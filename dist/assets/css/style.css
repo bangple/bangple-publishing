@@ -1,0 +1,514 @@
+    @import url(common.css);
+    @import url(layout.css);
+    * {
+        background-repeat: no-repeat;
+    }
+    /************************************************************************
+main 
+*************************************************************************/
+    
+    .main-copy h1 {
+        font-family: 'NanumSquareRound'!important;
+        font-weight: 200!important;
+        font-size: 36px;
+        color: #02597e;
+        line-height: 62px;
+    }
+    
+    .main-copy h1 b {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    
+    @media screen and (max-width:1024px) {}
+    
+    @media screen and (max-width:480px) {}
+    
+    @media screen and (max-width:280px) {}
+    /** 견적 요청하기 **/
+    
+    .main-quotation {
+        position: absolute;
+        top: -39px;
+        left: 0;
+        width: 1110px;
+        height: 78px;
+        border-radius: 40px;
+        background: linear-gradient(89deg, #02597e, #329c9c);
+        z-index: 999;
+    }
+    
+    .main-quotation p {
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    
+    .main-quotation p::before {
+        content: '';
+        display: inline-block;
+        background: url(../img/icon/icon_quotation.png) no-repeat center center;
+        width: 53px;
+        height: 78px;
+        margin: 0 37px 0 45px;
+    }
+    
+    .main-quotation button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        line-height: 40px;
+        color: #02597e;
+        font-weight: 200;
+        border-radius: 50%;
+        background-color: #fff;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    /** 전국 숨은 업체 **/
+    
+    .main-country {
+        width: 100%;
+        height: 312px;
+        background-image: url(../img/main/bg-country.png);
+        background-position: center;
+        background-color: #f7fcff;
+    }
+    
+    .main-country .container {
+        height: inherit;
+    }
+    
+    .main-country h3 {
+        font-size: 28px;
+    }
+    
+    .main-country h3 p {
+        font-size: 14px;
+        color: #666;
+        font-weight: 200;
+    }
+    
+    .main-country button:hover,
+    .main-country button.action,
+    .main-country button {
+        border: solid 1px;
+    }
+    
+    .main-country button {
+        width: 76px;
+        height: 33px;
+        line-height: 32px;
+        font-size: 16px;
+        color: #52739b;
+        margin: 0 5px 6px;
+        padding: 0;
+        border-radius: 5px;
+        border-color: #abbcd5;
+        background-color: #e9f0f6;
+    }
+    
+    .main-country button:hover,
+    .main-country button.action {
+        color: #fff;
+        font-weight: 300;
+        background-color: #02597e;
+        border-color: #abbcd5;
+    }
+    
+    .card-product {
+        height: 317px;
+    }
+    
+    .card-product .card-body {
+        padding: 1.3rem 0.85rem;
+        text-align: left;
+    }
+    
+    .card-product .card-body .product-info a {
+        width: 100%;
+        height: 60px;
+        font-size: 14px;
+        margin-top: 25px;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    
+    .star-rating {
+        display: flex;
+    }
+    
+    .star-rating .sr-star {
+        font-size: 1.2rem;
+        color: #e9e9e9;
+    }
+    
+    .btn-all {
+        font-size: 14px;
+        color: #333;
+    }
+    
+    .btn-all::after {
+        content: '';
+        background: url(../img/icon/icon_next.png);
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin: 0 0 -1px 5px;
+    }
+    /** 서비스 선택 select-service, 업체가입**/
+    
+    .select-list {
+        display: none
+    }
+    
+    .select-service .card {
+        padding: 30px;
+        border-radius: 12px;
+    }
+    
+    .select-service .process {
+        height: 15px;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        border-color: #f3f3f3;
+    }
+    
+    .select-service .process div {
+        height: 9px;
+    }
+    
+    .select-service .select-list li {
+        height: 57px;
+        margin-bottom: 5px;
+        border: 1px solid #ededed;
+    }
+    
+    .select-service .select-list li.none {
+        height: auto;
+        border: none;
+    }
+    
+    .select-service .select-list li.form-check {
+        display: block;
+        line-height: 3.5rem;
+        padding-left: 2.5em;
+    }
+    
+    .select-service .select-list li.action {
+        background-color: #f3f5f5;
+    }
+    
+    .select-service .select-list li.form-check .form-check-input {
+        margin-top: 21px;
+    }
+    
+    .select-service .select-list li.form-check .form-check-label {
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .select-service .btn-next,
+    .select-service .btn-pre {
+        line-height: 40px;
+        border-radius: 7px;
+        padding: 0 30px;
+    }
+    
+    .select-service .btn-next {
+        font-weight: 100;
+        color: #fff;
+        background-color: #2d9599;
+    }
+    
+    .select-service .btn-pre {
+        font-weight: 200;
+        color: #2d9599;
+        border: 1px solid #2d9599;
+    }
+    
+    .select-service .select-list h4.join-bg {
+        height: 340px;
+        background-image: url(../img/login/img_joinimg.png);
+        background-position: center bottom;
+    }
+    
+    .select-service .select-list h4.join-bg p {
+        color: #666;
+        font-weight: 200;
+    }
+    
+    .select-service .select-list div.scroll-y {
+        height: 430px;
+        overflow-y: auto;
+    }
+    
+    .select-service .select-country button {
+        width: 97px;
+    }
+    
+    .select-service button.action {
+        color: #fff;
+        font-weight: 300;
+        background-color: #38c4c9;
+    }
+    /** login **/
+    
+    .login .card {
+        width: 448px;
+        padding: 50px 40px;
+        margin: 0 auto;
+    }
+    
+    .btn-yllw {
+        color: #000;
+        background-color: #fae100;
+    }
+    
+    .btn-blue,
+    .btn-grn {
+        color: #fff;
+    }
+    
+    .btn-blue {
+        background-color: #396abe;
+    }
+    
+    .btn-grn {
+        background-color: #19ce60;
+    }
+    
+    .form-check a {
+        color: #02597e;
+        text-decoration: underline;
+    }
+    
+    .form-check a:hover {
+        color: #2d9599;
+    }
+    /** join **/
+    
+    button.btn-square,
+    .join-thumbnail {
+        width: 57px!important;
+        height: 55px;
+    }
+    
+    button.btn-square {
+        line-height: 55px;
+        font-size: 26px;
+        font-weight: 500;
+        padding: 0;
+        text-align: center;
+        background-color: #f2f6f6;
+    }
+    
+    .join-thumbnail {
+        position: relative;
+        display: table;
+        border: 1px solid #c3c5cd;
+        border-radius: 7px;
+        background-size: 110%;
+        background-position: 52% -4px;
+        cursor: pointer;
+    }
+    
+    .join-thumbnail span.thumbnail-text {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        background-color: #00000080;
+        border-radius: 5px;
+    }
+    
+    .join-thumbnail button.badge {
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        width: 16px;
+        height: 16px;
+        padding: 0;
+    }
+    
+    .phone-certify-btn {
+        position: absolute;
+        top: 36%;
+        right: 0.625rem;
+        margin-bottom: 0;
+        padding: 0.5rem;
+        transform: translateY(-50%);
+        font-size: 1.125rem;
+        line-height: 1;
+        cursor: pointer;
+    }
+    /** 받은견적 **/
+    
+    .card-product .thumbnail-style1 a {
+        display: block;
+        width: 52px;
+        height: 52px;
+        margin-right: 5px;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+    
+    .card-product .thumbnail-style1 a img {
+        width: auto!important;
+        max-width: none!important;
+        height: 100%;
+    }
+    
+    .card-product .thumbnail-style1 a.more {
+        color: #666;
+        font-weight: 500;
+        line-height: 52px;
+        background-color: #b2d9d1;
+        border: 1px solid #77c1b2;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .card-product .thumbnail-style1 a.more:hover {
+        text-decoration: none;
+        background-color: #b2d9d190;
+    }
+    
+    .card-product .badge {
+        border-radius: 10px;
+    }
+    
+    .thumbnail-style a {
+        display: block;
+        margin-right: 5px;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+    
+    .thumbnail-style a.thumbnail-style2 {
+        width: 117px;
+        height: 117px;
+    }
+    
+    .thumbnail-style a img {
+        width: auto!important;
+        max-width: none!important;
+        height: 100%;
+    }
+    
+    .thumbnail-style a.thumbnail-style3 {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .product-list {
+        cursor: pointer;
+    }
+    /** 마이페이지 **/
+    
+    .card .front-icon {
+        font-size: 50px;
+    }
+    
+    .mypage-wrap .rounded-circle {
+        position: relative;
+        width: 97px;
+        height: 97px;
+        font-size: 70px;
+        color: #889ba9;
+        background-color: #cae5e8;
+    }
+    
+    .mypage-wrap .rounded-circle i {
+        vertical-align: baseline;
+    }
+    
+    .mypage-wrap .rounded-circle button.btn-camera {
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
+        vertical-align: baseline;
+        background-color: #fff;
+    }
+    
+    .mypage-wrap input.border-grn {
+        border: 3px solid #8fd5d3;
+    }
+    
+    .form-switch .form-check-input {
+        border-radius: 20px;
+    }
+    /** 게시판 **/
+    
+    .page-item.active .page-link {
+        border-color: #e1f5f2;
+    }
+    
+    .board-list ul.list-unstyled,
+    .board-view {
+        border-top: 2px solid #666;
+        padding-top: 10px;
+    }
+    
+    .board-list ul.list-unstyled li,
+    .board-view-wrap ul.list-unstyled li {
+        border-bottom: solid 1px #edf0f7;
+        padding: 10px 0;
+    }
+    
+    .board-list ul.list-fs-18 li {
+        font-size: 1.125rem;
+        padding: 20px 0 15px;
+    }
+    
+    ul.list-unstyled li a {
+        font-weight: 200;
+        color: #333;
+    }
+    
+    ul.list-unstyled li a:hover,
+    .sidebar ul.list-unstyled li a.nav-link-style:hover {
+        color: #2d9599;
+    }
+    
+    .sidebar-enabled::before,
+    .sidebar {
+        background-color: #eff8f9;
+    }
+    
+    .sidebar ul.list-unstyled li {
+        border-bottom: none;
+        padding: 0;
+    }
+    
+    .sidebar ul.list-unstyled li a.nav-link-style {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+    
+    .sidebar ul.list-unstyled li a.nav-link-style.active {
+        background-color: #d4eef1;
+    }
+    
+    .board-view-wrap ul.list-unstyled li a {
+        color: #999;
+    }
+    
+    .board-view {
+        border-bottom: solid 1px #edf0f7;
+    }
+    
+    .select-dropdown .dropdown-toggle::after {
+        font-size: 18px;
+        margin: 0 0 0 0!important;
+    }

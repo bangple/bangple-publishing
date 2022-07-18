@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BANGPLE</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#02597e">
+    <meta name="theme-color" content="#ffffff">-->
+    <!-- Page loading styles-->
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <link rel="stylesheet" media="screen" href="../assets/css/style.css">
+
+</head>
+<!-- Body-->
+
+<body>
+    <!-- Modal 비밀번호 찾기 -->
+    <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="width:305px;">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">필수 정보 입력 확인</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 align-center pt-0">
+                    <p class="mt-5">해당 페이지의 <span class="font-primary2">필수 정보</span>들이<br> 입력/등록 되어야 합니다.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4" data-bs-dismiss="modal">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main class="page-wrapper main-con">
+
+        <!-- Navbar -->
+        <iframe src="../layout/gnb.html" class="header-iframe"></iframe>
+
+
+        <!-- Page content-->
+        <!-- 로그인  -->
+        <section class="bg-secondary single-page select-service">
+            <div class="container ps-3 pb-7">
+                <h3 class="font-primary">업체가입</h3>
+                <div class="card mg_c" style="width:940px;min-height: 678px;">
+                    <div class="card-header">
+                        <div class="d-flex align-items-center justify-content-between mx-0">
+                            <div class="bg-light-grey process px-0" style="width:93%;">
+                                <div id="myBar" class="bg-green" style="width:20%"></div>
+                            </div>
+                            <div class="font-size-large02 font-primary" id="demo"><b>20%</b></div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-5">
+
+                        <div class="select-list">
+                            <div class="row">
+                                <h4 class="col-5 join-bg align-center">어떤 서비스를 제공<br>할 수 있나요?</h4>
+                                <ul class="col-7">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="11" name="radio">
+                                        <label class="form-check-label" for="11">해충방역 (벌레, 해충 퇴치)</label>
+                                    </li>
+                                    <li class="form-check action">
+                                        <input class="form-check-input" type="checkbox" id="22" name="radio" checked>
+                                        <label class="form-check-label" for="22">소독방역 (세균, 바이러스 퇴치)</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="33" name="radio">
+                                        <label class="form-check-label" for="33">드론방역 (농작물 보호, 가축방역)</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="select-list">
+                            <div class="row">
+                                <h4 class="col-5 join-bg align-center">업체님의 활동 지역의 <br> 주소를 알려주세요.
+                                    <p class="fs-sm mt-2">활동지역은 근처의 고객을 찾는데 도움이 됩니다.</p>
+                                </h4>
+                                <div class="col-7">
+                                    주소검색 API
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-list">
+                            <div class="row">
+                                <h4 class="col-5 join-bg align-center">업체님의 활동 지역의 <br> 주소를 알려주세요.
+                                    <p class="fs-sm mt-2">활동지역은 근처의 고객을 찾는데 도움이 됩니다.</p>
+                                </h4>
+                                <div class="col-7">
+                                    <div class="d-flex justify-content-between ms-2">
+                                        <p class="h7 mb-2">활동 지역</p>
+                                        <button class="btn-bgnone font-primary2 fs-sm">수정</button>
+                                    </div>
+                                    <div class="card card2" style="background-color: #e9f4f5;">
+                                        경기 고양시 일산서구 고양대로112번길 12 (법곳동)
+                                    </div>
+                                    <div class="d-flex justify-content-between ms-2 mt-4">
+                                        <p class="h7 mb-2">이동 가능 지역</p>
+                                        <button class="btn-bgnone font-primary2 fs-sm">수정</button>
+                                    </div>
+                                    <div class="card" style="height: 200px;padding: 0;">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.880873857798!2d127.20317465100955!3d37.55787033228282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb17ca8e64423%3A0x4f54e36b36af8af2!2z7ZiE64yA7KeA7Iud7IKw7JeF7IS87YSwIO2VnOqwleuvuOyCrDLssKg!5e0!3m2!1sko!2skr!4v1647491160787!5m2!1sko!2skr"
+                                            width="520" height="200" style="border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                    <div class="select-country mt-1">
+                                        <button class="btn btn-sm btn-outline mt-2">성남시</button>
+                                        <button class="btn btn-sm btn-outline mt-2 action">광주시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">용인시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">시흥시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">용인시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">성남시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">광주시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">용인시</button>
+                                        <button class="btn btn-sm btn-outline mt-2">시흥시</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="select-list">
+                            <div class="row mb-4">
+                                <h4 class="col-5 join-bg align-center">마지막으로 필수 정보를<br>입력해주세요.</h4>
+                                <div class="col-7 scroll-y">
+                                    <div>
+                                        <label for="44" class="form-label">이름</label>
+                                        <input class="form-control form-control-lg" type="text" id="44" placeholder="이름(실명)을 입력해주세요">
+                                    </div>
+                                    <div class="mt-3">
+                                        <label class="form-label">성별</label>
+                                        <div class="d-flex justify-content-between mx-0">
+                                            <button class="btn btn-lg btn-outline" style="width: 49%;">남성</button>
+                                            <button class="btn btn-lg btn-outline action" style="width: 49%;">여성</button>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="55" class="form-label">이메일</label>
+                                        <input class="form-control form-control-lg" type="text" id="55" placeholder="이메일 주소를 입력해주세요. ">
+                                    </div>
+                                    <div class="mt-3 ">
+                                        <label for="66 " class="form-label ">비밀번호</label>
+                                        <input class="form-control form-control-lg " type="password " id="66 " placeholder="영문+숫자 조합 8자리 이상 입력해주세요 ">
+                                    </div>
+                                    <div class="mt-3 ">
+                                        <div class="d-flex justify-content-between ">
+                                            <label class="form-label ">사업자등록증 등록 </label>
+                                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">편집</button>
+                                        </div>
+                                        <p class="fs-xs font-color-99 align-items-center px-2 mb-2 ">허위정보에 대한 모든 책임은 본인에게 있습니다.</p>
+                                        <button class="btn btn-lg btn-outline btn-square " style="width:50px; ">+</button>
+                                    </div>
+                                    <div class="mt-3 ">
+                                        <div class="d-flex justify-content-between ">
+                                            <label class="form-label ">소독업 신고증(필수서류) 및 교육이수증(선택) 서류 등록 </label>
+                                            <button class="btn-bgnone font-primary2 fs-sm align-items-center ">편집</button>
+                                        </div>
+                                        <p class="fs-xs font-color-99 align-items-center px-2 mb-2 ">허위정보에 대한 모든 책임은 본인에게 있습니다.</p>
+                                        <div class="d-flex ">
+                                            <button class="btn btn-lg btn-outline btn-square me-1 " style="width:50px; ">+</button>
+                                            <p class="join-thumbnail me-1 " style="background-image: url(../assets/img/login/thumbnail01.jpg); ">
+                                                <span class="thumbnail-text ">등록된<br>이미지</span>
+                                                <button class="badge rounded-pill bg-danger "><i class="ai-x "></i></button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 ">
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="checkbox" id="111" name="radio">
+                                            <label for="111 " class="form-label ps-0 ">(추가) 드론 방역여부 : 드론 자격증 (필수)</label>
+                                        </div>
+                                        <p class="fs-xs font-color-99 align-items-center px-2 mb-2">드론자격이 없는 업체가 드론방역시 불법입니다.</p>
+                                        <div class="d-flex ">
+                                            <button class="btn btn-lg btn-outline btn-square me-1" style="width:50px;">+</button>
+                                            <p class="join-thumbnail me-1" style="background-image: url(../assets/img/login/thumbnail01.jpg);">
+                                                <span class="thumbnail-text ">등록된<br>이미지</span>
+                                                <button class="badge rounded-pill bg-danger"><i class="ai-x"></i></button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="112" class="form-label">휴대전화 번호 인증</label>
+                                        <div class="position-relative">
+                                            <input class="form-control form-control-lg" type="password" id="112" placeholder="예) 010-1234-5678">
+                                            <label class="phone-certify-btn">
+                                                <button class="btn btn-sm btn-primary2 px-4">전송</button>
+                                            </label>
+                                            <code class="ps-2 block">휴대전화 번호를 입력해주세요</code>
+                                        </div>
+                                    </div>
+                                    <p class="form-check mt-4 pt-2">
+                                        <input class="form-check-input" type="checkbox" id="113" name="radio">
+                                        <label class="form-check-label" for="113"><a href="#">이용약관</a>, <a href="#">개인정보</a> <a href="#">수집 및 이용</a> 동의 (필수)</label>
+                                    </p>
+                                    <p class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="114" name="radio">
+                                        <label class="form-check-label" for="114">만 14세 이상 (필수)</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="align-center mt-1">
+                        <button class="btn btn-pre" onclick="plusDivs(-1)">이전</button>
+                        <button class="btn btn-next" onclick="plusDivs(1)">다음</button>
+
+                        <!-- 가입하기 버튼은 마지막 페이지에서 표시 -->
+                        <button class="btn btn-next" data-bs-toggle="modal" data-bs-target="#modalConfirm">가입하기</button>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </section>
+
+        <!-- Back to top button-->
+        <a class="btn-scroll-top " href="#top " data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2 ">Top</span><i class="btn-scroll-top-icon ai-arrow-up ">   </i></a>
+
+        <!-- Footer-->
+        <iframe src="../layout/footer.html " class="footer-iframe "></iframe>
+
+    </main>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("select-list ");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            x[slideIndex - 1].style.display = "block ";
+        }
+
+
+        function move() {
+            var elem = document.getElementById("myBar ");
+            var width = 20;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    document.getElementById("demo ").innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+
+    <!-- Back to top button--><a class="btn-scroll-top " href="#top " data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2 ">Top</span><i class="btn-scroll-top-icon ai-arrow-up ">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js "></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
+    <script src="../assets/vendor/tiny-slider/dist/min/tiny-slider.js "></script>
+    <script src="../assets/vendor/flatpickr/dist/flatpickr.min.js "></script>
+    <script src="../assets/vendor/flatpickr/dist/plugins/rangePlugin.js "></script>
+
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js "></script>
+</body>
+
+</html>

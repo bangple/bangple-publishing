@@ -1,0 +1,687 @@
+/*@charset "UTF-8";*/
+
+@font-face {
+    font-family: "around-icons";
+    src: url("../fonts/around-icons.ttf?enmnv5") format("truetype"), url("../fonts/around-icons.woff?enmnv5") format("woff"), url("../fonts/around-icons.svg?enmnv5#around-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* NotoSans */
+
+@font-face {
+    font-family: "NotoSans";
+    font-weight: 600;
+    src: url("../fonts/notosanskr-black.woff") format("woff"), url("../fonts/notosanskr-black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NotoSans";
+    font-weight: 500;
+    src: url("../fonts/notosanskr-bold.woff") format("woff"), url("../fonts/notosanskr-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NotoSans";
+    font-weight: 300;
+    src: url("../fonts/notosanskr-medium.woff") format("woff"), url("../fonts/notosanskr-medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NotoSans";
+    font-weight: 200;
+    src: url("../fonts/notosanskr-regular.woff") format("woff"), url("../fonts/notosanskr-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NotoSans";
+    font-weight: 100;
+    src: url("../fonts/notosanskr-light.woff") format("woff"), url("../fonts/notosanskr-light.woff2") format("woff2");
+}
+
+
+/* NanumSquareRound */
+
+@font-face {
+    font-family: "NanumSquareRound";
+    font-weight: 600;
+    src: url("../fonts/NanumSquareRoundB.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NanumSquareRound";
+    font-weight: 200;
+    src: url("../fonts/NanumSquareRoundR.woff2") format("woff2");
+}
+
+body {
+    font-family: "NotoSans";
+    font-weight: 200;
+    color: #666;
+    font-size: 16px;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+.mg_c {
+    margin: 0 auto;
+}
+
+.fl_wrap:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: ""
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1,
+dt {
+    font-weight: 500!important;
+    color: #333;
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+}
+
+.h7 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+ul li,
+ol li,
+ol,
+ul,
+dl,
+dd,
+dt {
+    margin-bottom: 0;
+}
+
+.flex-1 {
+    flex: 1 1 100% !important;
+}
+
+.block {
+    display: block;
+}
+
+.container {
+    position: relative;
+    padding: 0;
+}
+
+.sub-container {
+    position: relative;
+    padding: 0 30px;
+}
+
+.card,
+.card-img,
+.card-img-top {
+    border-radius: 7px;
+}
+
+.meta-link {
+    color: #666;
+}
+
+
+/************************************************************************************
+스크롤바
+*************************************************************************************/
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* 세로축 스크롤바 길이 */
+    height: 6px;
+    /* 가로축 스크롤바 길이 */
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+ ::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #848383;
+}
+
+ ::-webkit-scrollbar-button {
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+}
+
+ ::-webkit-scrollbar-button:start {
+    background-color: #fff;
+    /* Top, Left 방향의 이동버튼 */
+}
+
+ ::-webkit-scrollbar-button:end {
+    background-color: #fff;
+    /* Bottom, Right 방향의 이동버튼 */
+}
+
+.scroll_y {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scroll_x {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+/* margin 
+*************************************************************************/
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+
+/* text 
+*************************************************************************/
+
+.font-primary {
+    color: #02597e;
+}
+
+.font-primary2 {
+    color: #2d9599
+}
+
+.font-size-samll02 {
+    font-size: 0.9rem;
+}
+
+.font-size-samll01 {
+    font-size: 0.95rem;
+}
+
+.font-size-normal {
+    font-size: 1rem!important;
+}
+
+.font-size-large01 {
+    font-size: 1.1rem;
+}
+
+.font-size-large02 {
+    font-size: 1.2rem;
+}
+
+.font-size-large03 {
+    font-size: 1.25rem;
+}
+
+.font-size-large04 {
+    font-size: 1.37rem;
+}
+
+.font-color-ed {
+    color: #ededed;
+}
+
+.font-color-ff {
+    color: #fff;
+}
+
+.font-color-66 {
+    color: #666;
+}
+
+.font-color-33 {
+    color: #333;
+}
+
+.font-color-99 {
+    color: #999;
+}
+
+.font-width-normal {
+    font-weight: 200!important;
+}
+
+.font-width-300 {
+    font-weight: 300!important;
+}
+
+.font-underline {
+    text-decoration: underline;
+}
+
+.font-number {
+    font-family: 'NanumSquareRound';
+}
+
+
+/* Align
+*************************************************************************/
+
+.align-left {
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+
+.align-center {
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.align-right {
+    justify-content: flex-end !important;
+    text-align: right !important;
+}
+
+.align-top {
+    align-items: flex-start !important;
+    vertical-align: top !important;
+}
+
+.align-middle {
+    align-items: center !important;
+    vertical-align: middle !important;
+}
+
+.align-bottom {
+    align-items: flex-end !important;
+    vertical-align: bottom !important;
+}
+
+
+/* Add Class
+*************************************************************************/
+
+.flex-0 {
+    flex: 0 0 auto !important;
+}
+
+.flex-1 {
+    flex: 1 1 100% !important;
+}
+
+.text-word-break {
+    word-wrap: break-word !important;
+    word-break: keep-all !important;
+    white-space: normal !important;
+}
+
+
+/* button 
+*************************************************************************/
+
+button {
+    border: none;
+    font-weight: 200!important;
+}
+
+.btn-100 {
+    width: 100%;
+}
+
+.btn {
+    border-radius: 7px;
+}
+
+.btn-bgnone {
+    background-color: transparent;
+}
+
+.btn-round {
+    border-radius: 30px;
+}
+
+.btn-gry,
+.btn-gry:hover {
+    color: #ededed;
+}
+
+.btn-gry {
+    background-color: #666;
+}
+
+.btn-gry:hover {
+    background-color: #494949;
+}
+
+.btn-large1 {
+    height: 58px;
+    line-height: 55px;
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.btn-secondary.show {
+    background-color: #bfe1dc;
+    border-color: #bfe1dc;
+}
+
+.btn-ms,
+.btn-group-ms>.btn {
+    height: 40px;
+    padding: .425rem 1rem;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: .5rem;
+}
+
+.btn-outline {
+    border: 1px solid #c3c5cd;
+}
+
+.btn-outline-primary2 {
+    color: #2d9599;
+    border-color: #2d9599!important;
+}
+
+.btn-outline-primary2:hover {
+    color: #2d9599;
+    background-color: #f5f5f5;
+}
+
+.btn-lg {
+    height: 57px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.btn-lg2 {
+    height: 45px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.btn-primary2 {
+    color: #fff;
+    background-color: #2d9599;
+    border-color: #2d9599;
+    box-shadow: unset;
+}
+
+.btn-primary2:hover {
+    color: #fff;
+    background-color: #2d9599;
+    border-color: #2d9599;
+}
+
+.btn-check2:focus+.btn-primary2,
+.btn-primary2:focus {
+    color: #000;
+    background-color: #2d9599;
+    border-color: #2d9599;
+    box-shadow: unset, 0 0 0 0 rgba(93, 207, 192, 0.5);
+}
+
+
+/* background
+*****************************************************************************/
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-primary,
+.bg-gradient1,
+.bg-gradient1:hover {
+    color: #fff;
+}
+
+.bg-gradient1 {
+    background: linear-gradient(to left, #329c9c, #02597e);
+}
+
+.bg-gradient1:hover {
+    background: linear-gradient(to left, #299191, #004c6d);
+}
+
+.bg-light-grey,
+.bg-hover-light-grey:hover,
+.bg-light-gray,
+.bg-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f3f3f3!important;
+}
+
+.bg-green,
+.bg-hover-green:hover {
+    color: #fff!important;
+    background-color: #4CAF50!important;
+}
+
+.radius-7 {
+    border-radius: 7px;
+}
+
+.bg-secondary2 {
+    background-color: #24bdc7;
+}
+
+.bg-secondary3 {
+    background-color: #eff8f9;
+}
+
+.bg-secondary-gr {
+    background: linear-gradient(to bottom, #2fe0e6 -3%, #107f91);
+}
+
+.bg-danger {
+    background-color: #fb479b!important;
+}
+
+.bg-gry {
+    background-color: #ededed;
+    color: #333;
+}
+
+
+/* card
+************************************************************************/
+
+.card {
+    border-color: #c3c5cd;
+}
+
+.card-body,
+.card-header {
+    padding: 0;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+.card-footer {
+    border-top: none;
+}
+
+.card2 {
+    border: none;
+    padding: 16px 24px!important;
+}
+
+.card3 {
+    border-color: #edf0f7;
+}
+
+
+/* form
+*************************************************************************/
+
+.form-control {
+    font-weight: 200;
+    color: #666;
+}
+
+.form-check-input {
+    border: 1px solid #c3c5cd;
+}
+
+.form-label {
+    color: #666;
+    padding-left: 7px;
+}
+
+.form-select,
+.form-control-lg {
+    height: 57px;
+    color: #333;
+    font-weight: 200;
+    border-radius: 7px;
+    border: solid 1px #ededed;
+    margin-bottom: 5px;
+}
+
+code {
+    font-size: 0.75em;
+    color: #d63384;
+    font-family: 'NotoSans';
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 3px;
+}
+
+
+/** calendar **/
+
+.select-service li.form-check .date-picker[readonly] {
+    background-color: #e6e6f0;
+    border-radius: 50%;
+}
+
+.flatpickr-calendar {
+    width: 485px;
+}
+
+.flatpickr-day {
+    color: #999;
+    border-radius: 5px;
+}
+
+.flatpickr-day.today {
+    border-color: #2d9599!important;
+}
+
+.flatpickr-rContainer {
+    margin: 0 auto;
+}
+
+
+/*
+modal
+***********************************************************************/
+
+.modal-content {
+    border-radius: 7px;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+    padding: 0 0 27px;
+}
+
+.modal-title {
+    font-size: 20px;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}
+
+
+/*
+table
+************************************************************************/
+
+.border1 table {
+    border: 1px solid #299191;
+    width: 100%;
+}
+
+.border1 table th,
+.border1 table td {
+    border: 1px solid #299191;
+    border-right: none;
+    border-top: none;
+    padding: 3px 10px;
+}
+
+
+/*
+dropdown
+***********************************************************************/
+
+.dropdown-item,
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #333;
+    font-weight: 200;
+}
+
+.dropdown-toggle::after {
+    margin: 5px 0 0 0;
+}
+
+
+/*
+badge
+***********************************************************************/
+
+.badge-text {
+    border-radius: 5px;
+}
+
+
+/*
+list-group
+***********************************************************************/
+
+.list-group-flush>.list-group-item:last-child {
+    border-width: 0 0 1px;
+}

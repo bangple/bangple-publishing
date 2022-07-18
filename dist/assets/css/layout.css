@@ -1,0 +1,246 @@
+iframe {
+    width: 100%;
+}
+
+iframe.header-iframe {
+    height: 82px;
+    margin-bottom: -6px;
+    z-index: 9999;
+}
+
+iframe.footer-iframe {
+    height: 510px!important;
+}
+
+
+/*
+.page-wrapper {
+    min-width: 1110px!important;
+}*/
+
+::selection {
+    background: rgba(109, 244, 237, 0.22);
+}
+
+.header {
+    height: 82px;
+    border-bottom: 1px solid #DDD;
+}
+
+.header .btn.btn-round {
+    font-size: 1.05em;
+    font-weight: 100!important;
+    width: 108px;
+    height: 44px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../img/icon/navbar-light-toggler-icon-bg.svg);
+}
+
+.navbar-nav.mobile {
+    display: none;
+}
+
+.navbar-nav .badge {
+    font-weight: 200;
+}
+
+.navbar-nav .badge.rounded-pill {
+    border-radius: 4px!important;
+}
+
+.navbar .btn-ms {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 34px;
+    padding: 0!important;
+}
+
+.nav-item .btn-bell {
+    margin-top: 5px;
+}
+
+
+/* dropdown */
+
+.nav-item {
+    position: relative!important;
+}
+
+.nav-item .dropdown-menu {
+    border: 1px solid #c3c5cd;
+    overflow: initial!important;
+    right: -50%!important;
+    top: 63px!important;
+    box-shadow: 0 0 0 20 (#333)
+}
+
+.nav-item .dropdown-menu::after {
+    content: "";
+    display: inline-block;
+    font-size: inherit;
+    position: absolute;
+    top: -16px;
+    right: 54px;
+    background-image: url(../img/common/dropdown-tip.png);
+    width: 29px;
+    height: 16px;
+}
+
+.nav-news {
+    position: relative;
+    padding: 16px 1.25rem;
+}
+
+.nav-news .alarm-on {
+    position: absolute;
+    top: 15px;
+    right: 21px;
+    width: 8px;
+    height: 8px;
+    background-color: #fb479b;
+    border-radius: 50%;
+}
+
+.nav-news-list {
+    width: 230px;
+}
+
+.nav-news-list p.when {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.news-inform::before,
+.news-notice::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.news-inform::before {
+    background-image: url(../img/icon/icon_alram_s.png);
+}
+
+.news-notice::before {
+    background-image: url(../img/icon/icon_notice_s.png);
+}
+
+.nav-news-list a {
+    display: block;
+}
+
+.nav-news-list a:hover,
+.nav-mypage a:hover {
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.nav-news-list dt,
+.nav-news-list dd {
+    width: 100%;
+    font-weight: 200!important;
+    white-space: initial;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+}
+
+.nav-news-list dt::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 14px;
+    background-image: url(../img/icon/icon_next.png);
+    margin: 3px 0 0 8px;
+    float: right;
+}
+
+.nav-mypage .dropdown-menu {
+    width: 210px;
+}
+
+.nav-mypage a {
+    color: #333;
+    padding: 2px 5px;
+}
+
+@media screen and (max-width:640px) {
+    .navbar-nav.web {
+        display: none;
+    }
+    .navbar-nav.mobile {
+        display: block;
+    }
+    .container .bg-secondary.text-muted,
+    .container .bg-light.text-muted {
+        padding: 20px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    font-size: 1.05em;
+    font-weight: 200!important;
+}
+
+@media (min-width: 1280px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1110px!important;
+    }
+}
+
+.footer,
+.footer a {
+    color: #999!important;
+}
+
+.footer button.btn-md {
+    height: 37px;
+    line-height: 35px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.footer .copyright {
+    font-size: 12px;
+}
+
+.footer .widget a {
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.footer hr {
+    background-color: #707070!important;
+    margin: 0!important;
+    opacity: 1!important;
+}
+
+
+/*
+single-page
+*******************************************************************/
+
+.single-page {
+    min-height: 500px;
+    margin-top: -6px;
+}
+
+.single-page h3 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+    padding: 90px 0 40px;
+}

@@ -1,0 +1,189 @@
+/* jquery.gallery3d.css - 2012©yamoo9.com */
+
+
+/* =.gallery3d */
+
+.gallery3d {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 85%;
+}
+
+
+/* =.gallery3d .a-container */
+
+.gallery3d .a-container {
+    position: relative;
+    width: 500px;
+    min-height: 319px;
+    margin: 0 auto;
+}
+
+.gallery3d .a-container a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 319px;
+    text-align: center;
+}
+
+.gallery3d .a-container .g-center,
+.gallery3d nav {
+    z-index: 100;
+}
+
+.gallery3d .a-container img {
+    padding-left: 1px;
+    padding-top: 0;
+    width: 299px;
+}
+
+.gallery3d .a-container .desc {
+    position: absolute;
+    bottom: -45px;
+    left: -3%;
+    width: 106%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    background: #f8f9fb;
+    padding: 18px 0 0;
+}
+
+.gallery3d .a-container p {
+    margin: 0px;
+}
+
+.gallery3d .a-container .desc {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.gallery3d .a-container .g-center .desc {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.csstransitions .gallery3d .a-container a,
+.csstransitions .gallery3d .a-container .desc,
+.csstransitions .gallery3d nav button {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.no-csstransforms3d .gallery3d .g-prev {
+    left: -250px;
+}
+
+.no-csstransforms3d .gallery3d .g-next {
+    left: 250px;
+}
+
+
+/* =css3transforms3d */
+
+.csstransforms3d .gallery3d .a-container {
+    -moz-perspective: 1000px;
+    -moz-transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.csstransforms3d .gallery3d .a-container .g-prev {
+    -webkit-transform: translateX(-140px) scale(0.8) rotateY(0deg);
+    -moz-transform: translateX(-140px) scale(0.8) rotateY(0deg);
+    -o-transform: translateX(-140px) scale(0.8) rotateY(0deg);
+    -ms-transform: translateX(-140px) scale(0.8) rotateY(0deg);
+    transform: translateX(-140px) scale(0.8) rotateY(0deg);
+    opacity: 60%;
+    top: 28px;
+}
+
+.csstransforms3d .gallery3d .a-container .g-next {
+    -webkit-transform: translateX(140px) scale(0.8) rotateY(0deg);
+    -moz-transform: translateX(140px) scale(0.8) rotateY(0deg);
+    -o-transform: translateX(140px) scale(0.8) rotateY(0deg);
+    -ms-transform: translateX(140px) scale(0.8) rotateY(0deg);
+    transform: translateX(140px) scale(0.8) rotateY(0deg);
+    opacity: 60%;
+    top: 28px;
+}
+
+
+/* =.gallery3d nav */
+
+.gallery3d nav {
+    position: absolute;
+    left: 0;
+    bottom: 37%;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery3d nav button {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    /*opacity: 0.8;*/
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    border: none;
+    background: transparent;
+    text-indent: -10000px;
+}
+
+.gallery3d nav button:hover,
+.gallery3d nav button:focus {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.gallery3d nav button.prev,
+.gallery3d nav button.next {
+    position: absolute;
+}
+
+.gallery3d nav button.prev {
+    left: -70px;
+    background-image: url(../img/icon/icon_pre2.png);
+}
+
+.gallery3d nav button.next {
+    right: -70px;
+    background-image: url(../img/icon/icon_next2.png);
+}
+
+
+/* =.gallery3d.lack */
+
+.gallery3d.lack .a-container {
+    width: auto;
+    float: left;
+    left: 50%;
+}
+
+.gallery3d.lack .a-container a {
+    position: static;
+    float: left;
+    margin-right: 10px;
+    opacity: .5!important;
+}
+
+.gallery3d.lack .a-container .desc {
+    position: static;
+    margin-top: 20px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
