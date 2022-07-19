@@ -142,6 +142,41 @@ dt {
     padding: 0;
 }
 
+
+/*
+Grid
+*************************************************************************************/
+
+@media screen and (max-width:640px) {
+    /* .d-flex {
+        flex-wrap: wrap;
+    }
+    .col-m-1{
+        width: 25%;
+    }
+    .col-m-2{
+        width: 33.333%;
+    }
+    .col-m-3{
+        width: 20%;
+    }
+    .col-m-4,
+    .col-m-5,
+    .col-m-6,
+    .col-m-7,
+    .col-m-8,
+    .col-m-9,
+    .col-m-10 {
+        flex: 1 1 100% !important;
+        width: 100%;
+    } */
+}
+
+
+/*
+common
+*************************************************************************************/
+
 .sub-container {
     position: relative;
     padding: 0 30px;

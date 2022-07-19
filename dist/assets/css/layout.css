@@ -69,7 +69,8 @@ iframe.footer-iframe {
     position: relative!important;
 }
 
-.nav-item .dropdown-menu {
+.nav-item .dropdown-menu,
+.navbar-expand-lg .dropdown-menu.show {
     border: 1px solid #c3c5cd;
     overflow: initial!important;
     right: -50%!important;
@@ -92,6 +93,30 @@ iframe.footer-iframe {
 .nav-news {
     position: relative;
     padding: 16px 1.25rem;
+}
+
+.nav-news.web {
+    display: block;
+}
+
+.nav-news.mobile {
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    .nav-news.web {
+        display: none;
+    }
+    .nav-news.mobile {
+        display: block;
+    }
+    .nav-item .dropdown-menu[data-bs-popper] {
+        right: 0px!important;
+        left: auto!important;
+    }
+    .nav-item .dropdown-menu::after {
+        right: 21px;
+    }
 }
 
 .nav-news .alarm-on {

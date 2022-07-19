@@ -52,10 +52,11 @@
                     <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
                     <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130" style="margin-right: 50px;">
                 </a>
-                <!-- 알림, 마이페이지 -->
+                <!-- 알림, 마이페이지 - web -->
                 <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
                     <div class="nav-item dropdown mt-1 me-2">
-                        <a class="nav-link nav-news" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                        <a class="nav-link nav-news web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                        <a class="nav-link nav-news mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
                         <div class="dropdown-menu">
                             <div class="dropdown-column dropdown-item mb-2">
                                 <h6>알림</h6>
@@ -92,7 +93,7 @@
                         </div>
                     </div>
                     <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
-                        <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-3 ai-user"></i></button>
+                        <button class="btn btn-ms rounded-pill btn-primary px-2" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-3 ai-user"></i></button>
                         <div class="dropdown-menu">
                             <div class="dropdown-column dropdown-item">
                                 <h6 class="pb-1">홍길동 고객님</h6>
@@ -112,13 +113,14 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
                     <div class="offcanvas-header navbar-shadow">
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body justify-content-end">
-                        <!-- Menu-->
+                        <!-- Menu - web-->
                         <ul class="navbar-nav web">
                             <li class="nav-item dropdown dropdown-mega">
                                 <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
@@ -136,6 +138,9 @@
 
                         <!-- Menu - mobile-->
                         <ul class="navbar-nav mobile">
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
+                            </li>
                             <li class="nav-item dropdown dropdown-mega">
                                 <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-company-list.html">
                                     업체찾기
@@ -380,24 +385,16 @@
         <!-- // 인기 업체 -->
 
         <!-- 방역 전문 업체신가요? -->
-        <section class="pt-5 pb-7 px-0" style="background-color: #f8f9fb;">
+        <section class="pt-5 px-0" style="background-color: #f8f9fb;">
             <h3 class="align-center pb-5">방역 전문 업체신가요?</h3>
             <div class="container d-flex justify-content-between align-items-center">
-                <div class="col-4 align-center">
+                <div class="col-4 col-m-4 align-center">
                     <p class="font-size-large03 font-primary">
                         <b>방플</b>은 방역만을 위한<br> 전문 플랫폼 입니다.<br> 저희와 함께 새로운 방역 시장을<br> 만들어 갔으면 좋겠습니다.
                     </p>
                     <button class="btn btn-round btn-large1 bg-gradient1">업체가입</button>
                 </div>
-                <div class="col-7">
-
-                    <!-- <div class="slider center">
-                        <div><img src="../assets/img/main/img_bnr01.png"></div>
-                        <div><img src="../assets/img/main/img_bnr02.png"></div>
-                        <div><img src="../assets/img/main/img_bnr03.png"></div>
-                        <div><img src="../assets/img/main/img_bnr01.png"></div>
-                        <div><img src="../assets/img/main/img_bnr02.png"></div>
-                    </div> -->
+                <div class="business-bnr col-7 col-m-7 pb-7">
                     <div id="business-bnr">
                         <a href="../customer/customer-company-list.html">
                             <img src="../assets/img/main/img_bnr01.png" alt="야무의 웹 사이트" width="480" height="260">

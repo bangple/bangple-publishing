@@ -22,7 +22,27 @@ main
     
     @media screen and (max-width:1024px) {}
     
-    @media screen and (max-width:480px) {}
+    @media screen and (max-width:480px) {
+        .main-copy h1 {
+            position: absolute;
+            top: 50px;
+            left: 30%;
+            font-size: 26px;
+            line-height: 42px;
+        }
+        .main-copy h1 b {
+            font-size: 26px;
+        }
+        .main.bg-secondary .ms-7 {
+            margin-left: 0!important;
+        }
+        .main.bg-secondary .me-7 {
+            margin-right: 0!important;
+        }
+        /* .main.bg-secondary img {
+            width: ;
+        } */
+    }
     
     @media screen and (max-width:280px) {}
     /** 견적 요청하기 **/
@@ -63,6 +83,12 @@ main
         background-color: #fff;
         letter-spacing: -1px;
         text-align: center;
+    }
+    
+    @media screen and (max-width:640px) {
+        .main-quotation {
+            width: 100%;
+        }
     }
     /** 전국 숨은 업체 **/
     
@@ -113,6 +139,14 @@ main
         font-weight: 300;
         background-color: #02597e;
         border-color: #abbcd5;
+    }
+    
+    .main-business-bnr .pb-7 {
+        padding-bottom: 0 !important;
+    }
+    
+    .main-business-bnr .pb-5 {
+        padding-bottom: 15px !important;
     }
     
     .card-product {
