@@ -445,8 +445,8 @@ main
         height: 80px;
     }
     
-    .product-list {
-        cursor: pointer;
+    .product-list a{
+        text-decoration: none;
     }
     /** 마이페이지 **/
     
