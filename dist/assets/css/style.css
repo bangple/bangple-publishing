@@ -141,6 +141,10 @@ main
         border-color: #abbcd5;
     }
     
+    .main-business-bnr{
+        padding-bottom: 170px;
+    }
+    
     .main-business-bnr .pb-7 {
         padding-bottom: 0 !important;
     }
@@ -546,3 +550,42 @@ main
         font-size: 18px;
         margin: 0 0 0 0!important;
     }
+
+    /** 업체 찾기 , 업체 정보 **/
+    .nav-tabs {
+        margin-bottom: 0.8rem;
+        border: 0;
+    }
+
+    .nav-tabs .nav-link{
+        border-radius: 7px;
+        color: #999;
+        font-weight: 300;
+        height: 42px;
+        line-height: 39px;
+        padding: 0 15px;
+    }
+    .nav-tabs .nav-link.active {
+        border: 2px solid #02597e;
+    }
+    .tab-content .card .list-group-item{
+        color: #999;
+    }
+    .tab-content .card .list-group-item i{
+        font-size: 19px;
+        color: #666;
+    }
+
+    
+@media screen and (max-width:990px) {
+    .nav-tabs,
+    .tab-pane{
+        margin: 0 30px;
+    }
+    .tab-pane .col-lg-6.col-ms-6.pe-0{
+        padding-left: 0!important;
+    }
+    .tab-pane .col-lg-6.col-ms-6.ps-0{
+        padding-right: 0!important;
+    }
+}

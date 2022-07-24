@@ -551,10 +551,19 @@ button {
     color: #333;
 }
 
+.bg-gry2 {
+    background-color: #f9f9f9;
+    color: #666;
+}
 
+hr{
+    background-color: #e7e9ee;
+}
 /* card
 ************************************************************************/
-
+.row{
+    margin: 0;
+}
 .card {
     border-color: #c3c5cd;
 }
@@ -581,6 +590,9 @@ button {
     border-color: #edf0f7;
 }
 
+@media screen and (max-width: 990px) {
+    
+}
 
 /* form
 *************************************************************************/
