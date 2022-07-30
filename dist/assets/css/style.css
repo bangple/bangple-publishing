@@ -154,7 +154,7 @@ main
     }
     
     .card-product {
-        height: 317px;
+        height: 200px;
     }
     
     .card-product .card-body {
@@ -577,6 +577,16 @@ main
     }
 
     
+    .tag-big{
+        display: inline-block;
+        font-size: 16px;
+        height: 36px;
+        line-height: 34px;
+        font-weight: 500;
+        color: #2d9599;
+        padding: 0 30px;
+        margin: 0 5px 10PX 0;
+    }
 @media screen and (max-width:990px) {
     .nav-tabs,
     .tab-pane{
