@@ -154,7 +154,7 @@ main
     }
     
     .card-product {
-        height: 200px;
+        height: 190px;
     }
     
     .card-product .card-body {
@@ -599,3 +599,8 @@ main
         padding-right: 0!important;
     }
 }
+
+.board-thumbnail{
+    height: 150px;
+}
+
