@@ -39,7 +39,7 @@
 <!-- Body-->
 
 <body>
-    <main class="page-wrapper main-con">
+    <main class="page-wrapper sub-con">
 
         <!-- Navbar (Solid background)-->
         <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
@@ -491,7 +491,56 @@
                 <!-- Tabs 4 -->
                 <div class="tab-pane fade" id="qna" role="tabpanel">
                     <h5 class="font-size-large03 mt-5 mb-4">질문답변</h5>
-                    
+                    <div class="qna-list mb40">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>Q.방역서비스 절차는 어떻게 진행 되나요?</dt>
+                                    <dd class="contentStr">
+                                        상담->현장방문->해충유무확인->방역진행->예방법안내->결제진행
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
+                                    <dd class="contentStr">
+                                        코로나예방소독 / 바퀴 / 개미 / 쥐 / 기타보행해충 / 옴진드기 / 저곡해충 (권연벌레 / 톱가슴머리대장 / 쌀바구미 / 화랑곡나방) / 매트리스 케어(집먼지진드기)
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Q.방역서비스 절차는 어떻게 진행 되나요?</dt>
+                                    <dd class="contentStr">
+                                        면적에따라 달라집니다.(공급면적기준)<br>
+                                        바퀴벌레퇴치기준(상황에따라금액은조정될수있습니다.)<br>
+                                        1평~9평 원룸 6만원<br>
+                                        1평~9평 투룸 7만원
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
+                                    <dd class="contentStr">
+                                        해충은 제품이 아니고 유입경로가 매우 다양하고 유입경로를 차단하는데 한계가 있기 때문에 A/S 또는 환불이 어렵습니다.
+                                        하지만 정기적인 관리로 번식을 최대한억제 하며 박멸되도록 최대한 노력하겠습니다.
+                                        해충은 제품이 아니고 유입경로가 매우 다양하고 유입경로를 차단하는데 한계가 있기 때문에 A/S 또는 환불이 어렵습니다.
+                                        하지만 정기적인 관리로 번식을 최대한억제 하며 박멸되도록 최대한 노력하겠습니다.
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
+                                    <dd class="contentStr">
+                                        코로나예방소독 / 바퀴 / 개미 / 쥐 / 기타보행해충 / 옴진드기 / 저곡해충 (권연벌레 / 톱가슴머리대장 / 쌀바구미 / 화랑곡나방) / 매트리스 케어(집먼지진드기)
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -517,7 +566,47 @@
     <!-- Main theme script-->
     <script src="../assets/js/theme.min.js"></script>
 
-
+    <script text="javascript/text">
+        $(document).ready(function(){
+     
+            $('.qna-list ul li').each(function(){
+                //var content = $(this).children('.content');
+                var content = $(this).find('.contentStr');
+     
+                var content_txt = content.text();
+                var content_html = content.html();
+                var content_txt_short = content_txt.substring(0,250)+"...";
+                var btn_more = $('<a href="javascript:void(0)" class="more font-primary2">자세히 보기 <i class="ai-chevron-down"></i></a>');
+     
+                
+                $(this).append(btn_more);
+                
+                if(content_txt.length >= 250){
+                    content.html(content_txt_short)
+                    
+                }else{
+                    btn_more.hide()
+                }
+                
+                btn_more.click(toggle_content);
+                function toggle_content(){
+                    if($(this).hasClass('short')){
+                        // 접기 상태
+                        $(this).html('자세히 보기 <i class="ai-chevron-down"></i>');
+                        content.html(content_txt_short)
+                        $(this).removeClass('short');
+                    }else{
+                        // 더보기 상태
+                        $(this).html('접어 두기 <i class="ai-chevron-up"></i>');
+                        content.html(content_html);
+                        $(this).addClass('short');
+     
+                    }
+                }
+            });
+        });
+      </script>
+    
 
 
 </body>

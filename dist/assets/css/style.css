@@ -604,3 +604,48 @@ main
     height: 150px;
 }
 
+/***  질문답변 ***/
+.qna-list {
+	border-bottom:1px solid #ddd;
+}
+.qna-list li{
+	padding:30px 0;
+	border-bottom:1px dashed #999;
+	cursor:pointer;
+}
+.qna-list li:last-child{
+	border-bottom:none;
+}
+.qna-list li:hover{
+	background:#f5f5f5;
+}
+.qna-list li dt{
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+}
+.qna-list li dd{
+    font-size: 18px;
+	color:#999;
+    margin-top: 15px;
+    /*overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;*/
+}
+.qna-list li a.more{
+    display: block;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px auto 0;
+}
+.qna-list li a.more i{
+    font-size: 16px;
+    color: #3748a0;
+}
+.qna-list li a.more:hover{
+    text-decoration: none;
+}
