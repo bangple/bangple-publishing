@@ -96,15 +96,15 @@
         margin-top: 35px;
     }
     .gallery3d .a-container a {
-        width: 75%;
+        width: 95%;
         height: 178px;
-        left: 42px;
+        /*left: 42px;*/
     }
     .gallery3d .a-container img {
-        width: 70%;
+        width: 100%;
     }
     .gallery3d .a-container .desc{
-        bottom: -85px;
+        bottom: -143px;
     }
     .gallery3d nav {
         width: 114%!important;
@@ -119,13 +119,14 @@
     }
     .csstransforms3d .gallery3d .a-container .g-prev,
     .csstransforms3d .gallery3d .a-container .g-next {
-        top: 17px!important;
+        top: 0!important;
+        opacity: 0!important;
     }
     .csstransforms3d .gallery3d .a-container .g-prev {
-        transform: translateX(-90px)!important;
+        transform: translateX(0px)!important;
     }
     .csstransforms3d .gallery3d .a-container .g-next {
-        transform: translateX(90px)!important;
+        transform: translateX(0px)!important;
     }
 }
 
@@ -206,7 +207,11 @@
     background-image: url(../img/icon/icon_next2.png);
 }
 
-
+@media screen and (max-width:420px){
+    .csstransforms3d .gallery3d .a-container{
+        transform-style: unset;
+    }
+}
 /* =.gallery3d.lack */
 
 .gallery3d.lack .a-container {

@@ -3,6 +3,26 @@
     * {
         background-repeat: no-repeat;
     }
+
+    .display-web{
+        
+    }
+
+    .display-mobile{
+        display: none;
+    }
+
+    @media screen and (max-width:480px){
+        .display-web{
+            display: none;
+        }
+    
+        .display-mobile{
+            display: block;
+        }
+    }
+
+
     /************************************************************************
 main 
 *************************************************************************/
@@ -160,15 +180,31 @@ main
     .main-business-bnr .pb-5 {
         padding-bottom: 15px !important;
     }
- 
- 
+    .main-business-bnr .tns-carousel-wrapper{
+        display: none;
+    }
 @media screen and (max-width:640px) {
     .main-country{
         background-image:none;
     }
     
     .main-business-bnr{
-        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+    /* .main-business-bnr .gallery3d{
+        display: none!important;
+    } */
+    .main-business-bnr .tns-carousel-wrapper{
+        display: block;
+    }
+    #tns1-mw {
+        text-align: center;
+    }
+    #tns1-mw a p{
+        font-size: 20px;
+    }
+    .tns-carousel-wrapper .tns-nav{
+        padding-top: 0;
     }
 }
 @media screen and (max-width:480px) {
@@ -180,8 +216,8 @@ main
     
 }
 
-    .card-product {
-        height: 190px;
+    .main-con .card-product {
+        height: 321px;
     }
     
     .card-product .card-body {
@@ -193,6 +229,7 @@ main
         width: 100%;
         height: 60px;
         font-size: 14px;
+        font-weight: 200;
         margin-top: 25px;
         overflow: hidden;
         white-space: normal;
@@ -224,6 +261,14 @@ main
         height: 14px;
         margin: 0 0 -1px 5px;
     }
+
+    
+@media screen and (max-width:480px) {
+    .popular-company .mb-30{
+        margin-bottom:20px;
+    }    
+}
+
     /** 서비스 선택 select-service, 업체가입**/
     
     .select-list {
@@ -414,7 +459,8 @@ main
         cursor: pointer;
     }
     /** 받은견적 **/
-    
+
+
     .card-product .thumbnail-style1 a {
         display: block;
         width: 52px;
@@ -449,6 +495,7 @@ main
         border-radius: 10px;
     }
     
+
     .thumbnail-style a {
         display: block;
         margin-right: 5px;
@@ -475,6 +522,11 @@ main
     .product-list a{
         text-decoration: none;
     }
+    
+    .photo-list .thumbnail-style {
+        height: 190px;
+    }
+
     /** 마이페이지 **/
     
     .card .front-icon {
