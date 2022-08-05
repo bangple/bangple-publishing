@@ -23,10 +23,18 @@ main
     @media screen and (max-width:1024px) {}
     
     @media screen and (max-width:480px) {
+        .main-visual .order-md-1{
+            height: 265px;
+        }
+        .main-visual .order-md-1 img{
+            position: absolute;
+            bottom: 11px;
+        }
         .main-copy h1 {
             position: absolute;
-            top: 50px;
-            left: 30%;
+            top: 100px;
+            right: 5%;
+            width: 75%;
             font-size: 26px;
             line-height: 42px;
         }
@@ -152,7 +160,26 @@ main
     .main-business-bnr .pb-5 {
         padding-bottom: 15px !important;
     }
+ 
+ 
+@media screen and (max-width:640px) {
+    .main-country{
+        background-image:none;
+    }
     
+    .main-business-bnr{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width:480px) {
+    .main-country .col-lg-8{
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    
+}
+
     .card-product {
         height: 190px;
     }
@@ -587,6 +614,7 @@ main
         padding: 0 30px;
         margin: 0 5px 10PX 0;
     }
+
 @media screen and (max-width:990px) {
     .nav-tabs,
     .tab-pane{

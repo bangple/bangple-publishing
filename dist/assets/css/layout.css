@@ -34,6 +34,12 @@ iframe.footer-iframe {
     height: 44px;
 }
 
+@media screen and (max-width:480px){
+    .header .container{
+        padding: 0;
+    }
+}
+
 .navbar-dark .navbar-toggler-icon {
     background-image: url(../img/icon/navbar-light-toggler-icon-bg.svg);
 }
@@ -252,6 +258,27 @@ iframe.footer-iframe {
     margin: 0!important;
     opacity: 1!important;
 }
+
+.footer .widget .col-lg-3{
+    padding-left: 0;
+}
+
+@media screen and (max-width:640px) {
+    .footer.pb-6{
+        padding-bottom: 0rem !important;
+    }
+    .footer .copyright {
+        display: none;
+    }
+    .footer .widget .col-lg-3{
+        display: none;
+        padding-left: 15px;
+    }
+    .footer .container{
+        width: 85%;
+    }
+}
+
 
 
 /*
