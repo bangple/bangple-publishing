@@ -123,10 +123,10 @@
         opacity: 0!important;
     }
     .csstransforms3d .gallery3d .a-container .g-prev {
-        transform: translateX(0px)!important;
+        transform: translateX(90px)!important;
     }
     .csstransforms3d .gallery3d .a-container .g-next {
-        transform: translateX(0px)!important;
+        transform: translateX(90px)!important;
     }
 }
 
