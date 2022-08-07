@@ -508,7 +508,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     forEach(carousels, function (index, value) {
       var defaults = {
         container: value,
-        controlsText: ['<i class="ai-arrow-left"></i>', '<i class="ai-arrow-right"></i>'],
+        controlsText: ['<i class="ai-chevron-left"></i>', '<i class="ai-chevron-right"></i>'],
         navPosition: 'top',
         controlsPosition: 'top',
         mouseDrag: true,
