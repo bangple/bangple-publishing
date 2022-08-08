@@ -143,6 +143,14 @@ dt {
 }
 
 
+@media screen and (max-width:920px){
+    .header .container{
+        padding: 0 15px;
+    }
+    .container{
+        padding: 0 30px;
+    }
+} 
 @media screen and (max-width:480px){
     .container{
         padding: 0 20px;
@@ -630,6 +638,7 @@ hr{
 .form-control {
     font-weight: 200;
     color: #666;
+    border-radius: 7px;
 }
 
 .form-check-input {
@@ -659,6 +668,11 @@ code {
 
 .form-check-input[type=checkbox] {
     border-radius: 3px;
+}
+
+textarea{
+    font-weight: 300;
+
 }
 
 

@@ -10,6 +10,12 @@
     width: 85%;
 }
 
+@media screen and (max-width:920px){
+    .gallery3d{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
 
 /* =.gallery3d .a-container */
 
