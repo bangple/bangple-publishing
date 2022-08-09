@@ -416,3 +416,9 @@ single-page
     font-weight: 300;
     padding: 90px 0 40px;
 }
+
+@media screen and (max-width:920px){
+    .single-page h3 {
+        padding: 50px 0 20px;
+    }
+}

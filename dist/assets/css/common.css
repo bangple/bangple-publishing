@@ -151,6 +151,12 @@ dt {
         padding: 0 30px;
     }
 } 
+@media screen and (max-width:640px){
+    h4,
+    .h4 {
+        font-size: 18px;
+    }
+}
 @media screen and (max-width:480px){
     .container{
         padding: 0 20px;
@@ -675,6 +681,17 @@ textarea{
 
 }
 
+@media screen and (max-width:480px){
+    
+    .form-select,
+    .form-control-lg {
+        height: 40px!important;
+        min-height: auto;
+        font-size: 0.9rem;
+        padding: 0.55rem 1.25rem!important;
+    }
+
+}
 
 /** calendar **/
 
@@ -700,6 +717,12 @@ textarea{
     margin: 0 auto;
 }
 
+@media screen and (max-width:480px){
+    .flatpickr-calendar {
+        width: 95%;
+    }
+
+}
 
 /*
 modal

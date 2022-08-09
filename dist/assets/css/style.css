@@ -454,7 +454,7 @@ main
    }
 
    h3{
-        font-size: 22px!important;
+        font-size: 20px!important;
    }
    .service-kind.pt-6,
    .popular-company.pt-6{
@@ -496,7 +496,13 @@ main
     border-radius: 12px;
 }
 
+.single-page.select-service .card {
+    width:940px;
+    min-height: 678px;
+}
+
 .select-service .process {
+    width: calc(100% - 70px);
     height: 15px;
     border-top: 3px solid;
     border-bottom: 3px solid;
@@ -581,6 +587,41 @@ main
     font-weight: 300;
     background-color: #38c4c9;
 }
+
+
+@media screen and (max-width:920px){
+    .single-page.select-service .card{
+        width:100%;
+    }
+    .select-service .display-web {
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px){
+    .select-service .display-web,
+    .select-service .select-list h4.join-bg {
+        display: none;
+    }
+    .select-service .mt-n5{
+        margin-top: -1rem !important;
+    }
+    .select-service .process-area .process{
+        width: calc(100% - 50px);
+    }
+    .select-service .process-area .font-size-large02{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    
+}
+@media screen and (max-width:320px){
+    
+}
+
 /** login **/
 
 .login .card {
@@ -674,6 +715,21 @@ button.btn-square {
     line-height: 1;
     cursor: pointer;
 }
+
+
+@media screen and (max-width:480px){
+    .single-page h3{
+        padding: 45px 0 15px;
+    }
+    .login .card {
+        width: 100%;
+        padding: 30px 15px;
+    }
+}
+
+
+
+
 /** 받은견적 **/
 
 
