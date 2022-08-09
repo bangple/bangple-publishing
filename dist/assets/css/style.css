@@ -623,7 +623,14 @@ main
 
 
 @media screen and (max-width:480px){
-    
+    .select-service .card {
+        padding: 30px 20px;
+    }
+    .select-service .select-list .justify-content-between .btn-lg{
+        height: 40px;
+        line-height: 36px;
+        padding: 0 1.5rem;
+    }
     .select-service .btn-next,
     .select-service .btn-pre {
         padding: 0 20px;
@@ -631,7 +638,25 @@ main
 
 }
 @media screen and (max-width:320px){
-    
+    .select-service .card {
+        border-radius: 7px;
+    }
+    .select-service .card-body.pt-5{
+        padding-top: 2rem !important;
+    }
+    .select-service .select-list .scroll-y {
+        padding: 0 10px;
+    }
+    .select-service .select-list .scroll-y .form-check .form-check-input{
+        margin-left: -1.6em;
+    }
+    .select-service .select-list li.form-check{
+        padding-left: 2.2em;
+    }
+    .select-service .btn-next, .select-service .btn-pre,
+    .select-service .select-list li.form-check .form-check-label{
+        font-size: 0.85rem;
+    }
 }
 
 /** login **/
