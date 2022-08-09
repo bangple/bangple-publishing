@@ -608,7 +608,7 @@ main
         display: none;
     }
     .select-service .select-list .scroll-y{
-        height: calc(100vh - 295px);
+        height: calc(100vh - 400px);
     }
     .select-service .mt-n5{
         margin-top: -1rem !important;
