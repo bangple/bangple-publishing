@@ -498,7 +498,9 @@ main
 
 .single-page.select-service .card {
     width:940px;
-    min-height: 678px;
+}
+.single-page.select-service .select-list .card {
+    width:auto;
 }
 
 .select-service .process {
@@ -573,8 +575,9 @@ main
     font-weight: 200;
 }
 
-.select-service .select-list div.scroll-y {
-    height: 430px;
+
+.select-service .select-list .scroll-y {
+    height: calc(100vh - 520px);
     overflow-y: auto;
 }
 
@@ -592,6 +595,7 @@ main
 @media screen and (max-width:920px){
     .single-page.select-service .card{
         width:100%;
+        height: auto;
     }
     .select-service .display-web {
         display: none;
@@ -602,6 +606,9 @@ main
     .select-service .display-web,
     .select-service .select-list h4.join-bg {
         display: none;
+    }
+    .select-service .select-list .scroll-y{
+        height: calc(100vh - 295px);
     }
     .select-service .mt-n5{
         margin-top: -1rem !important;
@@ -617,6 +624,11 @@ main
 
 @media screen and (max-width:480px){
     
+    .select-service .btn-next,
+    .select-service .btn-pre {
+        padding: 0 20px;
+    }
+
 }
 @media screen and (max-width:320px){
     
