@@ -62,11 +62,16 @@ main
 
 @media screen and (max-width:480px) {
     .main-visual .order-md-1{
-        height: 275px;
+        height: 260px;
+    }
+    .main-visual .order-md-1{
+        background-image: url(../img/main/img_mainvisual01.png);
+        background-repeat: no-repeat;
+        background-position: 23px -6px;
+        background-size: 105%;
     }
     .main-visual .order-md-1 img{
-        position: absolute;
-        bottom: 20px;
+        display: none!important;
     }
     .main-copy h1 {
         position: absolute;
@@ -96,12 +101,17 @@ main
 
 @media screen and (max-width:360px) {
     .main-visual .order-md-1{
-        height: 242px;
+        height: 228px;
+    }
+    .main-copy h1{
+        top: 34px;
     }
 }
 @media screen and (max-width:280px) {
     .main-visual .order-md-1 {
         height: 193px;
+        background-position: 20px 0px;
+        background-size: 111%;
     }
     .main-copy h1{
         top: 32px;
@@ -116,6 +126,7 @@ main
     .main-copy h1 b {
         font-size: 1.2em;
     }
+    
 }
 
 
@@ -302,6 +313,10 @@ main
     }
 }
 @media screen and (max-width:480px) {
+    .main-country{
+        height: auto;
+        padding: 40px 0 ;
+    }
     .main-country .col-lg-9{
         width: 90%;
         margin: 10px auto;
@@ -314,6 +329,17 @@ main
     .main-country button.me-0 {
         margin-right: 5px !important;
     }
+    .main-business-bnr .font-size-large03{
+        font-size: 1rem;
+    }
+    .main-business-bnr .btn-large1{
+        height: 39px;
+        line-height: 38px;
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:320px){
     
 }
 
@@ -430,7 +456,8 @@ main
    h3{
         font-size: 22px!important;
    }
-   .service-kind.pt-6{
+   .service-kind.pt-6,
+   .popular-company.pt-6{
         padding-top: 40px!important;
    }
    .service-kind .mb-30{
@@ -440,10 +467,22 @@ main
         display: block;
    }
    .nav-link-style {
+        min-width: 264px!important;
         color: #666;
         font-weight: 200;
    }
 
+}
+@media screen and (max-width:320px){
+    .popular-company h3{
+        margin-bottom:0;
+    }
+    .tns-carousel-wrapper.tns-controls-inside [data-controls=next]{
+        right: -0.7rem;
+    }
+    .tns-carousel-wrapper.tns-controls-inside [data-controls=prev] {
+        left: -0.7rem;
+    }
 }
 
 /** 서비스 선택 select-service, 업체가입**/

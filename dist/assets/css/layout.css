@@ -368,6 +368,7 @@ iframe.footer-iframe {
     .footer .accordion-item .accordion-body a{
         display: block;
         font-size: 13px;
+        line-height: 26px;
     }
 }
 
@@ -375,12 +376,26 @@ iframe.footer-iframe {
     .footer.pb-6{
         padding-bottom: 0rem !important;
     }
-    /* .footer .copyright {
-        display: none;
-    } */
+    .footer .copyright {
+        padding-bottom: 2rem !important;
+    }
     
-    .footer .container{
+    /* .footer .container{
         width: 85%;
+    } */
+}
+@media screen and (max-width:320px){
+    .footer button.btn-md {
+        height: 30px;
+        line-height: 28px;
+        font-size: 12px;
+        padding: 0px 16px;
+    }
+    .footer .accordion-button {
+        font-size: 13px;
+    }
+    .footer .accordion-item .accordion-body{
+        padding-bottom: 1rem!important;
     }
 }
 
