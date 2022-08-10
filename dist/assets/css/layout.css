@@ -422,3 +422,22 @@ single-page
         padding: 50px 0 20px;
     }
 }
+
+
+
+/*
+sub-page
+*******************************************************************/
+
+.sub-header-style1{
+    height: 270px;
+}
+.sub-header-style1{
+    background-position: top center;
+    /* background-size: 100%; */
+}
+@media screen and (max-width: 640px){
+    .sub-header-style1{
+        text-align: center;
+    }
+}

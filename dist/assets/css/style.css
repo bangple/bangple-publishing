@@ -54,19 +54,39 @@ main
 }
 
 @media screen and (max-width:640px){
+    .main-visual .order-md-1{
+        height: 260px;
+    }
+    .main-visual .order-md-1{
+        width: 100%;
+        background-image: url(../img/main/img_mainvisual01.png);
+        background-repeat: no-repeat;
+        background-position: 100% bottom;
+        background-size: 65%;
+    }
+    .main-visual .order-md-1 img{
+        display: none!important;
+    }
     .main-copy h1 {
-        font-size: 26px;
+        position: absolute;
+        top: 60px;
+        left: 5%;
+        width: 270px;
+        font-size: 22px;
         line-height: 1.5em;
     }
 }
 
+@media screen and (max-width:540px){
+    .main-visual .order-md-1 {
+        height: 220px;
+    }
+}
 @media screen and (max-width:480px) {
     .main-visual .order-md-1{
         height: 260px;
     }
     .main-visual .order-md-1{
-        background-image: url(../img/main/img_mainvisual01.png);
-        background-repeat: no-repeat;
         background-position: 23px -6px;
         background-size: 105%;
     }
@@ -74,9 +94,7 @@ main
         display: none!important;
     }
     .main-copy h1 {
-        position: absolute;
         top: 50px;
-        left: 5%;
         width: 75%;
         font-size: 20px;
         line-height: 32px;
@@ -312,6 +330,37 @@ main
         justify-content: center!important;
     }
 }
+@media screen and (max-width:768px){
+    .main-country {
+        height: auto;
+        padding: 30px 0;
+    }
+    .main-country button {
+        width: calc((100% - 43px)/6);
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    .main-country button:nth-child(6n) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:640px){
+    .main-country {
+        height: auto;
+        padding: 30px 0;
+    }
+    .main-country button {
+        width: calc((100% - 26px)/4);
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    .main-country button:nth-child(6n) {
+        margin-right: 5px;
+    }
+    .main-country button:nth-child(4n) {
+        margin-right: 0;
+    }
+}
 @media screen and (max-width:480px) {
     .main-country{
         height: auto;
@@ -322,13 +371,13 @@ main
         margin: 10px auto;
         padding: 0;
     }
-    .main-country button{
-         width: calc( 25% - 8px);
+    /*.main-country button{
+         width: calc((100% - 25px)/4);
          margin-left: 0;
     }
     .main-country button.me-0 {
         margin-right: 5px !important;
-    }
+    }*/
     .main-business-bnr .font-size-large03{
         font-size: 1rem;
     }
@@ -337,7 +386,6 @@ main
         line-height: 38px;
         font-size: 15px;
     }
-    
 }
 @media screen and (max-width:320px){
     
@@ -391,20 +439,26 @@ main
 
 
 @media screen and (max-width:920px){
-    .popular-company .display-web,
-    .main-business-bnr .display-web{
+    .popular-company .display-web{
         display: none;
     }
-    .popular-company .display-mobile,
-    .main-business-bnr .display-mobile{
+    .popular-company .display-mobile{
         display: block;
     }
     .main-business-bnr .display-web{
         margin-top: 30px;
     }
 }
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px){
     
+}
+@media screen and (max-width:640px) {
+    .main-business-bnr .display-web{
+        display: none;
+    }
+    .main-business-bnr .display-mobile{
+        display: block;
+    }
     .main-business-bnr{
         padding-bottom: 50px;
     }
@@ -576,13 +630,17 @@ main
 }
 
 
-.select-service .select-list .scroll-y {
+.select-service .scroll-y {
     height: calc(100vh - 520px);
     overflow-y: auto;
 }
 
 .select-service .select-country button {
-    width: 97px;
+    width: calc((100% - 35px)/5);
+    margin-right: 5px;
+}
+.select-service .select-country button:nth-child(5n) {
+    margin-right: 0;
 }
 
 .select-service button.action {
@@ -607,7 +665,7 @@ main
     .select-service .select-list h4.join-bg {
         display: none;
     }
-    .select-service .select-list .scroll-y{
+    .select-service .scroll-y{
         height: calc(100vh - 400px);
     }
     .select-service .mt-n5{
@@ -618,6 +676,17 @@ main
     }
     .select-service .process-area .font-size-large02{
         font-size: 0.9rem;
+    }
+    
+    .select-service .select-country button {
+        width: calc((100% - 18px)/3);
+        margin-right: 5px;
+    }
+    .select-service .select-country button:nth-child(5n) {
+        margin-right: 5px;
+    }
+    .select-service .select-country button:nth-child(3n) {
+        margin-right: 0;
     }
 }
 
@@ -635,6 +704,10 @@ main
     .select-service .btn-pre {
         padding: 0 20px;
     }
+    .select-service .select-country button{
+        font-size: 12px!important;
+        padding: 0.425rem 0;
+    }
 
 }
 @media screen and (max-width:320px){
@@ -644,10 +717,11 @@ main
     .select-service .card-body.pt-5{
         padding-top: 2rem !important;
     }
-    .select-service .select-list .scroll-y {
-        padding: 0 10px;
+    .select-service .scroll-y {
+        height: calc(100vh - 300px);
+        padding: 0 ;
     }
-    .select-service .select-list .scroll-y .form-check .form-check-input{
+    .select-service .scroll-y .form-check .form-check-input{
         margin-left: -1.6em;
     }
     .select-service .select-list li.form-check{
@@ -657,6 +731,10 @@ main
     .select-service .select-list li.form-check .form-check-label{
         font-size: 0.85rem;
     }
+    .select-list .bg-gradient1{
+        font-size: 0.8rem;
+    }
+    
 }
 
 /** login **/
@@ -762,9 +840,39 @@ button.btn-square {
         width: 100%;
         padding: 30px 15px;
     }
+    .phone-certify-btn{
+        top: 34%;
+        right: 0.3rem;
+        padding: 0;
+    }
+    .phone-certify-btn .btn-sm{
+        padding: 0.25rem 0;
+        font-size: 0.75rem;
+    }
+    .phone-certify-btn .btn-sm.px-4{
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
 }
 
-
+@media screen and (max-width:320px) {
+    .single-page h3{
+        padding: 25px 0 5px;
+    }
+    .phone-certify-btn{
+        top: 34%;
+        right: 0.3rem;
+        padding: 0;
+    }
+    .phone-certify-btn .btn-sm{
+        padding: 0.25rem 0;
+        font-size: 0.75rem;
+    }
+    .phone-certify-btn .btn-sm.px-4{
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+}
 
 
 /** 받은견적 **/
@@ -810,11 +918,13 @@ button.btn-square {
     margin-right: 5px;
     overflow: hidden;
     border-radius: 7px;
+    background-color: #e1f5f2;
 }
 
 .thumbnail-style a.thumbnail-style2 {
     width: 117px;
     height: 117px;
+    text-align: center;
 }
 
 .thumbnail-style a img {
@@ -834,6 +944,78 @@ button.btn-square {
 
 .photo-list .thumbnail-style {
     height: 190px;
+}
+
+.modalFinish{
+    width:650px;
+}
+
+@media screen and (max-width: 640px) {
+    .card-product{
+        max-width: none;
+    }
+    .card-product .btn-primary2.btn-100{
+        position: absolute;
+        bottom: 24px;
+        right: 14px;
+        width: auto;
+    }
+    .product-list .me-5{
+        margin-right: 0!important;
+    }
+    .product-list .ms-2{
+        margin-left: 0!important;
+    }
+
+    .modalFinish{
+        width:95%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .product-list .me-5{
+        margin-right: 30px!important;
+    }
+    .modalFinish .modal-body.px-5{
+        padding: 0 30px 30px!important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+   
+    .card-product .btn-primary2.btn-100{
+        position: initial;
+        width: 100%;
+    }
+    .product-list .me-5{
+        margin-right: 0!important;
+    }
+    .product-list .thumbnail-style{
+        margin-bottom: 20px;
+    }
+    .product-list .thumbnail-style a.thumbnail-style2{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .product-list .thumbnail-style a img {
+        width: 100%!important;
+        max-width: none!important;
+        height: auto;
+    }
+
+    .sub-header-style1 h2.pt-4{
+        padding-top: 0.5rem !important;
+    }
+    .sub-header-style1 .btn-area .mt-5{
+        margin-top: 2rem !important;
+    }
+    .sub-header-style1 .btn-area button{
+        width: 170px;
+        height: 40px;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
 }
 
 /** 마이페이지 **/
