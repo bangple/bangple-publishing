@@ -447,7 +447,7 @@ sub-page
 }
 @media screen and (max-width: 480px){
     
-    .sub-header-style2{
+    .sub-header-style3{
         display: none;
     }
     .sub-header-style2.my-5{
