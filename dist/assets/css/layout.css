@@ -281,13 +281,13 @@ iframe.footer-iframe {
     font-weight: 200!important;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .container-xl,
     .container-lg,
     .container-md,
     .container-sm,
     .container {
-        max-width: 1110px!important;
+        max-width: 1024px!important;
     }
 }
 
@@ -436,8 +436,22 @@ sub-page
     background-position: top center;
     /* background-size: 100%; */
 }
+
 @media screen and (max-width: 640px){
     .sub-header-style1{
         text-align: center;
+    }
+    .sub-header-style2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+    
+    .sub-header-style2{
+        display: none;
+    }
+    .sub-header-style2.my-5{
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
     }
 }

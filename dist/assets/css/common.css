@@ -137,6 +137,9 @@ dt {
 .flex-1 {
     flex: 1 1 100% !important;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
 .block {
     display: block;
@@ -170,13 +173,13 @@ dt {
     .container{
         padding: 0 20px;
     }
+    .mt-5{
+        margin-top: 2rem !important;
+    }
 } 
 @media screen and (max-width:320px){
     .container{
         padding: 0 12px;
-    }
-    .mt-5{
-        margin-top: 2rem !important;
     }
 } 
 /*
@@ -303,6 +306,7 @@ common
     color: #2d9599
 }
 
+
 .font-size-samll02 {
     font-size: 0.9rem;
 }
@@ -367,6 +371,13 @@ common
     font-family: 'NanumSquareRound';
 }
 
+@media screen and (max-width:480px){
+    
+    .fs-5{
+        font-size: 1rem!important;
+    }
+    
+}
 
 /* Align
 *************************************************************************/
@@ -617,7 +628,9 @@ hr{
 .br-gry{
     border-color:#ddd;
 }
-
+.br-none{
+    border:none;
+}
 
 /* card
 ************************************************************************/
@@ -708,6 +721,14 @@ textarea{
         min-height: auto;
         font-size: 0.9rem;
         padding: 0.55rem 1.25rem!important;
+    }
+
+}
+@media screen and (max-width:320px){
+    
+    .form-select,
+    .form-control-lg {
+        padding: 0.55rem 15px!important;
     }
 
 }

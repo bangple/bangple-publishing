@@ -45,111 +45,96 @@
         <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
         <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
             <div class="container">
-                <button class="navbar-toggler ms-n2 me-2" id="btn_side_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html" target="_parent">
+                <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html">
                     <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
-                    <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130" style="margin-right: 50px;">
+                    <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130">
                 </a>
                 <!-- 알림, 마이페이지 -->
-                <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
-                    <div class="nav-item dropdown mt-1 me-2">
-                        <a class="nav-link nav-news" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-column dropdown-item mb-2">
-                                <h6>알림</h6>
-                                <div class="nav-news-list">
-                                    <p class="when fs-xs font-color-99 news-inform mb-0">1일전</p>
-                                    <a href="#">
-                                        <dl>
-                                            <dt>요청서가 도착했습니다</dt>
-                                            <dd class="d-flex align-items-center fs-xs font-color-99">김길동님에 견적 요청서가 도착했습니다. 요청 내용을 자세히 확인해보세요</dd>
-                                        </dl>
-                                    </a>
+                <div class="d-flex justify-content-end order-lg-3">
+                    <div class="d-flex align-items-center ms-lg-auto">
+                        <div class="nav-item dropdown mt-1">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <div class="dropdown-menu dropdown-alarm">
+                                <div class="dropdown-column dropdown-item mb-2">
+                                    <h6>알림</h6>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-inform mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>요청서가 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">김길동님에 견적 요청서가 도착했습니다. 요청 내용을 자세히 확인해보세요</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
                                 </div>
-                                <hr>
-                                <div class="nav-news-list">
-                                    <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
-                                    <a href="#">
-                                        <dl>
-                                            <dt>공지사항이 도착했습니다</dt>
-                                            <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
-                                        </dl>
-                                    </a>
-                                </div>
-                                <hr>
-                                <div class="nav-news-list">
-                                    <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
-                                    <a href="#">
-                                        <dl>
-                                            <dt>공지사항이 도착했습니다</dt>
-                                            <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
-                                        </dl>
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
+                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-3 ai-user"></i></button>
+                            <div class="dropdown-menu dropdown-mypage">
+                                <div class="dropdown-column dropdown-item">
+                                    <h6 class="pb-1">홍길동 고객님</h6>
+                                    <div class="mt-3">
+                                        <a href="../customer/customer-estimate-list-group.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>받은 견적</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                        <hr class="my-1">
+                                        <a href="../mypage/mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>마이페이지</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary mt-4" style="width:100% ;">로그아웃</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
-                        <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-3 ai-user"></i></button>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-column dropdown-item">
-                                <h6 class="pb-1">홍길동 고객님</h6>
-                                <div class="mt-3">
-                                    <a href="../customer/customer-estimate-list-group.html" class="d-flex justify-content-between align-items-center py-2">
-                                        <span>받은 견적</span>
-                                        <span><i class="ai-chevron-right"></i></span>
-                                    </a>
-                                    <hr class="my-1">
-                                    <a href="../mypage/mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
-                                        <span>마이페이지</span>
-                                        <span><i class="ai-chevron-right"></i></span>
-                                    </a>
-                                </div>
-                                <button class="btn btn-primary btn-100 mt-4" onclick="location.href='../main/index.html';">로그아웃</button>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    <button class="navbar-toggler order-lg-4" id="btn_side_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+                <div class="offcanvas offcanvas-collapse offcanvas-end order-lg-2" id="primaryMenu">
                     <div class="offcanvas-header navbar-shadow">
                         <h5 class="mt-1 mb-0">Menu</h5>
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body justify-content-end">
-                        <!-- Menu-->
-                        <ul class="navbar-nav web">
+                        <!-- Menu - web-->
+                        <ul class="navbar-nav me-3">
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html" target="_parent"> Sitemap </a>
+                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
                             </li>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-company-list.html" target="_parent"> 업체찾기 </a>
+                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-company-list.html"> 업체찾기 </a>
                             </li>
                             <li class="nav-item dropdown dropdown-mega">
                                 <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-estimate-list-group.html">받은견적</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="#">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
-                            </li>
-                        </ul>
-
-                        <!-- Menu - mobile-->
-                        <ul class="navbar-nav mobile">
-                            <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-company-list.html" target="_parent">
-                                    업체찾기
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-estimate-list-group.html">
-                                    받은견적
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle mt-1" href="#" target="_parent">
-                                    채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span>
-                                </a>
                             </li>
                         </ul>
                     </div>
@@ -163,33 +148,33 @@
         <!-- 업체명 -->
         <section class="container mt-5">
             <div class="row">
-                <div class="col-lg-9 col-sm-6">
+                <div class="col-lg-9 col-sm-8 mb-2">
                     <div class="card card2 bg-secondary3 height-100">
-                        <div class="product-list d-flex align-middle mt-1">
+                        <div class="row product-list align-middle mt-1">
 
-                            <div class="col col-md-2 thumbnail-style">
+                            <div class="col-lg-2 col-md-4 col-sm-5 thumbnail-style me-4">
                                 <a href="#" class="thumbnail-style2"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
                             </div>
-                            <div class="col-lg-10 col-md-10 px-0 ms-2">
+                            <div class="col-lg-9 col-md-8 col-sm-7">
                                 <dl>
                                     <dt class="font-size-large03">
                                         참좋은 해충방역
                                         <p class="fs-xs font-width-normal mt-3 mb-0">방역소독의 모든 것! 열화상카메라렌탈, 새집증후군제거, 해충방제서비스 까지!</p>
                                     </dt>
-                                    <dd class="mt-4">
+                                    <dd class="mt-4 d-flex flex-wrap">
                                         <div class="star-rating align-items-center">
                                             <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
                                             <span class="font-size-samll02 mx-2">1 (5)</span>
-                                            <span class="rounded-pill badge-text fs-xs bg-primary px-3 py-1 mt-1 ms-1">Pay사용</span>
                                         </div>
+                                        <div class="badge"><span class="rounded-pill badge-text fs-xs bg-primary px-3 py-1 mt-1 ms-1">Pay사용</span></div>
                                     </dd>
                                 </dl>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 ps-1">
-                    <div class="font-size-samll02 card card2 bg-gry2">
+                <div class="col-lg-3 col-sm-4 mb-2">
+                    <div class="font-size-samll02 card card2 bg-gry2 height-100">
                         <p>
                             참좋은 해충방역 (해충으로부터 
                             해방!) 업체에게 원하는 서비스
@@ -246,7 +231,7 @@
 
                         <div class="col-lg-6 col-ms-6 mt-5">
                             <h5 class="font-size-large03 mb-4">기본정보</h5>
-                            <div class="card px-4 py-3" style="height: 278px;">
+                            <div class="card px-4 py-3">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item px-0">
                                         <i class="ai-check-square me-2"></i>
@@ -275,7 +260,7 @@
 
                         <div class="col-lg-6 col-ms-6 mt-5">
                             <h5 class="font-size-large03 mb-4">추가정보</h5>
-                            <div class="card px-4 py-3" style="height: 278px;">
+                            <div class="card px-4 py-3">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item px-0">
                                         <i class="ai-layers me-2"></i>
@@ -398,9 +383,9 @@
 
                     <h5 class="font-size-large03 mt-5 mb-4">리뷰</h5>
                     <div class="card bg-gry2 p-4 mb-5">
-                        <div class="row align-items-center">
-                            <h2 class="col-lg-1 mb-0 br-right br-gry">4.5 </h2>
-                            <div class="col-lg-11">
+                        <div class="d-flex align-items-center">
+                            <h2 class="mb-0 br-right br-gry pe-4">4.5 </h2>
+                            <div class="ps-4">
                                 <div class="star-rating align-items-center">
                                     <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
                                 </div>

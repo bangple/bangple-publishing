@@ -537,6 +537,9 @@ main
     .tns-carousel-wrapper.tns-controls-inside [data-controls=prev] {
         left: -0.7rem;
     }
+    .star-rating span.badge-text{
+
+    }
 }
 
 /** 서비스 선택 select-service, 업체가입**/
@@ -949,7 +952,14 @@ button.btn-square {
 .modalFinish{
     width:650px;
 }
-
+@media screen and (max-width: 768px){
+    .product-list .me-6{
+        margin-right: 2rem !important;
+    }
+    .product-list .me-4{
+        margin-right: 0 !important;
+    }
+}
 @media screen and (max-width: 640px) {
     .card-product{
         max-width: none;
@@ -960,24 +970,33 @@ button.btn-square {
         right: 14px;
         width: auto;
     }
-    .product-list .me-5{
-        margin-right: 0!important;
-    }
+    
     .product-list .ms-2{
         margin-left: 0!important;
+    }
+    .product-list .col-sm-7 .mt-4{
+        margin-top: 5px!important;
+    }
+    .product-list .col-sm-7 .badge{
+        margin-top: 10px!important;
+        padding-left: 0;
     }
 
     .modalFinish{
         width:95%;
     }
+
 }
 
 @media screen and (max-width: 540px) {
-    .product-list .me-5{
+    .product-list .me-6{
         margin-right: 30px!important;
     }
     .modalFinish .modal-body.px-5{
         padding: 0 30px 30px!important;
+    }
+    .product-list .col-sm-9 dl{
+        padding-left: 30px;
     }
 }
 
@@ -987,7 +1006,7 @@ button.btn-square {
         position: initial;
         width: 100%;
     }
-    .product-list .me-5{
+    .product-list .me-6{
         margin-right: 0!important;
     }
     .product-list .thumbnail-style{
@@ -1003,7 +1022,11 @@ button.btn-square {
         max-width: none!important;
         height: auto;
     }
-
+    
+    .product-list .col-sm-9 dl{
+        padding-left: 0;
+    }
+    
     .sub-header-style1 h2.pt-4{
         padding-top: 0.5rem !important;
     }
@@ -1055,6 +1078,22 @@ button.btn-square {
 .form-switch .form-check-input {
     border-radius: 20px;
 }
+
+@media screen and (max-width:320px){
+    .mypage-main .mypage-header{
+        justify-content: space-around;
+        text-align: center;
+    }
+    .mypage-main .mypage-header .thumbnail-style{
+        margin-bottom: 10px;
+    }
+    .mypage-main .mypage-header .thumbnail-style.me-4,
+    .mypage-main .mypage-header .thumbnail-style a{
+        margin-right: 0!important;
+    }
+}
+
+
 /** 게시판 **/
 
 .page-item.active .page-link {
@@ -1121,6 +1160,23 @@ ul.list-unstyled li a:hover,
     margin: 0 0 0 0!important;
 }
 
+@media screen and (max-width:480px) {
+    .select-dropdown .px-4{
+        padding: 0 16px 0 15px !important;
+    }
+}
+@media screen and (max-width:320px) {
+    .select-dropdown .px-4{
+        padding: 0 16px 0 15px !important;
+    }
+    .select-dropdown .fs-sm{
+        font-size: 0.75rem !important;
+    }
+    .select-dropdown .dropdown-toggle .pe-2 {
+        padding-right: 0 !important;
+    }
+}
+
 /** 업체 찾기 , 업체 정보 **/
 .nav-tabs {
     margin-bottom: 0.8rem;
@@ -1161,7 +1217,7 @@ ul.list-unstyled li a:hover,
 @media screen and (max-width:990px) {
     .nav-tabs,
     .tab-pane{
-        margin: 0 30px;
+        margin: 0 ;
     }
     .tab-pane .col-lg-6.col-ms-6.pe-0{
         padding-left: 0!important;
@@ -1171,8 +1227,15 @@ ul.list-unstyled li a:hover,
     }
 }
 
+@media screen and (max-width:480px){
+    .tag-big{
+        font-size: 14px;
+        padding: 0 22px;
+    }
+}
+
 .board-thumbnail{
-    height: 150px;
+    height: 140px;
 }
 
 /***  질문답변 ***/
