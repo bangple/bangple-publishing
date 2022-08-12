@@ -711,7 +711,9 @@ main
         font-size: 12px!important;
         padding: 0.425rem 0;
     }
-
+    .select-service .select-list .w-50{
+        width: 85% !important;
+    }
 }
 @media screen and (max-width:320px){
     .select-service .card {
@@ -915,7 +917,9 @@ button.btn-square {
     border-radius: 10px;
 }
 
-
+.product-list .thumbnail-style{
+    margin-right: 2rem;
+}
 .thumbnail-style a {
     display: block;
     margin-right: 5px;
@@ -944,6 +948,24 @@ button.btn-square {
 .product-list a{
     text-decoration: none;
 }
+.product-list .company-info{
+    width: calc(100% - (125px + 2rem));
+}
+.product-list .company-info .reply-area span.name{
+    width: 80px;
+}
+.product-list .company-info .reply-area span.reply-text{
+    width: calc( 100% - 90px) ;
+    white-space: normal; 
+	line-height: 1.2; 
+	height: 2.3em; 
+	text-align: left; 
+	word-wrap: break-word; 
+	display: -webkit-box; 
+	-webkit-line-clamp: 2; 
+	-webkit-box-orient: vertical; 
+    overflow: hidden;
+}
 
 .photo-list .thumbnail-style {
     height: 190px;
@@ -952,6 +974,11 @@ button.btn-square {
 .modalFinish{
     width:650px;
 }
+
+@media screen and (max-width: 920px){
+
+}
+
 @media screen and (max-width: 768px){
     .product-list .me-6{
         margin-right: 2rem !important;
@@ -974,10 +1001,10 @@ button.btn-square {
     .product-list .ms-2{
         margin-left: 0!important;
     }
-    .product-list .col-sm-7 .mt-4{
+    .product-list .mt-4{
         margin-top: 5px!important;
     }
-    .product-list .col-sm-7 .badge{
+    .product-list .badge{
         margin-top: 10px!important;
         padding-left: 0;
     }
@@ -989,14 +1016,12 @@ button.btn-square {
 }
 
 @media screen and (max-width: 540px) {
-    .product-list .me-6{
-        margin-right: 30px!important;
-    }
+    
     .modalFinish .modal-body.px-5{
         padding: 0 30px 30px!important;
     }
-    .product-list .col-sm-9 dl{
-        padding-left: 30px;
+    .product-list .company-info{
+        width: 100%;
     }
 }
 
@@ -1006,11 +1031,12 @@ button.btn-square {
         position: initial;
         width: 100%;
     }
-    .product-list .me-6{
-        margin-right: 0!important;
+    .product-list .company-info{
+        width: 100%;
     }
     .product-list .thumbnail-style{
-        margin-bottom: 20px;
+        width: 100%;
+        margin: 0 auto 20px;
     }
     .product-list .thumbnail-style a.thumbnail-style2{
         width: 100%;
@@ -1038,6 +1064,7 @@ button.btn-square {
         height: 40px;
         margin-bottom: 5px;
         font-size: 0.9rem;
+        margin-right: 0!important;
     }
 }
 
@@ -1120,6 +1147,10 @@ button.btn-square {
 ul.list-unstyled li a {
     font-weight: 200;
     color: #333;
+    width: 95%; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
 }
 
 ul.list-unstyled li a:hover,
@@ -1163,6 +1194,12 @@ ul.list-unstyled li a:hover,
 @media screen and (max-width:480px) {
     .select-dropdown .px-4{
         padding: 0 16px 0 15px !important;
+    }
+    .board-list .list-unstyled li{
+        flex-wrap: wrap;
+    }
+    .board-list .list-unstyled span{
+        display: block;
     }
 }
 @media screen and (max-width:320px) {
