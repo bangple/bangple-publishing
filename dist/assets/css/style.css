@@ -926,12 +926,12 @@ button.btn-square {
     overflow: hidden;
     border-radius: 7px;
     background-color: #e1f5f2;
+    text-align: center;
 }
 
 .thumbnail-style a.thumbnail-style2 {
     width: 117px;
     height: 117px;
-    text-align: center;
 }
 
 .thumbnail-style a img {
@@ -943,6 +943,11 @@ button.btn-square {
 .thumbnail-style a.thumbnail-style3 {
     width: 80px;
     height: 80px;
+}
+
+.thumbnail-style a.thumbnail-style4 {
+    width: 52px;
+    height: 52px;
 }
 
 .product-list a{
@@ -1347,4 +1352,42 @@ ul.list-unstyled li a:hover,
 }
 .qna-list li a.more:hover{
     text-decoration: none;
+}
+
+/** 채팅 **/
+
+.input-icon-search {
+    position: absolute;
+    top: 47%;
+    left: 0.625rem;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1.125rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.chat-list .tab-pane p span{
+    position: relative;
+    padding-right: 17px;
+}
+.chat-list .tab-pane p span::after{
+    content: '|';
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-size: 0.6rem;
+}
+.chat-list .tab-pane p span:last-child::after{
+    content: none;
+}
+.chat-list .company-info dt .badge span{
+    font-size: 11px;
+    padding: 3px 16px;
+    font-weight: 200;
+}
+
+.chat-section{
+    border-top: 1px solid #f0f1f3;
 }

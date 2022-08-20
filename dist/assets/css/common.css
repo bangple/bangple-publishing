@@ -320,19 +320,22 @@ common
 }
 
 .font-size-large01 {
-    font-size: 1.1rem;
+    font-size: 1.1rem!important;
 }
 
 .font-size-large02 {
-    font-size: 1.2rem;
+    font-size: 1.2rem!important;
 }
 
 .font-size-large03 {
-    font-size: 1.25rem;
+    font-size: 1.25rem!important;
 }
 
 .font-size-large04 {
-    font-size: 1.37rem;
+    font-size: 1.37rem!important;
+}
+.font-size-large05 {
+    font-size: 1.9rem!important;
 }
 
 .font-color-ed {
@@ -586,6 +589,10 @@ button {
 
 .bg-secondary3 {
     background-color: #eff8f9;
+}
+
+.bg-secondary4 {
+    background-color: #d6f2f5;
 }
 
 .bg-secondary-gr {

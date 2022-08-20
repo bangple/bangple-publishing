@@ -133,7 +133,7 @@
                                 <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-estimate-list-group.html">받은견적</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="#">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../customer/customer-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
                             </li>
                         </ul>
                     </div>
@@ -143,128 +143,157 @@
         <!-- /Navbar (Solid background)-->
 
         <!-- Page content-->
-        <h3 class="sub-header-style2 container my-5 font-width-300">업체찾기</h3>
+        <h3 class="sub-header-style2 container my-5 font-width-300">채팅</h3>
         <!-- 지역 선택 -->
         <section class="container">
             <div class="col-lg-4 col-sm-4 mb-3">
-                <select class="form-select" id="11" required>
-                    <option value="">지역 선택</option>
-                    <option value="서울시">서울시</option>
-                    <option value="경기도">경기도</option>
-                    <option value="인천시">인천시</option>
-                </select>
+              <div class="position-relative">
+                <input class="form-control form-control-lg ps-5" type="text" id="" placeholder="이름과 서비스를 검색하세요.">
+                <label class="input-icon-search">
+                    <i class="ai-search"></i>
+                </label>
+            </div>
             </div>
         </section>
-        <section class="container">
-            <div class="select-dropdown card bg-secondary3 br-none ">
-                <div class="d-flex align-items-center justify-content-between px-4">
-                    <span class="fs-sm">
-                        189,000 개의 업체
-                    </span>
-                    <div class="dropdown mt-1">
-                        <button class="btn btn-bgnone dropdown-toggle fs-sm font-color-33 px-0" data-bs-toggle="dropdown" data-bs-placement="bottom" aria-expanded="false">
-                            <b class="pe-2">리뷰순</b> 
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="../customer/customer-estimate-list-group.html" class="py-1 dropdown-item">
-                                방플페이 이용순
-                            </a>
-                            <a href="../mypage/mypage-main.html" class="py-1 dropdown-item">
-                                리뷰순
-                            </a>
-                            <a href="../mypage/mypage-main.html" class="py-1 dropdown-item">
-                                최근활동순
-                            </a>
-                            <a href="../mypage/mypage-main.html" class="py-1 dropdown-item">
-                                평점순
-                            </a>
-                            <a href="../mypage/mypage-main.html" class="py-1 dropdown-item">
-                                거래 성사순
-                            </a>
+        <!-- 채팅 리스트 -->
+        <section class="container chat-list pt-3 pb-7">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a href="#all" class="nav-link active" data-bs-toggle="tab" role="tab">
+                        전체
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#not-read" class="nav-link" data-bs-toggle="tab" role="tab">
+                        안읽음
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#favorite" class="nav-link" data-bs-toggle="tab" role="tab">
+                        즐겨찾기
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#deal" class="nav-link" data-bs-toggle="tab" role="tab">
+                        거래성사
+                    </a>
+                </li>
+            </ul>
+
+            <hr>
+          
+            
+            <!-- Tabs content -->
+            <div class="tab-content pt-4">
+
+                <!-- Tabs 1 -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    
+                    <!-- itam 1 -->
+                    <div class="pb-5">
+                        <div class="card card2 bg-secondary3 height-100 mb-3">
+                            <div class="product-list d-flex flex-wrap align-middle mt-1">
+                                <div class="thumbnail-style">
+                                    <a href="customer-chatting-detail.html" class="thumbnail-style4"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
+                                </div>
+                                <div class="company-info">
+                                    <dl>
+                                        <dt class="d-flex flex-wrap align-middle font-size-large03">
+                                            <a href="customer-chatting-detail.html" class="font-color-66"><span>참좋은 해충방역</span></a>
+                                            <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">답변안함</span></div>
+                                        </dt>
+                                        <p class="fs-xs font-width-normal mt-2 mb-0"><span>해충방역</span> <span>경기 의정부시</span></p>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="customer-chatting-detail.html" class="fs-sm font-color-99">안녕하세요 참좋은 해충방역 업체입니다. 업체선정 아직 안하셨으면... </a>
+                        <hr>
+                        <div class="d-flex justify-content-between align-middle px-3">
+                            <span class="fs-sm">총 70,000원 부터 ~</span>
+                            <span class="fs-xs font-color-99">2002.02.03</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-        </section>
 
-        <!-- 업체 리스트 -->
-        <section class="container mt-5 pb-7">
-            <!-- Item-->
-            <div class="product-list d-flex flex-wrap">
-
-                <div class="thumbnail-style">
-                    <a href="customer-company-list-detail.html" class="thumbnail-style2"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
-                </div>
-                <div class="company-info">
-                    <dl>
-                        <dt class="font-size-large03 font-color-66">
-                            <a href="customer-company-list-detail.html">
-                                참좋은 해충방역
-                                <p class="fs-xs font-width-normal mt-1 mb-0">방역소독의 모든 것! 열화상카메라렌탈, 새집증후군제거, 해충방제서비스 까지!</p>
-                            </a>
-                        </dt>
-                        <dd class="mt-2 mb-4">
-                            <div class="star-rating align-items-center flex-wrap">
-                                <div class="mb-3">
-                                    <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
-                                    <span class="font-size-samll02 mx-2">1 (5)</span>
+                    <!-- itam 2 -->
+                    <div class="pb-5">
+                        <div class="card card2 bg-secondary3 height-100 mb-3">
+                            <div class="product-list d-flex flex-wrap align-middle mt-1">
+                                <div class="thumbnail-style">
+                                    <a href="customer-chatting-detail.html" class="thumbnail-style4"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
                                 </div>
-                                <div class="mb-3">
-                                    <span class="rounded-pill badge-text fs-xs bg-gry px-2 py-1 mt-1">거래성사 22회</span>
-                                    <span class="rounded-pill badge-text fs-xs bg-primary px-3 py-1 mt-1 ms-1">Pay사용</span>
+                                <div class="company-info">
+                                    <dl>
+                                        <dt class="d-flex flex-wrap align-middle font-size-large03">
+                                            <a href="customer-chatting-detail.html" class="font-color-66"><span>참좋은 해충방역</span></a>
+                                            <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">답변안함</span></div>
+                                        </dt>
+                                        <p class="fs-xs font-width-normal mt-2 mb-0"><span>해충방역</span> <span>경기 의정부시</span></p>
+                                    </dl>
                                 </div>
                             </div>
-                        </dd>
-                        <dd class="mt-n3 reply-area">
-                            <a href="#" class="d-flex flex-wrap">
-                                <span class="font-size-normal font-color-99 name"><img src="../assets/img/icon/icon_review.png" class="mb-1"> <b>송**</b></span>
-                                <span class="font-color-99 reply-text">해충에 대한 정보는 물론 서비스 단가표도 있더라고요. 초기 서비스 이용 후, 6개월 내에 재방역을 요청할 시에는 50%나 할인이 된다고 하니 이 또한 굳이네요~! </span>
-                            </a>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-            <hr class="my-4">
+                        </div>
+                        <a href="customer-chatting-detail.html" class="fs-sm font-color-99">안녕하세요 참좋은 해충방역 업체입니다. 업체선정 아직 안하셨으면... </a>
+                        <hr>
+                        <div class="d-flex justify-content-between align-middle px-3">
+                            <span class="fs-sm">총 70,000원 부터 ~</span>
+                            <span class="fs-xs font-color-99">2002.02.03</span>
+                        </div>
+                    </div>
 
-            <!-- Item-->
-            <div class="product-list d-flex flex-wrap">
-                <div class="thumbnail-style">
-                    <a href="customer-company-list-detail.html" class="thumbnail-style2"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
-                </div>
-                <div class="company-info">
-                    <dl>
-                        <dt class="font-size-large03 font-color-66">
-                            <a href="customer-company-list-detail.html">
-                                참좋은 해충방역
-                                <p class="fs-xs font-width-normal mt-1 mb-0">방역소독의 모든 것! 열화상카메라렌탈, 새집증후군제거, 해충방제서비스 까지!</p>
-                            </a>
-                        </dt>
-                        <dd class="mt-2 mb-4">
-                            <div class="star-rating align-items-center flex-wrap">
-                                <div class="mb-3">
-                                    <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
-                                    <span class="font-size-samll02 mx-2">1 (5)</span>
+                    <!-- itam 3 -->
+                    <div class="pb-5">
+                        <div class="card card2 bg-secondary3 height-100 mb-3">
+                            <div class="product-list d-flex flex-wrap align-middle mt-1">
+                                <div class="thumbnail-style">
+                                    <a href="customer-chatting-detail.html" class="thumbnail-style4"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
                                 </div>
-                                <div class="mb-3">
-                                    <span class="rounded-pill badge-text fs-xs bg-gry px-2 py-1 mt-1">거래성사 22회</span>
-                                    <span class="rounded-pill badge-text fs-xs bg-gry px-3 py-1 mt-1 ms-1">Pay사용</span>
+                                <div class="company-info">
+                                    <dl>
+                                        <dt class="d-flex flex-wrap align-middle font-size-large03">
+                                            <a href="customer-chatting-detail.html" class="font-color-66"><span>참좋은 해충방역</span></a>
+                                            <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">답변안함</span></div>
+                                        </dt>
+                                        <p class="fs-xs font-width-normal mt-2 mb-0"><span>해충방역</span> <span>경기 의정부시</span></p>
+                                    </dl>
                                 </div>
                             </div>
-                        </dd>
-                        <dd class="mt-n3 reply-area">
-                            <a href="#" class="d-flex flex-wrap">
-                                <span class="font-size-normal font-color-99 name"><img src="../assets/img/icon/icon_review.png" class="mb-1"> <b>송**</b></span>
-                                <span class="font-color-99 reply-text">해충에 대한 정보는 물론 서비스 단가표도 있더라고요. 초기 서비스 이용 후, 6개월 내에 재방역을 요청할 시에는 50%나 할인이 된다고 하니 이 또한 굳이네요~! </span>
-                            </a>
-                        </dd>
-                    </dl>
+                        </div>
+                        <a href="customer-chatting-detail.html" class="fs-sm font-color-99">안녕하세요 참좋은 해충방역 업체입니다. 업체선정 아직 안하셨으면... </a>
+                        <hr>
+                        <div class="d-flex justify-content-between align-middle px-3">
+                            <span class="fs-sm">총 70,000원 부터 ~</span>
+                            <span class="fs-xs font-color-99">2002.02.03</span>
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>
+
+                <!-- Tabs 2 -->
+                <div class="tab-pane fade" id="not-read" role="tabpanel">
+                    <h5 class="font-size-large03 mt-5 mb-4">안읽음</h5>
+                    
+                    
+                </div>
+
+                <!-- Tabs 3 -->
+                <div class="tab-pane fade" id="favorite" role="tabpanel">
+                    <h5 class="font-size-large03 mt-5 mb-4">즐겨찾기</h5>
+                    
+                    
+                </div>
+
+                <!-- Tabs 4 -->
+                <div class="tab-pane fade" id="deal" role="tabpanel">
+                    <h5 class="font-size-large03 mt-5 mb-4">거래성사</h5>
+                    
+                    
                 </div>
             </div>
-            <hr class="my-4">
-
         </section>
-        <!-- // 업체 리스트 -->
 
 
 
