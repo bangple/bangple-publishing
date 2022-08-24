@@ -1254,6 +1254,7 @@ ul.list-unstyled li a:hover,
     height: 42px;
     line-height: 39px;
     padding: 0 15px;
+    border: 2px solid #fff;
 }
 .nav-tabs .nav-link.active {
     border: 2px solid #02597e;
@@ -1266,6 +1267,29 @@ ul.list-unstyled li a:hover,
     color: #666;
 }
 
+.nav-tabs.nav-tabs2 .nav-link{
+    padding: 0 9px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-tabs.nav-tabs3 .nav-link{
+    color: #666;
+    text-align: center;
+    padding: 0 0 10px;
+    border:none;
+    border-bottom: 5px solid #e7e9ee;
+    border-radius: 0;
+}
+.nav-tabs.nav-tabs3 .nav-link.active {
+    font-weight: 600;
+    border:none;
+    border-bottom: 5px solid #666;
+}
+.nav-tabs.nav-tabs2:not(.nav-fill):not(.nav-justified) .nav-item, .nav-pills .nav-item,
+.nav-tabs.nav-tabs3:not(.nav-fill):not(.nav-justified) .nav-item, .nav-pills .nav-item{
+    margin-right: 0;
+}
 
 .tag-big{
     display: inline-block;
@@ -1389,5 +1413,13 @@ ul.list-unstyled li a:hover,
 }
 
 .chat-section{
+    display: grid;
     border-top: 1px solid #f0f1f3;
+}
+.chat-area{
+    background-color: 
+    #fafafa;
+}
+.asid{
+    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.08);
 }
