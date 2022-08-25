@@ -976,6 +976,9 @@ button.btn-square {
     height: 190px;
 }
 
+.photo-list .thumbnail-style-s {
+    height: 93px;
+}
 .modalFinish{
     width:650px;
 }
@@ -1301,6 +1304,13 @@ ul.list-unstyled li a:hover,
     padding: 0 30px;
     margin: 0 5px 10PX 0;
 }
+.aside .tag-big{
+    font-size: 14px;
+    height: 36px;
+    line-height: 34px;
+    font-weight: 300;
+    padding: 0 15px;
+}
 
 @media screen and (max-width:990px) {
     .nav-tabs,
@@ -1353,15 +1363,8 @@ ul.list-unstyled li a:hover,
 	font-weight:bold;
 }
 .qna-list li dd{
-    font-size: 18px;
 	color:#999;
     margin-top: 15px;
-    /*overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;*/
 }
 .qna-list li a.more{
     display: block;
@@ -1417,14 +1420,30 @@ ul.list-unstyled li a:hover,
     border-top: 1px solid #f0f1f3;
 }
 .chat-area{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     position: relative;
+    z-index: 100;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: #fafafa;
 }
-.chat-area .chat-write-wrap{
+.chat-area .chat-footer{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e7e9ee;
+    background-color: #fff;
+}
+.chat-area .chat-footer p{
+    padding: 0 0 0 20px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.chat-area .chat-write-wrap{
     display: flex;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1435,19 +1454,156 @@ ul.list-unstyled li a:hover,
     padding: 24px 20px;
 }
 .chat-area .chat-write-wrap .chat_input_area {
-    width: calc(100% - 150px);
+    width: calc(100% - 160px);
 }
 .chat-area .chat-write-wrap .chat_input_area .chat_input {
     height: 100%;
-    padding: 0 17px 0 6px;
-    font-size: 15px;
     line-height: 1.35;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.group_message_balloon {
+    position: absolute;
+    bottom: 133px;
+    right: 0;
+    left: 14px;
+    padding: 20px 14px 15px 0;
+    overflow-y: auto;
+    height: calc(100vh - 354px);
+}
+.group_message_balloon .new_message_balloon_area {
+    position: relative;
+}
+.group_message_balloon .date_check {
+    margin-bottom: 12px;
+    text-align: center;
+}
+.group_message_balloon .date_check>span {
+    display: inline-block;
+    padding: 0 12px 1px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.group_message_balloon .new_message_balloon_area+li {
+    margin-top: 30px;
+}
+.group_message_balloon .new_message_balloon_area .thumbnail_profile {
+    position: absolute;
+    top: 0;
+}
+.group_message_balloon .new_message_balloon_area .thumbnail_profile>a, .talk_pc_user .group_message_balloon .new_message_balloon_area .thumbnail_profile>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.group_message_balloon .new_message_balloon_area .thumbnail_profile>a img {
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: auto;
+}
+.group_message_balloon .message_balloon {
+    position: relative;
+    max-width: 73%;
+    margin-bottom: 0;
+    word-break: break-all;
+}
+.group_message_balloon .message_balloon>span.copy_area {
+    display: inline-block;
+    width: 272px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    border: 1px solid #dfdfdf;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+.group_message_balloon .message_balloon .txt_confirm {
+    position: absolute;
+    bottom: 1px;
+    min-width: 60px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.group_message_balloon .new_message_balloon_area:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+.group_message_balloon .talk_pc_partner.new_message_balloon_area .thumbnail_profile {
+    left: 0;
+}
+.group_message_balloon .talk_pc_partner .message_balloon{
+    float: left;
+    margin-left: 40px;
+}
+.group_message_balloon .talk_pc_partner .message_balloon .txt_confirm{
+    left: 100%;
+}
+.group_message_balloon .talk_pc_partner .message_balloon>span.copy_area{
+    margin-left: 10px;
+}
+
+
+.group_message_balloon .talk_pc_user.new_message_balloon_area .thumbnail_profile{
+    right: 0;
+}
+.group_message_balloon .talk_pc_user .message_balloon{
+    float: right;
+    margin-right: 40px;
+}
+.group_message_balloon .talk_pc_user .message_balloon .txt_confirm{
+    right: 100%;
+}
+.group_message_balloon .talk_pc_user .message_balloon>span.copy_area{
+    margin-right: 10px;
+}
+
+
+.group_message_balloon .message_balloon>span.copy_area dl{
+    line-height: 25px;
+}
+.group_message_balloon .message_balloon>span.copy_area dl dt{
+    width: 25%;
+    font-size: 12px;
+}
+.group_message_balloon .message_balloon>span.copy_area dl dd{
+    font-size: 14px;
+    color: #02597e;
+    font-weight: 500;
+}
+
+
+
 .aside{
     box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.08);
     z-index: 999;
     overflow: hidden;
     
+}
+.chat-section .aside .scroll-y {
+    height: calc(100vh - 520px);
+}
+.chat-section .aside .photo-list{
+    display: grid;
+    grid-template-columns: calc(33.33% - 10px) calc(33.33% - 10px) calc(33.33% - 10px);
+    gap: 15px;
 }

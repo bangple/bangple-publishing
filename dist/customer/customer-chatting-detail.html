@@ -48,12 +48,12 @@
                     <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
                     <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130">
                 </a>
-                <!-- 알림, 마이페이지 - web -->
+                <!-- 알림, 마이페이지 -->
                 <div class="d-flex justify-content-end order-lg-3">
                     <div class="d-flex align-items-center ms-lg-auto">
-                        <div class="nav-item dropdown mt-1">
-                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
-                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="ai-bell"></i><span class="alarm-on"></span></a>
                             <div class="dropdown-menu dropdown-alarm">
                                 <div class="dropdown-column dropdown-item mb-2">
                                     <h6>알림</h6>
@@ -89,8 +89,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
-                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user"></i></button>
+                        <div class="nav-item nav-mypage dropdown">
+                            <a class="nav-link btn-ms rounded-pill btn-primary" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user font-color-ff mb-1"></i></a>
                             <div class="dropdown-menu dropdown-mypage">
                                 <div class="dropdown-column dropdown-item">
                                     <h6 class="pb-1">홍길동 고객님</h6>
@@ -166,15 +166,85 @@
         <section class="container chat-section">
             <div class="row">
                 <div class="chat-area col-lg-8 col-md-8 col-sm-8">
-                    2022년 02월 15일 화요일
-                    <div class="chat-write-wrap">
-                        <div class="chat_input_area">
-                            <input title="메시지 입력창" class="chat_input" placeholder="메시지를 입력하세요."></input>
-                        </div>
-                        <div class="submit_btn_wrap">
-                            <button class="btn btn-primary2">전송</button>
-                            <button class="btn btn-outline-primary2">첨부</button>
-                        </div>
+                    <ul class="group_message_balloon">
+                        <li class="date_check">
+                            <span>2022년 02월 15일 화요일</span>
+                        </li>
+                        
+
+                        <li class="talk_pc_user new_message_balloon_area">
+                            <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
+                                <a>
+                                    <img src="https://shop-phinf.pstatic.net/20190821_249/talk_1566365690373ntzc9_JPEG/DSC03042.JPG?type=f164" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                </a>
+                            </div>
+                            <div class="message_balloon card_message">
+                                <span class="copy_area">홍길동 고객님 안녕하세요. 요청서에 따른 견적입니다.</span>
+                                <div class="txt_confirm _status" aria-label="메시지 작성시간">
+                                    <span class="_time"><em>오후</em> <span>2:13</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk_pc_partner new_message_balloon_area">
+                            <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
+                                <a>
+                                    <img src="https://shop-phinf.pstatic.net/20190821_249/talk_1566365690373ntzc9_JPEG/DSC03042.JPG?type=f164" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                </a>
+                            </div>
+                            <div class="message_balloon card_message">
+                                <span class="copy_area">
+                                    <h6>견적서</h6>
+                                    <p>홍길동 고객님 안녕하세요. 요청서에 
+                                        따른 견적입니다.</p>
+                                    <hr>
+                                    <dl class="d-flex">
+                                        <dt>서비스 </dt>
+                                        <dd>해충방역</dd>
+                                    </dl>
+                                    <dl class="d-flex">
+                                        <dt>견적금액 </dt>
+                                        <dd>총 70,000원 부터 ~</dd>
+                                    </dl>
+                                    <hr>
+                                    <p>견적금애게 대해 궁금한 점을 물어보세요.</p>
+                                    <button class="btn btn-primary btn-100">업체 프로필 보기</button>
+                                </span>
+                                <div class="txt_confirm _status" aria-label="메시지 작성시간">
+                                    <span class="_time"><em>오후</em> <span>2:13</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk_pc_user new_message_balloon_area">
+                            <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
+                                <a>
+                                    <img src="https://shop-phinf.pstatic.net/20190821_249/talk_1566365690373ntzc9_JPEG/DSC03042.JPG?type=f164" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                </a>
+                            </div>
+                            <div class="message_balloon card_message">
+                                <span class="copy_area">
+                                    견적서 잘 받았어요~! <br>
+                                    “관련 장소/시간 등등 업무를<br> 
+                                    협의진행”
+                                </span>
+                                <div class="txt_confirm _status" aria-label="메시지 작성시간">
+                                    <span class="_time"><em>오후</em> <span>2:13</span></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chat-footer">
+                        <p class="fs-sm font-primary2">
+                            <i class="ai-alert-triangle font-color-66 fs-lg me-1"></i> 업체님이 답변을 기다리고 있어요
+                        </p>
+                        <div class="chat-write-wrap justify-content-between">
+                            <div class="chat_input_area">
+                                <input title="메시지 입력창" class="form-control chat_input" placeholder="메시지를 입력하세요."></input>
+                            </div>
+                            <div class="submit_btn_wrap">
+                                <button class="btn btn-primary2">전송</button>
+                                <button class="btn btn-outline-primary2">첨부</button>
+                            </div>
+                        </div>                    
                     </div>
                 </div>
                 <div class="aside col-lg-4 col-md-4">
@@ -248,40 +318,38 @@
                             <!-- Tabs content -->
                             <div class="tab-content">
                                 <!-- Tabs 1 -->
-                                <div class="tab-pane fade show active" id="info" role="tabpanel">
+                                <div class="tab-pane fade show active scroll-y pe-2" id="info" role="tabpanel">
                                     <h6 class="mt-4 mb-3">한 줄 소개</h6>
-                                    <p class="fs-sm">
+                                    <p class="fs-sm pb-3">
                                         안녕하세요? 참좋은 해충방역 업체입니다.<br>
                                         압도적인 1위가 될수 있었던 이유는 과정에 충실했기 때문이라고 생각됩니다.<br> 
                                         지금도 지속적으로 방역과정을 업데이트 하고 있습니다. 최고가 되겠습니다.
                                     </p>
                 
-                                    <div class="mt-4 mb-6">
-                                        <h6 class="mb-3">기본정보</h6>
-                                        <div class="pb-3">
-                                            <ul class="list-group list-group-flush fs-sm">
-                                                <li class="list-group-item px-0 font-color-99">
-                                                    <i class="ai-check-square me-2 mb-1"></i>
-                                                    본인 인증여부 : 본인 인증
-                                                </li>
-                                                <li class="list-group-item px-0 font-color-99">
-                                                    <i class="ai-briefcase me-2 mb-1"></i>
-                                                    거래 성사된 횟수 : 4049회
-                                                </li>
-                                                <li class="list-group-item px-0 font-color-99">
-                                                    <i class="ai-map-pin me-2 mb-1"></i>
-                                                    거래 성사 가능 위치 : 서울특별시 관악구
-                                                </li>
-                                                <li class="list-group-item px-0 font-color-99">
-                                                    <i class="ai-clock me-2 mb-1"></i>
-                                                    연락 가능 시간: 오전7시 – 오후11시
-                                                </li>
-                                                <li class="list-group-item px-0 d-flex border-0 font-color-99">
-                                                    <i class="ai-credit-card me-2 mt-1"></i>
-                                                    결제 가능한 방식 : 카드결제, 계좌이체, 현금결제 가능 
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <h6 class="mt-4 mb-3">기본정보</h6>
+                                    <div class="pb-3">
+                                        <ul class="list-group list-group-flush fs-sm">
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-check-square me-2 mb-1"></i>
+                                                본인 인증여부 : 본인 인증
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-briefcase me-2 mb-1"></i>
+                                                거래 성사된 횟수 : 4049회
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-map-pin me-2 mb-1"></i>
+                                                거래 성사 가능 위치 : 서울특별시 관악구
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-clock me-2 mb-1"></i>
+                                                연락 가능 시간: 오전7시 – 오후11시
+                                            </li>
+                                            <li class="list-group-item px-0 d-flex border-0 font-color-99">
+                                                <i class="ai-credit-card me-2 mt-1"></i>
+                                                결제 가능한 방식 : 카드결제, 계좌이체, 현금결제 가능 
+                                            </li>
+                                        </ul>
                                     </div>
 
                                     <h6 class="mt-4 mb-3">추가정보</h6>
@@ -307,7 +375,7 @@
                                     </div>
 
                                     <h6 class="mt-4 mb-3">제공 서비스</h6>
-                                    <div class="p-2">
+                                    <div class="d-flex flex-wrap justify-content-around p-2 pb-3">
                                         <span class="tag-big rounded-pill bg-secondary3">해충방역</span>
                                         <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
                                         <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
@@ -320,8 +388,8 @@
                                     </div>
 
                                     
-                                    <h5 class="mt-4 mb-3">업체소개</h5>
-                                    <p>
+                                    <h6 class="mt-4 mb-3">업체소개</h6>
+                                    <p class="fs-sm mb-5">
                                         안녕하세요? 참좋은 해충방역 업체입니다.<br>
                                         압도적인 1위가 될수 있었던 이유는 과정에 충실했기 때문이라고 생각됩니다.<br> 
                                         지금도 지속적으로 방역과정을 업데이트 하고 있습니다. 최고가 되겠습니다.
@@ -331,76 +399,32 @@
                 
                 
                                 <!-- Tabs 2 -->
-                                <div class="tab-pane fade" id="photo" role="tabpanel">
-                                    <h5 class="font-size-large03 mt-5 mb-4">사진 및 동영상</h5>
-                                    <div class="row pb-1 photo-list">
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt="11"></a>
-                                            </div>
+                                <div class="tab-pane fade scroll-y pe-2" id="photo" role="tabpanel">
+                                    <h6 class="mt-4 mb-3">사진 및 동영상</h6>
+                                    <!-- 포토 리스트 -->
+                                    <div class="pb-1 photo-list">
+                                        <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
                                         </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_mainvisual01.png" alt="11"></a>
-                                            </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/login/img_joinimg.png" alt=""></a>
                                         </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_disinfect.png" alt="11"></a>
-                                            </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/login/thumbnail01.jpg" alt=""></a>
                                         </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt="11"></a>
-                                            </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_service01.png" alt=""></a>
                                         </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_insect.png" alt="11"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_mainvisual01.png" alt="11"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt="11"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_mainvisual01.png" alt="11"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_disinfect.png" alt="11"></a>
-                                            </div>
-                                        </div>
-                                        <!-- Item-->
-                                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-                                            <div class="card thumbnail-style card-hover">
-                                                <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt="11"></a>
-                                            </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_bnr01.png" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
                 
                                 <!-- Tabs 3 -->
-                                <div class="tab-pane fade" id="review" role="tabpanel">
+                                <div class="tab-pane fade scroll-y pe-2" id="review" role="tabpanel">
                 
-                                    <h5 class="font-size-large03 mt-5 mb-4">리뷰</h5>
+                                    <h6 class="mt-4 mb-3">리뷰</h6>
                                     <div class="card bg-gry2 p-4 mb-5">
                                         <div class="d-flex align-items-center">
                                             <h2 class="mb-0 br-right br-gry pe-4">4.5 </h2>
@@ -414,7 +438,7 @@
                                     </div>
                 
                                     <!-- 리뷰 리스트1 -->
-                                    <div class="review-list">
+                                    <div class="review-list fs-sm">
                                         <div class="star-rating align-items-center">
                                             <p class="font-color-66 m-0 me-4">김**</p>
                                             <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
@@ -423,18 +447,15 @@
                                         <!-- 리뷰 내용 -->
                                         <div class="mt-3 pb-1">
                                             <!-- 이미지 -->
-                                            <div class="row">
-                                                <!-- Item-->
-                                                <div class="col-lg-2 col-md-4 col-sm-6 mb-grid-gutter">
-                                                    <div class="card thumbnail-style board-thumbnail card-hover">
-                                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt="11"></a>
-                                                    </div>
+                                            <div class="pb-1 photo-list">
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
                                                 </div>
-                                                <!-- Item-->
-                                                <div class="col-lg-2 col-md-4 col-sm-6 mb-grid-gutter">
-                                                    <div class="card thumbnail-style board-thumbnail card-hover">
-                                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_mainvisual01.png" alt="11"></a>
-                                                    </div>
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                                </div>
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -443,7 +464,7 @@
                                     
                 
                                     <!-- 리뷰 리스트2 -->
-                                    <div class="review-list mt-4">
+                                    <div class="review-list fs-sm mt-4">
                                         <div class="star-rating align-items-center">
                                             <p class="font-color-66 m-0 me-4">김**</p>
                                             <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
@@ -455,11 +476,26 @@
                                             <p>설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
                                                 제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! </p>
                                         </div>
+
+                                        <!-- reply -->
+                                        <div class="p-4" style="background-color: #f9f9f9;">
+                                            <div class="star-rating align-items-center">
+                                                <p class="font-color-66 m-0 me-4">김**</p>
+                                                <span class="font-size-samll02 font-color-99 ms-4">2022.02.13</span>
+                                            </div>
+                                            <!-- 리뷰 내용 -->
+                                            <div class="mt-3 pb-1">
+                                                <!-- 텍스트 -->
+                                                <p class="contentStr">설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                                    제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! 설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                                    제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! </p>
+                                            </div>
+                                        </div>
                                     </div>
                                     
                 
                                     <!-- 리뷰 리스트3 -->
-                                    <div class="review-list mt-4">
+                                    <div class="review-list fs-sm my-4">
                                         <div class="star-rating align-items-center">
                                             <p class="font-color-66 m-0 me-4">김**</p>
                                             <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
@@ -468,18 +504,9 @@
                                         <!-- 리뷰 내용 -->
                                         <div class="mt-3 pb-1">
                                             <!-- 이미지 -->
-                                            <div class="row">
-                                                <!-- Item-->
-                                                <div class="col-lg-2 col-md-4 col-sm-6 mb-grid-gutter">
-                                                    <div class="card thumbnail-style board-thumbnail card-hover">
-                                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt="11"></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Item-->
-                                                <div class="col-lg-2 col-md-4 col-sm-6 mb-grid-gutter">
-                                                    <div class="card thumbnail-style board-thumbnail card-hover">
-                                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_mainvisual01.png" alt="11"></a>
-                                                    </div>
+                                            <div class="pb-1 photo-list">
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
                                                 </div>
                                             </div>
                                             <!-- 텍스트 -->
@@ -491,9 +518,9 @@
                                 </div>
                 
                                 <!-- Tabs 4 -->
-                                <div class="tab-pane fade" id="qna" role="tabpanel">
-                                    <h5 class="font-size-large03 mt-5 mb-4">질문답변</h5>
-                                    <div class="qna-list mb40">
+                                <div class="tab-pane fade scroll-y pe-2" id="qna" role="tabpanel">
+                                    <h6 class="mt-4 mb-3">질문답변</h6>
+                                    <div class="qna-list mb40 fs-sm">
                                         <ul>
                                             <li>
                                                 <dl>
@@ -553,7 +580,7 @@
                         <div class="tab-pane fade" id="progress" role="tabpanel">
                             거래진행정보거래진행정보거래진행정보
                         </div>
-
+                    </div>
 
                 </div>
             </div>
@@ -697,7 +724,46 @@
     <script src="../assets/js/theme.min.js"></script>
 
 
-
+    <script text="javascript/text">
+        $(document).ready(function(){
+     
+            $('.qna-list ul li','.review-list').each(function(){
+                //var content = $(this).children('.content');
+                var content = $(this).find('.contentStr');
+     
+                var content_txt = content.text();
+                var content_html = content.html();
+                var content_txt_short = content_txt.substring(0,250)+"...";
+                var btn_more = $('<a href="javascript:void(0)" class="more font-primary2">더보기 <i class="ai-chevron-down"></i></a>');
+     
+                
+                $(this).append(btn_more);
+                
+                if(content_txt.length >= 250){
+                    content.html(content_txt_short)
+                    
+                }else{
+                    btn_more.hide()
+                }
+                
+                btn_more.click(toggle_content);
+                function toggle_content(){
+                    if($(this).hasClass('short')){
+                        // 접기 상태
+                        $(this).html('더보기 <i class="ai-chevron-down"></i>');
+                        content.html(content_txt_short)
+                        $(this).removeClass('short');
+                    }else{
+                        // 더보기 상태
+                        $(this).html('접어 두기 <i class="ai-chevron-up"></i>');
+                        content.html(content_html);
+                        $(this).addClass('short');
+     
+                    }
+                }
+            });
+        });
+      </script>
 
 </body>
 

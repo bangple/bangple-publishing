@@ -233,7 +233,9 @@ common
 .meta-link {
     color: #666;
 }
-
+.scroll-y{
+    overflow-y: auto;
+}
 
 /************************************************************************************
 스크롤바
@@ -257,7 +259,7 @@ common
 
  ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background-color: #848383;
+    background-color: #999;
 }
 
  ::-webkit-scrollbar-button {

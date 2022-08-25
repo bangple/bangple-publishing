@@ -86,11 +86,12 @@ iframe.footer-iframe {
 }
 
 .nav-item .dropdown-menu,
-.navbar-expand-lg .dropdown-menu.show {
+.nav-item .dropdown-menu.show,
+.nav-item .dropdown-menu[data-bs-popper] {
     border: 1px solid #c3c5cd;
     overflow: initial!important;
-    right: -50%!important;
-    top: 63px!important;
+    right: -166%!important;
+    top: 45px!important;
     box-shadow: 0 0 0 20 (#333)
 }
 
@@ -108,9 +109,12 @@ iframe.footer-iframe {
 
 .nav-news {
     position: relative;
-    padding: 16px 1.25rem;
+    padding: 0;
+    margin-right: 20px;
 }
-
+.nav-news .ai-bell{
+    font-size: 30px;
+}
 .nav-news.display-web {
     display: block;
 }
@@ -129,7 +133,7 @@ iframe.footer-iframe {
         display: block;
     }
     .nav-item .dropdown-menu[data-bs-popper] {
-        right: 0px!important;
+        right: -17px!important;
         left: auto!important;
     }
     .nav-item .dropdown-menu::after {
@@ -144,15 +148,25 @@ iframe.footer-iframe {
     .navbar .btn-ms{
         margin-right: 10px;
     }
-    
+    .nav-item .dropdown-menu.dropdown-alarm[data-bs-popper]{
+        right: -81px!important;
+    }
+    .nav-item .dropdown-menu.dropdown-alarm::after {
+        right: 86px;
+    }
+}
+@media screen and (max-width:360px){
+    .nav-item .dropdown-menu[data-bs-popper] {
+        right: -6px!important;
+    }
 }
 @media screen and (max-width:320px){
     .nav-item .dropdown-menu[data-bs-popper] {
         left: auto!important;
-        top: 54px!important;
+        top: 46px!important;
     }
     .nav-item .dropdown-menu.dropdown-alarm[data-bs-popper]{
-        right: -81px!important;
+        right: -88px!important;
     }
     .nav-item .dropdown-menu.dropdown-alarm::after {
         right: 93px;
@@ -160,12 +174,15 @@ iframe.footer-iframe {
     .nav-item .dropdown-menu.dropdown-mypage[data-bs-popper] {
         right: -6px!important;
     }
+    .nav-item .nav-news{
+        margin-right: 12px;
+    }
 }
 
 .nav-news .alarm-on {
     position: absolute;
-    top: 15px;
-    right: 21px;
+    top: 0px;
+    right: 3px;
     width: 8px;
     height: 8px;
     background-color: #fb479b;
@@ -238,6 +255,9 @@ iframe.footer-iframe {
     color: #333;
     padding: 2px 5px;
 }
+.nav-mypage a.btn-ms:hover{
+    background-color: #2d9599;
+}
 
 @media screen and (max-width:640px) {
     .navbar-nav.web {
@@ -259,7 +279,7 @@ iframe.footer-iframe {
     .navbar-toggler{
         font-size: .8rem;
     }
-    .nav-news{
+    /*.nav-news{
         padding: 8px 0.8rem;
     }
     .nav-news .alarm-on{
@@ -273,7 +293,7 @@ iframe.footer-iframe {
     }
     .navbar .btn-ms .fs-3{
         font-size: calc(1.2rem + 0.45vw) !important;
-    }
+    }*/
 }
 .navbar-light .navbar-nav .nav-link {
     color: #333;
