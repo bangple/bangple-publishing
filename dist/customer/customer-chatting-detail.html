@@ -39,6 +39,54 @@
 <!-- Body-->
 
 <body>
+    <!-- Modal 요청서 확인 -->
+    <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modalRequest" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">내 요청서 보기</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pb-5">
+                    <ul class="list-group list-group-flush font-size-normal">
+                        <li class="list-group-item px-0">
+                            공간 유형을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 주거 공간</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            소독을 원하는 위치가 어디인가요?
+                            <p class="mb-0 mt-2 font-color-99">- 실내</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            추가로 원하는 소독이 있나요?
+                            <p class="mb-0 mt-2 font-color-99">- 해충방역</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            공간의 면적을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 10평 미만</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            정기 소독을 원하시나요?
+                            <p class="mb-0 mt-2 font-color-99">- 1회 소독</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            서비스 희망일을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 협의 가능해요.</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            서비스 희망 지역을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 서울 서초구 신원동</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            소독 관련 문의사항을 알려주세요!
+                            <p class="mb-0 mt-2 font-color-99">- 비용이 궁금합니다</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="page-wrapper sub-con">
 
         <!-- Navbar (Solid background)-->
@@ -152,7 +200,7 @@
                     </button>
                 </div>
                 <div class="col-lg-9 d-flex align-middle justify-content-end">
-                    <a href="#" class="d-flex align-middle font-color-66 me-4"><img src="../assets/img/icon/icon_career.png" class="me-2"> 내 요청서보기</a>
+                    <a href="#" class="d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalRequest"><img src="../assets/img/icon/icon_career.png" class="me-2"> 내 요청서보기</a>
                     <a href="#" class="d-flex align-middle font-color-66 me-4"><img src="../assets/img/icon/icon_singo.png" class="me-2"> 신고하기</a>
                     <a href="#" class="d-flex align-middle font-color-66 me-5"><img src="../assets/img/icon/icon_chatout.png" class="me-2"> 채팅방 나가기</a>
                 
@@ -175,7 +223,7 @@
                         <li class="talk_pc_user new_message_balloon_area">
                             <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
                                 <a>
-                                    <img src="https://shop-phinf.pstatic.net/20190821_249/talk_1566365690373ntzc9_JPEG/DSC03042.JPG?type=f164" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                    <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
                                 </a>
                             </div>
                             <div class="message_balloon card_message">
@@ -188,7 +236,7 @@
                         <li class="talk_pc_partner new_message_balloon_area">
                             <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
                                 <a>
-                                    <img src="https://shop-phinf.pstatic.net/20190821_249/talk_1566365690373ntzc9_JPEG/DSC03042.JPG?type=f164" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                    <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
                                 </a>
                             </div>
                             <div class="message_balloon card_message">
@@ -217,7 +265,7 @@
                         <li class="talk_pc_user new_message_balloon_area">
                             <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
                                 <a>
-                                    <img src="https://shop-phinf.pstatic.net/20190821_249/talk_1566365690373ntzc9_JPEG/DSC03042.JPG?type=f164" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                    <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
                                 </a>
                             </div>
                             <div class="message_balloon card_message">
@@ -577,8 +625,82 @@
                         
                         
                         <!-- Tabs 2 -->
-                        <div class="tab-pane fade" id="progress" role="tabpanel">
-                            거래진행정보거래진행정보거래진행정보
+                        <div class="progress-wrap tab-pane fade scroll-y" id="progress" role="tabpanel">
+                            <!-- 거래없음 --
+                            <div class="text-center mt-6 pt-4">
+                                <img src="../assets/img/icon/icon_empty.png" alt="">
+                                <p class="mt-4 mb-7 pb-7">진행중인 거래가 없습니다.</p>
+                            </div>
+                            !-- // 거래없음 -->
+
+                            <!-- 거래진행정보 -->
+                            <div class="card card2 bg-gry2">
+                                <h6 class="align-center">
+                                    <img src="../assets/img/icon/icon_infop.png" alt="">
+                                    <p class="font-primary2 mt-1">현재진행상태</p>
+                                </h6>
+                                <div class="progress-area justify-content-center">
+                                    <p class="on">
+                                        <span class="dot"></span>
+                                        <span class="progress-name fs-xs">견적접수</span>
+                                    </p>
+                                    <p class="on">
+                                        <span class="dot"></span>
+                                        <span class="progress-name fs-xs">거래예약</span>
+                                    </p>
+                                    <p class="on">
+                                        <span class="dot"></span>
+                                        <span class="progress-name fs-xs">거래확정</span>
+                                    </p>
+                                </div>
+                                
+                                <button class="btn btn-primary btn-100 mt-4">이어서 거래하기</button>
+                            </div>
+                            <!-- //거래진행정보 -->
+                            <div class="px-3 mt-4">
+                                <h6>서비스 정보</h6>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>서비스 명 :</dd>
+                                    <dt class="font-primary">해충방역</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>서비스 진행일 :</dd>
+                                    <dt class="font-primary">2022.04.12(화)</dt>
+                                </dl>
+
+                                <hr>
+
+                                <h6>거래 정보</h6>  
+                                <dl class="d-flex justify-content-between">
+                                    <dd>서비스 금액 :</dd>
+                                    <dt class="font-primary">70,000원</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>방플페이 수수료 :</dd>
+                                    <dt class="font-primary">245원</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>최종 결제금액 :</dd>
+                                    <dt class="font-primary">70,245원</dt>
+                                </dl>
+
+                                <hr>
+
+                                <h6>결제 정보</h6>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>결제일시 :</dd>
+                                    <dt class="font-primary">2022-04-12 13:24</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>결제수단 :</dd>
+                                    <dt class="font-primary">토스페이</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>결제방식 :</dd>
+                                    <dt class="font-primary">일시불</dt>
+                                </dl>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -727,7 +849,7 @@
     <script text="javascript/text">
         $(document).ready(function(){
      
-            $('.qna-list ul li','.review-list').each(function(){
+            $('.qna-list ul li').each(function(){
                 //var content = $(this).children('.content');
                 var content = $(this).find('.contentStr');
      

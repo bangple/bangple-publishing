@@ -1607,3 +1607,50 @@ ul.list-unstyled li a:hover,
     grid-template-columns: calc(33.33% - 10px) calc(33.33% - 10px) calc(33.33% - 10px);
     gap: 15px;
 }
+
+/** 진행상태 **/
+
+.progress-area{
+    display: flex;
+    width: 100%;
+}
+.progress-area p{
+    position: relative;
+    height: 2px;
+}
+.progress-area p span.dot{
+    position: absolute;
+    top:-6px;
+    right:0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.progress-area p span.progress-name{
+    position: absolute;
+    width: 50px;
+    right: -21px;
+    top: 11px;
+}
+.progress-area p.off{
+    background-color: #e7e9ee;
+}
+.progress-area p.off span.dot{
+    background-color: #e7e9ee;
+}
+.progress-area p.on{
+    background-color: #02597e;
+}
+.progress-area p.on span.dot{
+    background-color: #02597e;
+}
+.progress-area p{
+    width: calc(50% - 21px);
+}
+.progress-area p:first-child{
+    width: 14px;
+}
+
+.progress-wrap {
+    min-height: calc(100vh - 210px) ;
+}

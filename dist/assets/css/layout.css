@@ -106,6 +106,9 @@ iframe.footer-iframe {
     width: 29px;
     height: 16px;
 }
+.nav-item .dropdown-menu.dropdown-alarm{
+    right: -60%!important;
+}
 
 .nav-news {
     position: relative;
