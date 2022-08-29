@@ -454,6 +454,7 @@ button {
 
 .btn-bgnone {
     background-color: transparent;
+    text-decoration: underline;
 }
 
 .btn-round {
@@ -496,6 +497,12 @@ button {
     font-size: 1rem;
     font-weight: 200;
     border-radius: .5rem;
+}
+
+.btn-sm, 
+.btn-group-sm>.btn {
+    height: 33px;
+    padding: 0.3rem 1rem;
 }
 
 .btn-outline {

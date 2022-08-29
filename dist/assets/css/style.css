@@ -925,7 +925,7 @@ button.btn-square {
     margin-right: 5px;
     overflow: hidden;
     border-radius: 7px;
-    background-color: #e1f5f2;
+    background-color: #cae5e8;
     text-align: center;
 }
 
@@ -1462,6 +1462,10 @@ ul.list-unstyled li a:hover,
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+.modal .modal-448{
+    width: 448px;
+}
+
 
 .group_message_balloon {
     position: absolute;
