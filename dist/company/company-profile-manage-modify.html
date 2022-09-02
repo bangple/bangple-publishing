@@ -183,34 +183,49 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <div class="font-size-large03 mb-0">이름</div>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>참좋은 해충방역</div>
+                        <input class="form-control form-control-ms mb-3" type="text" id="" placeholder="참좋은 해충방역">
                         <hr>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">대표서비스</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>해충방역</div>
+                        <div class="mb-0 d-flex">
+                            <div class="form-check me-4 mb-0">
+                                <input class="form-check-input" type="checkbox" id="111" name="checkbox">
+                                <label for="111" class="form-label ps-0 mb-0">해충방역</label>
+                            </div>
+                            <div class="form-check me-4 mb-0">
+                                <input class="form-check-input" type="checkbox" id="111" name="checkbox">
+                                <label for="111" class="form-label ps-0 mb-0">소독방역</label>
+                            </div>
+                            <div class="form-check me-4 mb-0">
+                                <input class="form-check-input" type="checkbox" id="111" name="checkbox">
+                                <label for="111" class="form-label ps-0 mb-0">드론방역</label>
+                            </div>
+                        </div>
                         <hr>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">한 줄 소개</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다.</div>
-                        <hr>
+                        <div class="form-floating text_box">
+                            <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="80" placeholder="10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다."></textarea>
+                            <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/80</div>
+                        </div>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">본인인증</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">인증하기</button>
+                            <button class="btn-bgnone font-color-33 fs-sm align-items-center">인증완료</button>
                         </div>
                         <hr>
                     </div>
@@ -252,9 +267,25 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">연락 가능 시간</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>오전 10시 ~ 오후 6시</div>
+                        <div class="d-flex justify-content-start">
+                            <select class="form-select w-25" id="select-input">
+                                <option>오전 12:00</option>
+                                <option>오전 1:00</option>
+                                <option>오전 2:00</option>
+                                <option>오전 3:00</option>
+                            </select>
+                            <span class="m-2">부터</span>
+                            <select class="form-select w-25" id="select-input">
+                                <option>오전 12:00</option>
+                                <option>오전 1:00</option>
+                                <option>오전 2:00</option>
+                                <option>오전 3:00</option>
+                            </select>
+                            <span class="m-2">까지</span>
+                        </div>
+                        
                         <hr>
                     </div>
 
@@ -285,35 +316,70 @@
                             <h5 class="font-size-large03 mb-0">계좌정보</h5>
                             <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
                         </div>
-                        <div>인증완료 / 방플은행 ****5275</div>
+                        <p class="mb-0">인증완료 / 방플은행 ****5275</p>
                         <hr>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">경력</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>12년 이상</div>
+                        <div>
+                            <select class="form-select w-25" id="select-input">
+                                <option>1년</option>
+                                <option>2년</option>
+                                <option>3년</option>
+                                <option>4년</option>
+                            </select>
+                        </div>
                         <hr>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">직원수</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>직원 3명</div>
+                        <div>
+                            <select class="form-select w-25" id="select-input">
+                                <option>직원 1명(본인포함)</option>
+                                <option>직원 2명</option>
+                                <option>직원 3명</option>
+                                <option>직원 4명</option>
+                            </select>
+                        </div>
                         <hr>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">사업자등록증</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">등록하기</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>허위정보에 대한 모든 책임은 본인에게 있습니다</div>
-                        <hr>
+                        
+                        <section class="container card card2 bg-secondary3 mypage-wrap">
+                            <div class="d-flex align-items-center align-center px-2 py-2">
+                                <img src="../assets/img/icon/icon_caution.png">
+                                <b class="font-color-66 ms-4">
+                                    허위정보에 대한 모든 책임은 본인에게 있습니다
+                                </b>
+                            </div>
+                        </section>
+
+                        <div class="row photo-list pb-1 mt-4">
+                            <!-- Item-->
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-grid-gutter">
+                                <div class="card thumbnail-style card-hover">
+                                    <a class="card-img-top add-img fs-1" href="#"><b>+</b></a>
+                                </div>
+                            </div>
+                            <!-- Item-->
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-grid-gutter">
+                                <div class="card thumbnail-style card-hover">
+                                    <a class="card-img-top" href="#"><img src="../assets/img/login/thumbnail01.jpg" alt=""></a>
+                                </div>
+                            </div>
                     </div>
 
                     <div class="mt-5">
@@ -372,28 +438,42 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">세금계산서 등록</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>네, 가능합니다.</div>
+                        <section class="container card card2 bg-secondary3 mypage-wrap">
+                            <div class="d-flex align-items-center justify-content-around px-2">
+                                <img src="../assets/img/icon/icon_caution.png">
+                                <div class="py-2">
+                                    서비스 금액 거래 증빙을 위한 세금계산서는 서비스 제공자(업체)가<br>서비스 의뢰인(고객)에게 발행해주는것이 원칙입니다.
+                                </div>
+                                <button class="btn btn-ms btn-outline-primary2">등록하기</button>
+                            </div>
+                        </section>
+                        <div class="form-check me-4 mb-0 mt-4">
+                            <input class="form-check-input" type="radio" id="111" name="radio">
+                            <label for="111" class="form-label fs-6 ps-0 mb-0">네, 가능합니다.</label>
+                        </div>
+                        <code>간이과세자가 아닌 일반과세자일 경우 선택해주세요</code>
+                        <hr>
+                        
+                        <div class="form-check me-4 mb-0 mt-4">
+                            <input class="form-check-input" type="radio" id="111" name="radio">
+                            <label for="111" class="form-label fs-6 ps-0 mb-0">네, 가능합니다.</label>
+                        </div>
                         <hr>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">제공 서비스</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
                         <div class="card px-4 py-3">
                             <div class="p-2 pb-0">
                                 <button class="btn btn-ms rounded-pill btn-outline bg-gry2 font-color-66 pt-1" style="height:36px;"><b class="fs-5">+</b> 서비스 추가</button>
                                 <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
                                 <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
-                                <span class="tag-big rounded-pill bg-secondary3">해충방역</span>
-                                <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
-                                <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
-                                <span class="tag-big rounded-pill bg-secondary3">해충방역</span>
-                                <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
-                                <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
+                                <span class="tag-big rounded-pill bg-secondary3">해충방역<button class="btn-bgnone btn-del px-0"><i class="ai-x"></i></button></span>
                             </div>
                         </div>
                     </div>
@@ -401,13 +481,16 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">업체서비스 상세설명</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
-                        <div>
-                            안녕하세요. 감염예방 전문가 홍길동입니다.<br>
-                            업계 5년 차, 고객님 들의 불편함을 해결해 드리기 위해 최선을 다할 것을 약속합니다.
+                        <div class="form-floating text_box">
+                            <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="80" placeholder="10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다."></textarea>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <code>30자 이상 입력해주세요.</code>
+                                <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/200</div>
+                            </div>
+                            
                         </div>
-                        <hr>
                     </div>
 
                     <div class="mt-5">
@@ -470,7 +553,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">질문답변</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
                         </div>
                         <div class="qna-list mb40">
                             <ul>
@@ -478,7 +561,9 @@
                                     <dl>
                                         <dt>Q.방역서비스 절차는 어떻게 진행 되나요?</dt>
                                         <dd class="contentStr fs-lg">
-                                            상담->현장방문->해충유무확인->방역진행->예방법안내->결제진행
+                                            <div class="form-floating">
+                                                <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="80" placeholder="10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다."></textarea>
+                                            </div>                    
                                         </dd>
                                     </dl>
                                 </li>
@@ -486,7 +571,9 @@
                                     <dl>
                                         <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
                                         <dd class="contentStr fs-lg">
-                                            코로나예방소독 / 바퀴 / 개미 / 쥐 / 기타보행해충 / 옴진드기 / 저곡해충 (권연벌레 / 톱가슴머리대장 / 쌀바구미 / 화랑곡나방) / 매트리스 케어(집먼지진드기)
+                                            <div class="form-floating">
+                                                <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="80" placeholder="10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다."></textarea>
+                                            </div>    
                                         </dd>
                                     </dl>
                                 </li>
@@ -499,8 +586,9 @@
                             <h5 class="font-size-large03 mb-0">링크</h5>
                             <button class="btn-bgnone font-primary2 fs-sm align-items-center">등록하기</button>
                         </div>
-                        <div>
-                            홈페이지 <a href="https://www.bangble.com" target="_blank" class="ms-5">https://www.bangble.com</a>
+                        <div class="mt-3">
+                            <label for="large-input" class="form-label">홈페이지</label>
+                            <input class="form-control form-control-lg" type="text" id="large-input" placeholder="이메일 주소를 입력해주세요.">
                         </div>
                         <hr>
                     </div>
@@ -589,46 +677,15 @@
     <script src="../assets/js/theme.min.js"></script>
 
     <script text="javascript/text">
-        $(document).ready(function(){
-     
-            $('.qna-list ul li').each(function(){
-                //var content = $(this).children('.content');
-                var content = $(this).find('.contentStr');
-     
-                var content_txt = content.text();
-                var content_html = content.html();
-                var content_txt_short = content_txt.substring(0,250)+"...";
-                var btn_more = $('<a href="javascript:void(0)" class="more font-primary2">자세히 보기 <i class="ai-chevron-down"></i></a>');
-     
-                
-                $(this).append(btn_more);
-                
-                if(content_txt.length >= 250){
-                    content.html(content_txt_short)
-                    
-                }else{
-                    btn_more.hide()
-                }
-                
-                btn_more.click(toggle_content);
-                function toggle_content(){
-                    if($(this).hasClass('short')){
-                        // 접기 상태
-                        $(this).html('자세히 보기 <i class="ai-chevron-down"></i>');
-                        content.html(content_txt_short)
-                        $(this).removeClass('short');
-                    }else{
-                        // 더보기 상태
-                        $(this).html('접어 두기 <i class="ai-chevron-up"></i>');
-                        content.html(content_html);
-                        $(this).addClass('short');
-     
-                    }
-                }
+        $('.text_box textarea').keyup(function(){
+            var content = $(this).val();
+            $('.text_box .count span').html(content.length);
+            if (content.length > 200){
+                alert("최대 200자까지 입력 가능합니다.");
+                $(this).val(content.substring(0, 200));
+                $('.text_box .count span').html(200);
+            }
             });
-        });
-
-        
       </script>
     
 

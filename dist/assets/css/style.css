@@ -560,16 +560,27 @@ main
     width:auto;
 }
 
-.select-service .process {
+.process-area .process {
     width: calc(100% - 70px);
     height: 15px;
     border-top: 3px solid;
     border-bottom: 3px solid;
-    border-color: #f3f3f3;
+    border-color: #e7e9ee;
+    background-color: #e7e9ee;
 }
 
-.select-service .process div {
+.process-area .process div {
     height: 9px;
+}
+.process-area .process-2 {
+    width: 100%;
+    height: 6px;
+    background-color: #e7e9ee;
+}
+
+.process-area .process-2 div {
+    height: 6px;
+    background-color: #02526a;
 }
 
 .select-service .select-list li {
@@ -951,6 +962,17 @@ button.btn-square {
     height: 52px;
 }
 
+.thumbnail-style a.add-img{
+    display: flex;
+    height:100%;
+    color:#666;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #e7e9ee;
+}
+
 .product-list a{
     text-decoration: none;
 }
@@ -1296,6 +1318,7 @@ ul.list-unstyled li a:hover,
 }
 
 .tag-big{
+    position: relative;
     display: inline-block;
     font-size: 16px;
     height: 36px;
@@ -1311,6 +1334,20 @@ ul.list-unstyled li a:hover,
     line-height: 34px;
     font-weight: 300;
     padding: 0 15px;
+}
+.tag-big .btn-del{
+    position: absolute;
+    top:-5px;
+    right: 7px;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f74f78;
+}
+.tag-big .btn-del i{
+    font-size: 11px;
+    color:#fff;
+    margin: -22px 3px 0;
 }
 
 @media screen and (max-width:990px) {
