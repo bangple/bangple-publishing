@@ -1696,3 +1696,47 @@ ul.list-unstyled li a:hover,
 .progress-wrap {
     min-height: calc(100vh - 210px) ;
 }
+
+@media screen and (min-width:540px) and (max-width:1000px){
+    .company-profile .row .col-md-2{
+        width: 22.66666667%;
+    }
+    .col-md-10 {
+        width: 77.33333333%;
+    }
+}
+@media screen and (max-width:768px){
+    .company-profile .display-web{
+        display: none;
+    }
+}
+@media screen and (max-width: 540px){
+    .company-profile .product-list{
+        text-align: center;
+    }
+    .company-profile .product-list .thumbnail-style{
+        margin: 0 auto 15px;
+    }
+    .company-profile .product-list .thumbnail-style .thumbnail-style a{
+        margin-right: 0;
+    }
+    .company-profile .product-list .company-info .d-flex{
+        justify-content: center;
+    }
+    .company-profile .card.card2.bg-secondary3 img{
+        display: none;
+    }
+    .company-profile .card.card2.bg-secondary3 button{
+        margin: 10px auto 0;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .company-profile .card.card2{
+        padding: 10px!important;
+    }
+    .company-profile .bg-secondary3 .ms-4{
+        margin-left: 0.5rem !important;
+        text-align: left!important;
+    }
+}

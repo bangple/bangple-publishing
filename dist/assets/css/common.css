@@ -729,6 +729,17 @@ textarea{
 
 }
 
+@media screen and (max-width: 600px){
+    .form-select{
+        padding: 0.55rem 0.7rem!important;
+        background-position: right 0.6rem center;
+    }
+}
+@media screen and (max-width: 540px){
+    .form-select.w-25{
+        width: 35%!important;
+    }
+}
 @media screen and (max-width:480px){
     
     .form-select,
@@ -736,9 +747,15 @@ textarea{
         height: 40px!important;
         min-height: auto;
         font-size: 0.9rem;
-        padding: 0.55rem 1.25rem!important;
+        padding: 0.55rem .7rem!important;
     }
 
+}
+@media screen and (max-width: 340px){
+    .form-select.w-25{
+        width: 80%!important;
+        margin-bottom: 8px;
+    }
 }
 @media screen and (max-width:320px){
     
