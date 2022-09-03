@@ -114,6 +114,7 @@ h4,
     font-size: 24px;
 }
 
+h7
 .h7 {
     font-size: 14px;
     font-weight: 500;
@@ -454,6 +455,9 @@ button {
 
 .btn-bgnone {
     background-color: transparent;
+}
+
+.btn-underline{
     text-decoration: underline;
 }
 
@@ -560,6 +564,12 @@ button {
     background-color: #fff;
 }
 
+.bg-primary{
+    background:#02597e!important;
+}
+.bg-primary2{
+    background:#2d9599!important;
+}
 .bg-primary,
 .bg-gradient1,
 .bg-gradient1:hover {
@@ -620,6 +630,10 @@ button {
 .bg-gry2 {
     background-color: #f9f9f9;
     color: #666;
+}
+
+.bg-gry3 {
+    background-color: #ddd;
 }
 
 hr{
@@ -704,13 +718,15 @@ hr{
     padding-left: 7px;
 }
 
-/*.form-select,*/
-.form-control-lg {
-    height: 57px;
+.form-select,
+.form-control-lg{
     color: #333;
     font-weight: 200;
     border-radius: 7px;
     border: solid 1px #ededed;
+}
+.form-control-lg {
+    height: 57px;
     margin-bottom: 5px;
 }
 
@@ -828,13 +844,35 @@ modal
     width:305px;
 }
 
+.modal-small .modal-header{
+    height: 38px;
+    background-color: #02597e;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.modal-small .modal-header .btn-close2 {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    color:#fff;
+}
+
+.modal-small .modal-header .modal-title{
+    font-size: 14px;
+    color:#fff;
+}
+
 @media screen and (min-width:500px){
     .modal-dialog{
         margin: 1.75rem auto;
     }
+    .modal-m {
+        max-width: 350px;
+    }
 }
 @media screen and (max-width:320px){
-    .dialog-sm{
+    .dialog-sm, 
+    .dialog-m{
         width:95%;
     }
     .modal-header{

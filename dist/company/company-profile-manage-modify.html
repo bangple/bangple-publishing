@@ -73,33 +73,212 @@
 
     <!-- Modal 사진 및 동영상 등록 -->
     <div class="modal fade" id="modalAddphoto" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-m" role="document">
             <div class="modal-content">
                 <div class="modal-header justify-content-center">
                     <h4 class="modal-title align-center">사진 및 동영상 등록</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body px-5 pt-4">
+                <div class="modal-body px-4 pt-4">
                     <p class="fs-sm font-color-99 mt-4">
                         최대 <b class="text-danger">20</b>개의 사진/동영상을 업체들이 등록할수있습니다.
                     </p>
-                    <ul class="list-group list-group-flush font-size-normal">
-                        <li class="list-group-item form-check">
-                            <input class="form-check-input" type="checkbox" id="11" name="checkbox">
-                            <label for="11">해충방역</label>
-                        </li>
-                        <li class="list-group-item form-check">
-                            <input class="form-check-input" type="checkbox" id="22" name="checkbox">
-                            <label for="22">소독방역</label>
-                        </li>
-                        <li class="list-group-item form-check">
-                            <input class="form-check-input" type="checkbox" id="33" name="checkbox">
-                            <label for="33">드론방역</label>
-                        </li>
-                    </ul>
+                    <h6>사진 등록</h6>
+                    <p class="fs-sm font-color-99 mt-3">
+                        직접 일하는 사진은 고객들에게 큰 도움이 됩니다.<br>(전/후 결과, 작업 과정, 장비 등)
+                    </p>
+                    <button type="button" class="btn btn-primary2 btn-ms px-4 w-100">사진 등록하기</button>
+                    <hr>
+                    <h6>동영상 등록</h6>
+                    <p class="fs-sm font-color-99 mt-3">
+                        유튜브에 올린 업체님의 영상 URL을 입력하세요.
+                    </p>
+                    <input class="form-control mb-3" type="text" id="" placeholder="URL 입력">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4 w-100">유튜브 URL 등록하기</button>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary2 btn-ms px-4" data-bs-dismiss="modal">확인</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 지역 선택 -->
+    <div class="modal fade" id="modalSelectarea" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-m" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">지역 선택</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4">
+                    <select class="form-select" id="select-input">
+                        <option>전국</option>
+                        <option>강원도</option>
+                        <option>경기도</option>
+                        <option>경상남도</option>
+                    </select>
+                    <select class="form-select mt-3" id="select-input">
+                        <option>강원도</option>
+                        <option>강원도</option>
+                        <option>경기도</option>
+                        <option>경상남도</option>
+                    </select>
+                    <select class="form-select mt-3" id="select-input">
+                        <option>경기</option>
+                        <option>경기</option>
+                        <option>경기도</option>
+                        <option>경상남도</option>
+                    </select>
+                    <div class="scroll-y mt-3 px-3" style="height: 200px;">
+                        <ul class="list-group list-group-flush font-size-normal">
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                <label for="11">경기전체</label>
+                            </li>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="22" name="checkbox">
+                                <label for="22">고양시</label>
+                            </li>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="33" name="checkbox">
+                                <label for="33">과천시</label>
+                            </li>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="44" name="checkbox">
+                                <label for="44">고양시</label>
+                            </li>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="55" name="checkbox">
+                                <label for="55">과천시</label>
+                            </li>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="66" name="checkbox">
+                                <label for="66">고양시</label>
+                            </li>
+                            <li class="list-group-item form-check">
+                                <input class="form-check-input" type="checkbox" id="77" name="checkbox">
+                                <label for="77">과천시</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 정산정보 -->
+    <div class="modal fade modalAccounts" id="modalAccounts" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-m modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">정산정보</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <!-- 업체인증 -->
+                        <div class="accordion-item">
+                            <h6 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                                    업체인증 <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">인증완료</span></div>
+                                </button>
+                            </h6>
+                            <div class="accordion-collapse collapse show" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body px-0">
+                                    <div class="font-size-samll02 card card2 bg-gry2">
+                                        
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs nav-tabs3" role="tablist">
+                                            <li class="nav-item" style="width: 50%;">
+                                                <a href="#personal" class="nav-link active" data-bs-toggle="tab" role="tab">
+                                                    개인
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" style="width: 50%;">
+                                                <a href="#business" class="nav-link" data-bs-toggle="tab" role="tab">
+                                                    사업자
+                                                </a>
+                                            </li>
+                                        </ul>
+                
+                                        <!-- Tabs content -->
+                                        <div class="tab-content mt-2">
+                                            <!-- 개인 -->
+                                            <div class="tab-pane show active" id="personal" role="tabpanel">
+                
+                                                <h6 class="fs-sm">이메일</h6>
+                                                <input class="form-control mb-3" type="text" id="" placeholder="honggildong@gmail.com">
+                
+                                                <h6 class="fs-sm">본인인증 <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">인증완료</span></div></h6>
+                                                <p>안전한 거래를 위해 인증합니다.</p>
+                                                <button type="button" class="btn btn-primary2 btn-ms px-4 w-100">수정</button>
+                
+                                            </div>
+                
+                                            <!-- 사업자 -->
+                                            <div class="tab-pane" id="business" role="tabpanel">
+                
+                                                <h6 class="fs-sm">사업자등록번호</h6>
+                                                <input class="form-control mb-3" type="text" id="" placeholder="1234-23445">
+                
+                                                <h6 class="fs-sm">사업자등록번호인증 <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">인증완료</span></div></h6>
+                                                <p>안전한 거래를 위해 인증합니다.</p>
+                                                <button type="button" class="btn btn-primary2 btn-ms px-4 w-100">수정</button>
+                
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- 계좌관리 -->
+                        <div class="accordion-item">
+                            <h6 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    계좌관리
+                                </button>
+                            </h6>
+                            <div class="accordion-collapse collapse" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body px-0">
+                                    <div class="font-size-samll02 card card2 bg-gry2">
+                                        <p>본 정보는 향후 회원탈퇴시에 캐시반환을 위한 정보로 활용됩니다.</p>
+                                        <h6 class="fs-sm">예금주</h6>
+                                        <div class="text_box">
+                                            <input class="form-control" type="text" id="fl-textarea" placeholder="참좋은 해충방역">
+                                            <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/30자</div>
+                                        </div>
+
+                                        <h6 class="fs-sm">은행명</h6>
+                                        <select class="form-select" id="select-input">
+                                            <option>은행을 선택하세요.</option>
+                                            <option>은행</option>
+                                            <option>은행</option>
+                                            <option>은행</option>
+                                        </select>
+
+                                        <h6 class="fs-sm mt-3">계좌번호</h6>
+                                        <div class="text_box mb-3">
+                                            <input class="form-control" type="text" id="fl-textarea" placeholder="입금받으실 계좌번호를 입력하세요">
+                                        </div>
+                                        
+                                        <button type="button" class="btn btn-primary2 btn-ms px-4 w-100">수정</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="fs-sm mt-4">
+                        <p class="h7">유의사항</p>
+                        <p class="font-color-99">* 해당 수집 정보는 국세청 공시 제2018-15호에 따라 과세자료 제출용으로 이용됩니다.</p>
+                        <p class="font-color-99">* 개인으로 업체 인증시, 타인 명의로 본인 인증을 할 경우 법적 처벌을 받을 수 있습니다.</p>
+                    </div>                    
+                    
                 </div>
             </div>
         </div>
@@ -119,9 +298,9 @@
                 <!-- 알림, 마이페이지 -->
                 <div class="d-flex justify-content-end order-lg-3">
                     <div class="d-flex align-items-center ms-lg-auto">
-                        <div class="nav-item dropdown">
-                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="ai-bell"></i><span class="alarm-on"></span></a>
-                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="ai-bell"></i><span class="alarm-on"></span></a>
+                        <div class="nav-item dropdown mt-1">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
                             <div class="dropdown-menu dropdown-alarm">
                                 <div class="dropdown-column dropdown-item mb-2">
                                     <h6>알림</h6>
@@ -157,18 +336,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nav-item nav-mypage dropdown">
-                            <a class="nav-link btn-ms rounded-pill btn-primary" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user font-color-ff mb-1"></i></a>
+                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
+                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user"></i></button>
                             <div class="dropdown-menu dropdown-mypage">
                                 <div class="dropdown-column dropdown-item">
                                     <h6 class="pb-1">홍길동 고객님</h6>
-                                    <div class="mt-3">
-                                        <a href="../customer/customer-estimate-list-group.html" class="d-flex justify-content-between align-items-center py-2">
-                                            <span>받은 견적</span>
+                                    <div class="d-flex justify-content-center bg-light-grey radius-7 fs-xs py-2">
+                                        <span class="me-3">평점: 25</span><span class="ms-3">리뷰: 30</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="../company/company-profile-manage.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>프로필 관리</span>
                                             <span><i class="ai-chevron-right"></i></span>
                                         </a>
                                         <hr class="my-1">
-                                        <a href="../mypage/mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
+                                        <a href="../company/company-mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
                                             <span>마이페이지</span>
                                             <span><i class="ai-chevron-right"></i></span>
                                         </a>
@@ -189,21 +371,25 @@
                         <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body justify-content-end">
-                        <!-- Menu - web-->
+                        <!-- Menu-->
                         <ul class="navbar-nav me-3">
                             <li class="nav-item dropdown dropdown-mega">
                                 <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
                             </li>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-company-list.html"> 업체찾기 </a>
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-request-list.html">받은요청</a>
                             </li>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-estimate-list-group.html">받은견적</a>
+                                <a class="nav-link dropdown-toggle mt-1" href="#">자동견적</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../customer/customer-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../company/company-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-profile-manage.html">프로필</a>
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
@@ -239,8 +425,8 @@
                                     </div>
                                 </div>
                                 <div class="btn-group-sm">
-                                    <button class="btn btn-primary2 px-4">활동분석</button>
-                                    <button class="btn btn-outline-primary2 px-4">미리보기</button>
+                                    <button class="btn btn-primary2 px-4" onclick="location.href='company-activity-analysis.html'">활동분석</button>
+                                    <button class="btn btn-outline-primary2 px-4" onclick="location.href='company-profile-manage-preview.html'">미리보기</button>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +436,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <div class="font-size-large03 mb-0">이름</div>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <input class="form-control form-control-ms mb-3" type="text" id="" placeholder="참좋은 해충방역">
                         <hr>
@@ -259,7 +445,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">대표서비스</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="mb-0 row ms-2">
                             <div class="col-lg-2 col-md-3 col-sm-4 form-check">
@@ -281,18 +467,18 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">한 줄 소개</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="form-floating text_box">
                             <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="80" placeholder="10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다."></textarea>
-                            <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/80</div>
+                            <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/80자</div>
                         </div>
                     </div>
 
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">본인인증</h5>
-                            <button class="btn-bgnone font-color-33 fs-sm align-items-center">인증완료</button>
+                            <button class="btn-bgnone font-color-33 fs-sm align-items-center btn-underline">인증완료</button>
                         </div>
                         <hr>
                     </div>
@@ -300,7 +486,10 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">활동지역</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">등록하기</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">등록하기</button>
+                        </div>
+                        <div>
+                            <input class="form-control form-control-ms mb-3" type="text" id="" placeholder="서울 강남구 강남대로 238 스카이쏠라빌딩">
                         </div>
                         <hr>
                     </div>
@@ -308,7 +497,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">이동가능 지역</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">등록하기</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline" data-bs-toggle="modal" data-bs-target="#modalSelectarea">등록하기</button>
                         </div>
                         <hr>
                         
@@ -334,7 +523,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">연락 가능 시간</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="d-flex flex-wrap justify-content-start">
                             <select class="form-select w-25" id="select-input">
@@ -359,7 +548,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">결제수단</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="mb-0 row ms-2">
                             <div class="col-lg-2 col-md-3 col-sm-4 form-check">
@@ -381,7 +570,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">계좌정보</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">수정</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline" data-bs-toggle="modal" data-bs-target="#modalAccounts">수정</button>
                         </div>
                         <p class="mb-0">인증완료 / 방플은행 ****5275</p>
                         <hr>
@@ -390,7 +579,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">경력</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div>
                             <select class="form-select w-25" id="select-input">
@@ -406,7 +595,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">직원수</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-8">
@@ -424,7 +613,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">사업자등록증</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         
                         <section class="container card card2 bg-secondary3 mypage-wrap">
@@ -508,7 +697,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">세금계산서 등록</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <section class="container card card2 bg-secondary3 mypage-wrap">
                             <div class="d-flex flex-wrap align-items-center justify-content-around px-2">
@@ -536,7 +725,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">제공 서비스</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="card px-4 py-3">
                             <div class="p-2 pb-0">
@@ -551,13 +740,13 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">업체서비스 상세설명</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="form-floating text_box">
                             <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="80" placeholder="10년 이상 경력의 해충방역 가능합니다. 10년 이상 경력의 해충방역 가능합니다."></textarea>
                             <div class="d-flex justify-content-between align-items-center">
                                 <code>30자 이상 입력해주세요.</code>
-                                <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/200</div>
+                                <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/200자</div>
                             </div>
                         </div>
                     </div>
@@ -622,7 +811,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">질문답변</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">저장</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">저장</button>
                         </div>
                         <div class="qna-list mb40">
                             <ul>
@@ -653,7 +842,7 @@
                     <div class="mt-5">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="font-size-large03 mb-0">링크</h5>
-                            <button class="btn-bgnone font-primary2 fs-sm align-items-center">등록하기</button>
+                            <button class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline">등록하기</button>
                         </div>
                         <div class="mt-3 row align-items-center">
                             <div class="col-md-2">
@@ -798,7 +987,18 @@
                 $('.text_box .count span').html(200);
             }
             });
-      </script>
+    </script>
+    <script text="javascript/text">
+        $('.text_box input').keyup(function(){
+            var content = $(this).val();
+            $('.text_box .count span').html(content.length);
+            if (content.length > 200){
+                alert("최대 200자까지 입력 가능합니다.");
+                $(this).val(content.substring(0, 200));
+                $('.text_box .count span').html(200);
+            }
+            });
+    </script>
     
 
 

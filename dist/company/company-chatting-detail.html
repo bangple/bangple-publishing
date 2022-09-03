@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BANGPLE</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#02597e">
+    <meta name="theme-color" content="#ffffff">-->
+    <!-- Page loading styles-->
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <link rel="stylesheet" media="screen" href="../assets/css/style.css">
+
+    <!-- 슬라이드
+    <link rel="stylesheet" media="screen" href="../assets/css/normalize.css">-->
+    <link href="../assets/js/jquery.gallery3d.css" rel="stylesheet">
+    <script src="../assets/js/modernizr.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.gallery3d.js"></script>
+    <script src="../assets/js/action.js" defer></script>
+
+</head>
+<!-- Body-->
+
+<body>
+    <!-- Modal 요청서 확인 -->
+    <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modalRequest" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">내 요청서 보기</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pb-5">
+                    <ul class="list-group list-group-flush font-size-normal">
+                        <li class="list-group-item px-0">
+                            공간 유형을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 주거 공간</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            소독을 원하는 위치가 어디인가요?
+                            <p class="mb-0 mt-2 font-color-99">- 실내</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            추가로 원하는 소독이 있나요?
+                            <p class="mb-0 mt-2 font-color-99">- 해충방역</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            공간의 면적을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 10평 미만</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            정기 소독을 원하시나요?
+                            <p class="mb-0 mt-2 font-color-99">- 1회 소독</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            서비스 희망일을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 협의 가능해요.</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            서비스 희망 지역을 선택해주세요.
+                            <p class="mb-0 mt-2 font-color-99">- 서울 서초구 신원동</p>
+                        </li>
+                        <li class="list-group-item px-0">
+                            소독 관련 문의사항을 알려주세요!
+                            <p class="mb-0 mt-2 font-color-99">- 비용이 궁금합니다</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal 신고하기 -->
+    <div class="modal fade" id="modalSingo" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modalSingo" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">신고하기</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pt-4">
+                    <div class="card card2 bg-gry2 py-4 align-center fs-sm mb-3">
+                        신고하기 사유 확인이 불가할 경우 해당 신고건은<br>미조치됩니다.
+                    </div>
+                    <ul class="list-group list-group-flush font-size-normal">
+                        <li class="list-group-item form-check">
+                            <input class="form-check-input" type="radio" id="11" name="radio">
+                            <label for="11">서비스와 관련없는 광고/홍보</label>
+                        </li>
+                        <li class="list-group-item form-check">
+                            <input class="form-check-input" type="radio" id="22" name="radio">
+                            <label for="22">부적절한 언어(욕설/성희롱 등) 사용</label>
+                        </li>
+                    </ul>
+                    <p class="fs-sm font-color-99 mt-4">
+                        서비스 진행중 문제가 생겼다면 증빙자료(대화내역, 문자메세지, <br>
+                        녹취, 사진 등)와 함께 방플 이메일 support@soomgo.com로 <br>
+                        접수해 주세요. 신고 결과는 별도 안내되지 않습니다.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4" data-bs-dismiss="modal">신고하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal 채팅방 나가기 -->
+    <div class="modal fade" id="modalTalkout" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered dialog-sm" role="document">
+            <div class="modal-content" style="width:305px">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">채팅방 나가기</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4 align-center">
+                    <p class="font-size-large03 font-primary2">채팅방을 나가시겠어요?</p>
+                    
+                    <p class="font-color-66 mt-4">
+                        채팅방을 나가면 <br>
+                        더 이상 리뷰를 작성할 수 없으며, <br>
+                        대화 내용이 삭제되고 <br>
+                        채팅목록에서도 삭제됩니다.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p class="align-center w-100"><button type="button" class="btn btn-primary2 btn-ms px-4"  onclick="location.href='customer-chatting-list.html';">채팅방 나가기</button></p>
+                    <p class="align-center mb-0 mt-2">
+                        <button type="button" class="btn-bgnone font-underline font-primary2 font-size-samll01 mt-2" data-bs-dismiss="modal">취소</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 리뷰작성하기 -->
+    <div class="modal fade" id="modalWriteReview" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-448" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">리뷰작성</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4">
+                    <div class="card card2 bg-gry2 py-4 align-center fs-sm mb-3">
+                        거래를 완료한 경우에만 리뷰를 작성해주세요. <br>
+                        허위 또는 악의적 리뷰는 이용에 제한이 있을 수 있습니다.
+                    </div>
+                    
+                    <!-- Item-->
+                    <div class="product-list d-flex flex-wrap align-items-center justify-content-between mb-3">
+                        <dl>
+                            <dt class="font-size-large01 font-color-66">참좋은 해충방역</dt>
+                            <dd class="">
+                                <p class="font-color-99 fs-sm mb-1">해충방역</p>
+                                <div class="star-rating align-items-center">
+                                    <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                                </div>
+                            </dd>
+                        </dl>
+                        <div class="thumbnail-style me-0">
+                            <a href="#" class="thumbnail-style3"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
+                        </div>
+                    </div>
+                    <textarea class="form-control fs-sm" id="textarea-input" rows="4" placeholder="참좋은방역 업체님과 거래는 어떠셨나요?"></textarea>
+
+                    <h6 class="mt-4">사진 첨부</h6>
+                    <div class="d-flex my-3">
+                        <button class="btn btn-lg btn-outline btn-square me-1 " style="width:50px; ">+</button>
+                        <p class="join-thumbnail me-1 mb-0" style="background-image: url(../assets/img/login/thumbnail01.jpg); ">
+                            <span class="thumbnail-text ">등록된<br>이미지</span>
+                            <button class="badge rounded-pill bg-danger "><i class="ai-x "></i></button>
+                        </p>
+                    </div>
+                    <p class="font-color-99 fs-sm mb-0">
+                        사진은 최대 10MB 이하의 BMP, JPEG, JPG, PNG 파일 5장까지 첨부 가능합니다.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4" data-bs-dismiss="modal">리뷰 등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 작성한 리뷰 -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">작성한 리뷰</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4">
+                    <!-- 리뷰 리스트1 -->
+                    <div class="review-list">
+                        <div class="star-rating align-items-center">
+                            <p class="font-color-66 m-0 me-4">김**</p>
+                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                            <span class="font-size-samll02 font-color-99 ms-4">2022.02.13</span>
+                        </div>
+                        <!-- 리뷰 내용 -->
+                        <div class="mt-3 pb-1">
+                            <!-- 텍스트 -->
+                            <p class="fs-sm font-color-99">설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! </p>
+                            <!-- 이미지 -->
+                            <div class="row flex-wrap">
+                                <!-- Item-->
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card thumbnail-style board-thumbnail card-hover">
+                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- Item-->
+                                <div class="col-lg-6 mb-3">
+                                    <div class="card thumbnail-style board-thumbnail card-hover">
+                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <!-- Item-->
+                                <div class="col-lg-6">
+                                    <div class="card thumbnail-style board-thumbnail card-hover">
+                                        <a class="card-img-top" href="#"><img src="../assets/img/main/img_mainvisual01.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                        <button class="btn btn-primary2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 리뷰 삭제 -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered dialog-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">리뷰 삭제</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4 align-center">
+                    <p class="font-size-large03 font-primary2">리뷰를 삭제하시겠습니까?</p>
+                </div>
+                <div class="modal-footer">
+                    <p class="align-center w-100">
+                        <button class="btn btn-primary2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">삭제하기</button>
+                    </p>
+                    <p class="align-center mb-0 mt-2">
+                        <button type="button" class="btn-bgnone font-underline font-primary2 font-size-samll01 mt-2" data-bs-dismiss="modal">취소</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <main class="page-wrapper sub-con">
+
+        <!-- Navbar (Solid background)-->
+        <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
+            <div class="container">
+                <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html">
+                    <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
+                    <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130">
+                </a>
+                <!-- 알림, 마이페이지 -->
+                <div class="d-flex justify-content-end order-lg-3">
+                    <div class="d-flex align-items-center ms-lg-auto">
+                        <div class="nav-item dropdown mt-1">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <div class="dropdown-menu dropdown-alarm">
+                                <div class="dropdown-column dropdown-item mb-2">
+                                    <h6>알림</h6>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-inform mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>요청서가 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">김길동님에 견적 요청서가 도착했습니다. 요청 내용을 자세히 확인해보세요</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
+                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user"></i></button>
+                            <div class="dropdown-menu dropdown-mypage">
+                                <div class="dropdown-column dropdown-item">
+                                    <h6 class="pb-1">홍길동 고객님</h6>
+                                    <div class="d-flex justify-content-center bg-light-grey radius-7 fs-xs py-2">
+                                        <span class="me-3">평점: 25</span><span class="ms-3">리뷰: 30</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>프로필 관리</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                        <hr class="my-1">
+                                        <a href="#" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>마이페이지</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary mt-4" style="width:100% ;">로그아웃</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="navbar-toggler order-lg-4" id="btn_side_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-collapse offcanvas-end order-lg-2" id="primaryMenu">
+                    <div class="offcanvas-header navbar-shadow">
+                        <h5 class="mt-1 mb-0">Menu</h5>
+                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <!-- Menu-->
+                        <ul class="navbar-nav me-3">
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#"> 받은요청</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#">자동견적</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../company/company-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#">프로필</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Navbar (Solid background)-->
+
+        <!-- Page content-->
+        <!-- 채팅창 상단 -->
+        <section class="container">
+            <header class="row chat_header align-middle my-2">
+                <div class="col-lg-3">
+                    <button class="btn btn-bgnone fs-lg font-color-66 px-0" onclick="location.href='customer-chatting-list.html'">
+                        <i class="ai-arrow-left-circle font-size-large05 me-3"></i> <b>참좋은 해충방역</b>
+                    </button>
+                </div>
+                <div class="col-lg-9 d-flex align-middle justify-content-end">
+                    <a href="#" class="d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalRequest"><img src="../assets/img/icon/icon_career.png" class="me-2"> 내 요청서보기</a>
+                    <a href="#" class="d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalSingo"><img src="../assets/img/icon/icon_singo.png" class="me-2"> 신고하기</a>
+                    <a href="#" class="d-flex align-middle font-color-66 me-5" data-bs-toggle="modal" data-bs-target="#modalTalkout"><img src="../assets/img/icon/icon_chatout.png" class="me-2"> 채팅방 나가기</a>
+                    
+                    <button class="btn btn-outline-primary2 me-1">거래예약</button>
+                    <button class="btn btn-primary2" data-bs-toggle="modal" data-bs-target="#modalWriteReview">거래확정(리뷰작성)</button>
+                    <!-- 리뷰 작성 후 - 작성한 리뷰보기 버튼으로 바뀜
+                        <button class="btn btn-primary2 ms-1" data-bs-toggle="modal" href="#exampleModalToggle" role="button">작성한 리뷰보기</button>
+                    -->
+                </div>
+            </header>
+        </section>
+
+        <!-- 채팅창 -->
+        <section class="container chat-section">
+            <div class="row">
+                <div class="chat-area col-lg-8 col-md-8 col-sm-8">
+                    <ul class="group_message_balloon">
+                        <li class="date_check">
+                            <span>2022년 02월 15일 화요일</span>
+                        </li>
+                        
+
+                        <li class="talk_pc_user new_message_balloon_area">
+                            <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
+                                <a>
+                                    <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                </a>
+                            </div>
+                            <div class="message_balloon card_message">
+                                <span class="copy_area">홍길동 고객님 안녕하세요. 요청서에 따른 견적입니다.</span>
+                                <div class="txt_confirm _status" aria-label="메시지 작성시간">
+                                    <span class="_time"><em>오후</em> <span>2:13</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk_pc_partner new_message_balloon_area">
+                            <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
+                                <a>
+                                    <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                </a>
+                            </div>
+                            <div class="message_balloon card_message">
+                                <span class="copy_area">
+                                    <h6>견적서</h6>
+                                    <p>홍길동 고객님 안녕하세요. 요청서에 
+                                        따른 견적입니다.</p>
+                                    <hr>
+                                    <dl class="d-flex">
+                                        <dt>서비스 </dt>
+                                        <dd>해충방역</dd>
+                                    </dl>
+                                    <dl class="d-flex">
+                                        <dt>견적금액 </dt>
+                                        <dd>총 70,000원 부터 ~</dd>
+                                    </dl>
+                                    <hr>
+                                    <p>견적금애게 대해 궁금한 점을 물어보세요.</p>
+                                    <button class="btn btn-primary btn-100">업체 프로필 보기</button>
+                                </span>
+                                <div class="txt_confirm _status" aria-label="메시지 작성시간">
+                                    <span class="_time"><em>오후</em> <span>2:13</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="talk_pc_user new_message_balloon_area">
+                            <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
+                                <a>
+                                    <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
+                                </a>
+                            </div>
+                            <div class="message_balloon card_message">
+                                <span class="copy_area">
+                                    견적서 잘 받았어요~! <br>
+                                    “관련 장소/시간 등등 업무를<br> 
+                                    협의진행”
+                                </span>
+                                <div class="txt_confirm _status" aria-label="메시지 작성시간">
+                                    <span class="_time"><em>오후</em> <span>2:13</span></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chat-footer">
+                        <p class="fs-sm font-primary2">
+                            <i class="ai-alert-triangle font-color-66 fs-lg me-1"></i> 업체님이 답변을 기다리고 있어요
+                        </p>
+                        <div class="chat-write-wrap justify-content-between">
+                            <div class="chat_input_area">
+                                <input title="메시지 입력창" class="form-control chat_input" placeholder="메시지를 입력하세요."></input>
+                            </div>
+                            <div class="submit_btn_wrap">
+                                <button class="btn btn-primary2">전송</button>
+                                <button class="btn btn-outline-primary2">첨부</button>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="aside col-lg-4 col-md-4">
+                    <ul class="nav nav-tabs nav-tabs3 mt-3" role="tablist">
+                        <li class="nav-item" style="width: 50%;">
+                            <a href="#company-summary" class="nav-link active" data-bs-toggle="tab" role="tab">
+                                업체요약
+                            </a>
+                        </li>
+                        <li class="nav-item" style="width: 50%;">
+                            <a href="#progress" class="nav-link" data-bs-toggle="tab" role="tab">
+                                거래진행정보
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tabs content -->
+                    <div class="tab-content">
+                        <!-- Tabs 1 -->
+                        <div class="tab-pane fade show active" id="company-summary" role="tabpanel">
+
+                            <!-- itam 1 -->
+                            <div class="pb-4">
+                                <div class="card card2 bg-secondary3 height-100">
+                                    <div class="product-list d-flex flex-wrap align-middle mt-1">
+            
+                                        <div class="thumbnail-style me-4">
+                                            <a href="#" class="thumbnail-style3"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
+                                        </div>
+                                        <div class="">
+                                            <dl>
+                                                <dt class="font-size-large02">
+                                                    참좋은 해충방역
+                                                </dt>
+                                                <dd class="my-2">
+                                                    <span class="font-size-samll02"><b>4.5</b> (5)</span>
+                                                </dd>
+                                                <dt class="font-size-normal font-primary">총 50,000원 부터</dt>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="nav nav-tabs nav-tabs2" role="tablist">
+                                <li class="nav-item">
+                                    <a href="#info" class="nav-link active" data-bs-toggle="tab" role="tab">
+                                        업체정보
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#photo" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        사진/동영상
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#review" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        리뷰(5)
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#qna" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        질문답변
+                                    </a>
+                                </li>
+                            </ul>
+                
+                            <hr>
+                            
+                            
+                            <!-- Tabs content -->
+                            <div class="tab-content">
+                                <!-- Tabs 1 -->
+                                <div class="tab-pane fade show active scroll-y pe-2" id="info" role="tabpanel">
+                                    <h6 class="mt-4 mb-3">한 줄 소개</h6>
+                                    <p class="fs-sm pb-3">
+                                        안녕하세요? 참좋은 해충방역 업체입니다.<br>
+                                        압도적인 1위가 될수 있었던 이유는 과정에 충실했기 때문이라고 생각됩니다.<br> 
+                                        지금도 지속적으로 방역과정을 업데이트 하고 있습니다. 최고가 되겠습니다.
+                                    </p>
+                
+                                    <h6 class="mt-4 mb-3">기본정보</h6>
+                                    <div class="pb-3">
+                                        <ul class="list-group list-group-flush fs-sm">
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-check-square me-2 mb-1"></i>
+                                                본인 인증여부 : 본인 인증
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-briefcase me-2 mb-1"></i>
+                                                거래 성사된 횟수 : 4049회
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-map-pin me-2 mb-1"></i>
+                                                거래 성사 가능 위치 : 서울특별시 관악구
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-clock me-2 mb-1"></i>
+                                                연락 가능 시간: 오전7시 – 오후11시
+                                            </li>
+                                            <li class="list-group-item px-0 d-flex border-0 font-color-99">
+                                                <i class="ai-credit-card me-2 mt-1"></i>
+                                                결제 가능한 방식 : 카드결제, 계좌이체, 현금결제 가능 
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <h6 class="mt-4 mb-3">추가정보</h6>
+                                    <div class="pb-3">
+                                        <ul class="list-group list-group-flush fs-sm">
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-layers me-2 mb-1"></i>
+                                                경력 : 15년
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-users me-2 mb-1"></i>
+                                                직원수 : 4명
+                                            </li>
+                                            <li class="list-group-item px-0 font-color-99">
+                                                <i class="ai-file-text me-2 mb-1"></i>
+                                                사업자등록증 등록여부 : 등록완료
+                                            </li>
+                                            <li class="list-group-item px-0 border-0 font-color-99">
+                                                <i class="ai-award me-2 mb-1"></i>
+                                                자격증 등록여부 : 등록완료
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <h6 class="mt-4 mb-3">제공 서비스</h6>
+                                    <div class="d-flex flex-wrap justify-content-around p-2 pb-3">
+                                        <span class="tag-big rounded-pill bg-secondary3">해충방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">해충방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">해충방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">소독방역</span>
+                                        <span class="tag-big rounded-pill bg-secondary3">드론방역</span>
+                                    </div>
+
+                                    
+                                    <h6 class="mt-4 mb-3">업체소개</h6>
+                                    <p class="fs-sm mb-5">
+                                        안녕하세요? 참좋은 해충방역 업체입니다.<br>
+                                        압도적인 1위가 될수 있었던 이유는 과정에 충실했기 때문이라고 생각됩니다.<br> 
+                                        지금도 지속적으로 방역과정을 업데이트 하고 있습니다. 최고가 되겠습니다.
+                                    </p>
+
+                                </div>
+                
+                
+                                <!-- Tabs 2 -->
+                                <div class="tab-pane fade scroll-y pe-2" id="photo" role="tabpanel">
+                                    <h6 class="mt-4 mb-3">사진 및 동영상</h6>
+                                    <!-- 포토 리스트 -->
+                                    <div class="pb-1 photo-list">
+                                        <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                        </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/login/img_joinimg.png" alt=""></a>
+                                        </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/login/thumbnail01.jpg" alt=""></a>
+                                        </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_service01.png" alt=""></a>
+                                        </div>
+                                        <div class="card thumbnail-style-s card-hover">
+                                            <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_bnr01.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Tabs 3 -->
+                                <div class="tab-pane fade scroll-y pe-2" id="review" role="tabpanel">
+                
+                                    <h6 class="mt-4 mb-3">리뷰</h6>
+                                    <div class="card bg-gry2 p-4 mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="mb-0 br-right br-gry pe-4">4.5 </h2>
+                                            <div class="ps-4">
+                                                <div class="star-rating align-items-center">
+                                                    <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                                                </div>
+                                                <p class="font-size-samll02 font-color-33 pt-2 m-0">5개 리뷰</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- 리뷰 리스트1 -->
+                                    <div class="review-list fs-sm">
+                                        <div class="star-rating align-items-center">
+                                            <p class="font-color-66 m-0 me-4">김**</p>
+                                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                                            <span class="font-size-samll02 font-color-99 ms-4">2022.02.13</span>
+                                        </div>
+                                        <!-- 리뷰 내용 -->
+                                        <div class="mt-3 pb-1">
+                                            <!-- 이미지 -->
+                                            <div class="pb-1 photo-list">
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                                </div>
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                                </div>
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                    
+                
+                                    <!-- 리뷰 리스트2 -->
+                                    <div class="review-list fs-sm mt-4">
+                                        <div class="star-rating align-items-center">
+                                            <p class="font-color-66 m-0 me-4">김**</p>
+                                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                                            <span class="font-size-samll02 font-color-99 ms-4">2022.02.13</span>
+                                        </div>
+                                        <!-- 리뷰 내용 -->
+                                        <div class="mt-3 pb-1">
+                                            <!-- 텍스트 -->
+                                            <p>설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                                제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! </p>
+                                        </div>
+
+                                        <!-- reply -->
+                                        <div class="p-4" style="background-color: #f9f9f9;">
+                                            <div class="star-rating align-items-center">
+                                                <p class="font-color-66 m-0 me-4">김**</p>
+                                                <span class="font-size-samll02 font-color-99 ms-4">2022.02.13</span>
+                                            </div>
+                                            <!-- 리뷰 내용 -->
+                                            <div class="mt-3 pb-1">
+                                                <!-- 텍스트 -->
+                                                <p class="contentStr">설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                                    제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! 설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                                    제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                
+                                    <!-- 리뷰 리스트3 -->
+                                    <div class="review-list fs-sm my-4">
+                                        <div class="star-rating align-items-center">
+                                            <p class="font-color-66 m-0 me-4">김**</p>
+                                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                                            <span class="font-size-samll02 font-color-99 ms-4">2022.02.13</span>
+                                        </div>
+                                        <!-- 리뷰 내용 -->
+                                        <div class="mt-3 pb-1">
+                                            <!-- 이미지 -->
+                                            <div class="pb-1 photo-list">
+                                                <div class="card thumbnail-style-s card-hover d-flex align-items-center">
+                                                    <a class="thumbnail-style3 card-img-top" href="#"><img src="../assets/img/main/img_drone.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <!-- 텍스트 -->
+                                            <p>설명도 친철하시고 오자마자 벌레 잡아주시고 꼼꼼히 방력해주셔서 안심이 됐어요 
+                                                제가 신경서야 할 부분도 잘 알려주셔서 너무 좋았어요 ㅠㅠ 감사합니다! </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                
+                                <!-- Tabs 4 -->
+                                <div class="tab-pane fade scroll-y pe-2" id="qna" role="tabpanel">
+                                    <h6 class="mt-4 mb-3">질문답변</h6>
+                                    <div class="qna-list mb40 fs-sm">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Q.방역서비스 절차는 어떻게 진행 되나요?</dt>
+                                                    <dd class="contentStr">
+                                                        상담->현장방문->해충유무확인->방역진행->예방법안내->결제진행
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
+                                                    <dd class="contentStr">
+                                                        코로나예방소독 / 바퀴 / 개미 / 쥐 / 기타보행해충 / 옴진드기 / 저곡해충 (권연벌레 / 톱가슴머리대장 / 쌀바구미 / 화랑곡나방) / 매트리스 케어(집먼지진드기)
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Q.방역서비스 절차는 어떻게 진행 되나요?</dt>
+                                                    <dd class="contentStr">
+                                                        면적에따라 달라집니다.(공급면적기준)<br>
+                                                        바퀴벌레퇴치기준(상황에따라금액은조정될수있습니다.)<br>
+                                                        1평~9평 원룸 6만원<br>
+                                                        1평~9평 투룸 7만원
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
+                                                    <dd class="contentStr">
+                                                        해충은 제품이 아니고 유입경로가 매우 다양하고 유입경로를 차단하는데 한계가 있기 때문에 A/S 또는 환불이 어렵습니다.
+                                                        하지만 정기적인 관리로 번식을 최대한억제 하며 박멸되도록 최대한 노력하겠습니다.
+                                                        해충은 제품이 아니고 유입경로가 매우 다양하고 유입경로를 차단하는데 한계가 있기 때문에 A/S 또는 환불이 어렵습니다.
+                                                        하지만 정기적인 관리로 번식을 최대한억제 하며 박멸되도록 최대한 노력하겠습니다.
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Q.어떤 서비스를 전문적으로 진행하나요?</dt>
+                                                    <dd class="contentStr">
+                                                        코로나예방소독 / 바퀴 / 개미 / 쥐 / 기타보행해충 / 옴진드기 / 저곡해충 (권연벌레 / 톱가슴머리대장 / 쌀바구미 / 화랑곡나방) / 매트리스 케어(집먼지진드기)
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        <!-- Tabs 2 -->
+                        <div class="progress-wrap tab-pane fade scroll-y" id="progress" role="tabpanel">
+                            <!-- 거래없음 --
+                            <div class="text-center mt-6 pt-4">
+                                <img src="../assets/img/icon/icon_empty.png" alt="">
+                                <p class="mt-4 mb-7 pb-7">진행중인 거래가 없습니다.</p>
+                            </div>
+                            !-- // 거래없음 -->
+
+                            <!-- 거래진행정보 -->
+                            <div class="card card2 bg-gry2">
+                                <h6 class="align-center">
+                                    <img src="../assets/img/icon/icon_infop.png" alt="">
+                                    <p class="font-primary2 mt-1">현재진행상태</p>
+                                </h6>
+                                <div class="progress-area justify-content-center">
+                                    <p class="on">
+                                        <span class="dot"></span>
+                                        <span class="progress-name fs-xs">견적접수</span>
+                                    </p>
+                                    <p class="on">
+                                        <span class="dot"></span>
+                                        <span class="progress-name fs-xs">거래예약</span>
+                                    </p>
+                                    <p class="on">
+                                        <span class="dot"></span>
+                                        <span class="progress-name fs-xs">거래확정</span>
+                                    </p>
+                                </div>
+                                
+                                <button class="btn btn-primary btn-100 mt-4">이어서 거래하기</button>
+                            </div>
+                            <!-- //거래진행정보 -->
+                            <div class="px-3 mt-4">
+                                <h6>서비스 정보</h6>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>서비스 명 :</dd>
+                                    <dt class="font-primary">해충방역</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>서비스 진행일 :</dd>
+                                    <dt class="font-primary">2022.04.12(화)</dt>
+                                </dl>
+
+                                <hr>
+
+                                <h6>거래 정보</h6>  
+                                <dl class="d-flex justify-content-between">
+                                    <dd>서비스 금액 :</dd>
+                                    <dt class="font-primary">70,000원</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>방플페이 수수료 :</dd>
+                                    <dt class="font-primary">245원</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>최종 결제금액 :</dd>
+                                    <dt class="font-primary">70,245원</dt>
+                                </dl>
+
+                                <hr>
+
+                                <h6>결제 정보</h6>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>결제일시 :</dd>
+                                    <dt class="font-primary">2022-04-12 13:24</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>결제수단 :</dd>
+                                    <dt class="font-primary">토스페이</dt>
+                                </dl>
+                                <dl class="d-flex justify-content-between">
+                                    <dd>결제방식 :</dd>
+                                    <dt class="font-primary">일시불</dt>
+                                </dl>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+        </section>
+        
+
+
+
+
+        <!-- Footer-->
+        <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+        <footer class="footer bg-dark pt-5 pb-6">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-7">
+                        <h4 class="font-color-ff">1599-5319</h4>
+                        <p class="fs-xs font-color-ed">평일 10:00 ~ 18:00<br> (점심시간 13:00 ~ 14:00 제외 주말/공휴일 제외)</p>
+                        <div class="mt-4 mb-5 pb-3">
+                            <button class="btn btn-round btn-gry btn-md d-lg-inline-block me-2">App store</button>
+                            <button class="btn btn-round btn-gry btn-md d-lg-inline-block">Play store</button>
+                        </div>
+                        <!-- mobile -->
+                        <div class="display-mobile">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <!-- Item -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            방역플렛폼소개
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse collapsed" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <a href="#!">회사소개</a>
+                                            <a href="#!">방플안내</a>
+                                            <a href="#!">채용안내</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            고객안내
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <a href="#!">이용안내</a>
+                                            <a href="#!">안전정책</a>
+                                            <a href="#!">예상금액</a>
+                                            <a href="#!">업체찾기</a>
+                                            <a href="#!">방플 보증</a>
+                                            <a href="#!">업체에게 묻다</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            업체안내
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <a href="#!">이용안내</a>
+                                            <a href="#!">업체가이드</a>
+                                            <a href="#!">업체타입</a>
+                                            <a href="#!">업체센터</a>
+                                        </div>
+                                    </div>
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            고객센터
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapse" id="flush-collapseFour" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <a href="../board/board-notice-main.html">공지사항</a>
+                                            <a href="#!">자주묻는질문</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // mobile -->
+
+                        <hr>
+
+                        <div class="copyright pt-4">
+                            <p class="">(주)company은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.</p>
+                            <p class="mb-1">상호명:(주)Company · 대표이사:홍길동 · 개인정보책임관리자:홍길동 · 주소:서울특별시 강남구 테헤란로 000, L7 00타워 5층</p>
+                            <p class="mb-1">사업자등록번호:120-88-22325 · 통신판매업신고증:제 2015-서울강남-00567 호 · 직업정보제공사업 신고번호:서울청 제 2019-21호</p>
+                            <p class="mb-1">고객센터:1234-5678 · 이메일:support@brand.com</p>
+                            <p class="mb-1">Copyright ©Company Inc. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-7 pt-0">
+                        <div class="row widget widget-light">
+                            <div class="col-lg-3 col-md-3 mb-grid-gutter">
+                                <p class="h7 widget-title mb-3">방역플렛폼소개</p>
+                                <a href="#!" class="mt-3">회사소개</a>
+                                <a href="#!">방플안내</a>
+                                <a href="#!">채용안내</a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 mb-grid-gutter">
+                                <p class="h7 widget-title mb-3">고객안내</p>
+                                <a href="#!" class="mt-3">이용안내</a>
+                                <a href="#!">안전정책</a>
+                                <a href="#!">예상금액</a>
+                                <a href="#!">업체찾기</a>
+                                <a href="#!">방플 보증</a>
+                                <a href="#!">업체에게 묻다</a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 mb-grid-gutter">
+                                <p class="h7 widget-title mb-3">업체안내</p>
+                                <a href="#!" class="mt-3">이용안내</a>
+                                <a href="#!">업체가이드</a>
+                                <a href="#!">업체타입</a>
+                                <a href="#!">업체센터</a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 mb-grid-gutter">
+                                <p class="h7 widget-title mb-3">고객센터</p>
+                                <a href="../board/board-notice-main.html" class="mt-3" target="_parent">공지사항</a>
+                                <a href="#!" target="_parent">자주묻는질문</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+
+
+    <script text="javascript/text">
+        $(document).ready(function(){
+     
+            $('.qna-list ul li').each(function(){
+                //var content = $(this).children('.content');
+                var content = $(this).find('.contentStr');
+     
+                var content_txt = content.text();
+                var content_html = content.html();
+                var content_txt_short = content_txt.substring(0,250)+"...";
+                var btn_more = $('<a href="javascript:void(0)" class="more font-primary2">더보기 <i class="ai-chevron-down"></i></a>');
+     
+                
+                $(this).append(btn_more);
+                
+                if(content_txt.length >= 250){
+                    content.html(content_txt_short)
+                    
+                }else{
+                    btn_more.hide()
+                }
+                
+                btn_more.click(toggle_content);
+                function toggle_content(){
+                    if($(this).hasClass('short')){
+                        // 접기 상태
+                        $(this).html('더보기 <i class="ai-chevron-down"></i>');
+                        content.html(content_txt_short)
+                        $(this).removeClass('short');
+                    }else{
+                        // 더보기 상태
+                        $(this).html('접어 두기 <i class="ai-chevron-up"></i>');
+                        content.html(content_html);
+                        $(this).addClass('short');
+     
+                    }
+                }
+            });
+        });
+      </script>
+
+</body>
+
+</html>

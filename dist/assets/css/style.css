@@ -560,6 +560,7 @@ main
     width:auto;
 }
 
+/* 프로세스 */
 .process-area .process {
     width: calc(100% - 70px);
     height: 15px;
@@ -568,20 +569,29 @@ main
     border-color: #e7e9ee;
     background-color: #e7e9ee;
 }
-
 .process-area .process div {
     height: 9px;
 }
+
 .process-area .process-2 {
     width: 100%;
     height: 6px;
     background-color: #e7e9ee;
 }
-
 .process-area .process-2 div {
     height: 6px;
     background-color: #02526a;
 }
+
+.process-area .process-3 {
+    width: calc(100% - 70px);
+    background-color: transparent;
+}
+.process-area .process-3 div {
+    height: 20px;
+}
+
+
 
 .select-service .select-list li {
     height: 57px;
@@ -1308,7 +1318,7 @@ ul.list-unstyled li a:hover,
     border-radius: 0;
 }
 .nav-tabs.nav-tabs3 .nav-link.active {
-    font-weight: 600;
+    font-weight: 500;
     border:none;
     border-bottom: 5px solid #666;
 }
@@ -1697,6 +1707,7 @@ ul.list-unstyled li a:hover,
     min-height: calc(100vh - 210px) ;
 }
 
+/* 업체프로필 */
 @media screen and (min-width:540px) and (max-width:1000px){
     .company-profile .row .col-md-2{
         width: 22.66666667%;
@@ -1740,3 +1751,25 @@ ul.list-unstyled li a:hover,
         text-align: left!important;
     }
 }
+
+.modalAccounts .accordion-flush .accordion-item:last-child {
+    border-bottom: 1px!important;
+}
+.modalAccounts .accordion-button,
+.modalAccounts .accordion-button:not(.collapsed){
+    font-size: 16px!important;
+    color: #333;
+    font-weight: 500!important;
+}
+.modalAccounts .accordion-button:not(.collapsed)::after,
+.modalAccounts .accordion-button::after {
+    content: '편집';
+    font-size: 12px;
+    text-align: right;
+    color: #2d9599;
+    font-weight: 500;
+    width: 35px;
+    background-image:none;
+    transform:none;
+}
+

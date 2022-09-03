@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BANGPLE</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#02597e">
+    <meta name="theme-color" content="#ffffff">-->
+    <!-- Page loading styles-->
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <link rel="stylesheet" media="screen" href="../assets/css/style.css">
+
+    <!-- 슬라이드
+    <link rel="stylesheet" media="screen" href="../assets/css/normalize.css">-->
+    <link href="../assets/js/jquery.gallery3d.css" rel="stylesheet">
+    <script src="../assets/js/modernizr.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.gallery3d.js"></script>
+    <script src="../assets/js/action.js" defer></script>
+
+</head>
+<!-- Body-->
+
+<body>
+    <main class="page-wrapper sub-con">
+
+        <!-- Navbar (Solid background)-->
+        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
+            <div class="container">
+                <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html">
+                    <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
+                    <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130">
+                </a>
+                <!-- 알림, 마이페이지 -->
+                <div class="d-flex justify-content-end order-lg-3">
+                    <div class="d-flex align-items-center ms-lg-auto">
+                        <div class="nav-item dropdown mt-1">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <div class="dropdown-menu dropdown-alarm">
+                                <div class="dropdown-column dropdown-item mb-2">
+                                    <h6>알림</h6>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-inform mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>요청서가 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">김길동님에 견적 요청서가 도착했습니다. 요청 내용을 자세히 확인해보세요</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
+                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user"></i></button>
+                            <div class="dropdown-menu dropdown-mypage">
+                                <div class="dropdown-column dropdown-item">
+                                    <h6 class="pb-1">홍길동 고객님</h6>
+                                    <div class="d-flex justify-content-center bg-light-grey radius-7 fs-xs py-2">
+                                        <span class="me-3">평점: 25</span><span class="ms-3">리뷰: 30</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="../company/company-profile-manage.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>프로필 관리</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                        <hr class="my-1">
+                                        <a href="../company/company-mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>마이페이지</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary mt-4" style="width:100% ;">로그아웃</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="navbar-toggler order-lg-4" id="btn_side_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-collapse offcanvas-end order-lg-2" id="primaryMenu">
+                    <div class="offcanvas-header navbar-shadow">
+                        <h5 class="mt-1 mb-0">Menu</h5>
+                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <!-- Menu-->
+                        <ul class="navbar-nav me-3">
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-request-list.html">받은요청</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#">자동견적</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../company/company-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-profile-manage.html">프로필</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Navbar (Solid background)-->
+
+        
+        <!-- Page content-->
+        
+        <!-- 이전페이지 버튼-->
+        <div class="container mb-2">
+            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-profile-manage.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
+        </div>
+        <h3 class="container my-5 font-width-300">활동분석</h3>
+
+        <!-- 견적발송수 -->
+        <section class="container">
+            <h5 class="font-size-large03 mt-5 mb-1">견적발송수</h5>
+            <p class="fs-sm font-color-99">적극적인 견적 발송으로 거래 성사 확률을 높여보세요.</p>
+
+            <div class="card card2 bg-gry2">
+                <div class="d-flex align-content-center justify-content-center">
+                    그래프 자리
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로필 열람수 -->
+        <section class="container">
+            <h5 class="font-size-large03 mt-5 mb-1">프로필 열람수</h5>
+            <p class="fs-sm font-color-99">80% 이상의 고객들이 프로필 확인 후 거래 성사를 결정합니다.</p>
+
+            <div class="card card2 bg-gry2">
+                <div class="d-flex align-content-center justify-content-center">
+                    그래프 자리
+                </div>
+            </div>
+        </section>
+
+        <!-- 누적 거래 완료수 -->
+        <section class="container">
+            <h5 class="font-size-large03 mt-5 mb-1">누적 거래 완료수</h5>
+            <p class="fs-sm font-color-99">거래 성사하기를 통해 카운팅됩니다.</p>
+
+            <div class="card card2 bg-gry2">
+                <div class="row align-content-center justify-content-start">
+                    <div class="col-lg-1 fs-sm">본인</div>
+                    <div class="col-lg-9 process-area d-flex align-content-center mx-0">
+                        <h6 class="font-primary mb-0" style="width:50px;">25건</h6>
+                        <div class="process-3 px-0 border-0" style="height:20px;">
+                            <div class="bg-primary" style="width:20%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row align-content-center justify-content-start mt-4">
+                    <div class="col-lg-1 fs-sm pe-0">상위 20%</div>
+                    <div class="col-lg-9 process-area d-flex align-content-center mx-0">
+                        <h6 class="font-color-99 mb-0" style="width:50px;">160건</h6>
+                        <div class="process-3 px-0 border-0" style="height:20px;">
+                            <div class="bg-gry3" style="width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 누적 평점 -->
+        <section class="container mb-7">
+            <h5 class="font-size-large03 mt-5 mb-1">누적 평점</h5>
+            <p class="fs-sm font-color-99">리뷰 요청 기능을 통해 고객에게 리뷰 작성을 요청하세요.</p>
+
+            <div class="card card2 bg-gry2">
+                <div class="row align-content-center justify-content-start">
+                    <div class="col-lg-1 fs-sm">본인</div>
+                    <div class="col-lg-9 d-flex align-content-center mx-0">
+                        <h6 class="font-primary mb-0" style="width:50px;">4.2</h6>
+                        <div class="star-rating align-items-center">
+                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                            <span class="font-size-samll02 font-primary mx-2">3개</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row align-content-center justify-content-start mt-4">
+                    <div class="col-lg-1 fs-sm pe-0">상위 20%</div>
+                    <div class="col-lg-9 d-flex align-content-center mx-0">
+                        <h6 class="font-color-99 mb-0" style="width:50px;">4.7</h6>
+                        <div class="star-rating align-items-center">
+                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
+                            <span class="font-size-samll02 mx-2">95개</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Footer-->
+        <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+        <iframe src="../layout/footer.html" class="footer-iframe"></iframe>
+
+    </main>
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <script text="javascript/text">
+        $(document).ready(function(){
+     
+            $('.qna-list ul li').each(function(){
+                //var content = $(this).children('.content');
+                var content = $(this).find('.contentStr');
+     
+                var content_txt = content.text();
+                var content_html = content.html();
+                var content_txt_short = content_txt.substring(0,250)+"...";
+                var btn_more = $('<a href="javascript:void(0)" class="more font-primary2">자세히 보기 <i class="ai-chevron-down"></i></a>');
+     
+                
+                $(this).append(btn_more);
+                
+                if(content_txt.length >= 250){
+                    content.html(content_txt_short)
+                    
+                }else{
+                    btn_more.hide()
+                }
+                
+                btn_more.click(toggle_content);
+                function toggle_content(){
+                    if($(this).hasClass('short')){
+                        // 접기 상태
+                        $(this).html('자세히 보기 <i class="ai-chevron-down"></i>');
+                        content.html(content_txt_short)
+                        $(this).removeClass('short');
+                    }else{
+                        // 더보기 상태
+                        $(this).html('접어 두기 <i class="ai-chevron-up"></i>');
+                        content.html(content_html);
+                        $(this).addClass('short');
+     
+                    }
+                }
+            });
+        });
+      </script>
+    
+
+
+</body>
+
+</html>

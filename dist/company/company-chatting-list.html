@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BANGPLE</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#02597e">
+    <meta name="theme-color" content="#ffffff">-->
+    <!-- Page loading styles-->
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <link rel="stylesheet" media="screen" href="../assets/css/style.css">
+
+    <!-- 슬라이드
+    <link rel="stylesheet" media="screen" href="../assets/css/normalize.css">-->
+    <link href="../assets/js/jquery.gallery3d.css" rel="stylesheet">
+    <script src="../assets/js/modernizr.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.gallery3d.js"></script>
+    <script src="../assets/js/action.js" defer></script>
+
+</head>
+<!-- Body-->
+
+<body>
+    <main class="page-wrapper sub-con">
+
+        <!-- Navbar (Solid background)-->
+        <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
+            <div class="container">
+                <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html">
+                    <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
+                    <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130">
+                </a>
+                <!-- 알림, 마이페이지 -->
+                <div class="d-flex justify-content-end order-lg-3">
+                    <div class="d-flex align-items-center ms-lg-auto">
+                        <div class="nav-item dropdown mt-1">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                            <div class="dropdown-menu dropdown-alarm">
+                                <div class="dropdown-column dropdown-item mb-2">
+                                    <h6>알림</h6>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-inform mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>요청서가 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">김길동님에 견적 요청서가 도착했습니다. 요청 내용을 자세히 확인해보세요</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
+                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user"></i></button>
+                            <div class="dropdown-menu dropdown-mypage">
+                                <div class="dropdown-column dropdown-item">
+                                    <h6 class="pb-1">홍길동 고객님</h6>
+                                    <div class="d-flex justify-content-center bg-light-grey radius-7 fs-xs py-2">
+                                        <span class="me-3">평점: 25</span><span class="ms-3">리뷰: 30</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>프로필 관리</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                        <hr class="my-1">
+                                        <a href="#" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>마이페이지</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary mt-4" style="width:100% ;">로그아웃</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="navbar-toggler order-lg-4" id="btn_side_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-collapse offcanvas-end order-lg-2" id="primaryMenu">
+                    <div class="offcanvas-header navbar-shadow">
+                        <h5 class="mt-1 mb-0">Menu</h5>
+                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <!-- Menu-->
+                        <ul class="navbar-nav me-3">
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#"> 받은요청</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#">자동견적</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../company/company-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#">프로필</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Navbar (Solid background)-->
+
+        <!-- Page content-->
+        <h3 class="sub-header-style2 container my-5 font-width-300">채팅</h3>
+        <!-- 지역 선택 -->
+        <section class="container">
+            <div class="col-lg-4 col-sm-4 mb-3">
+              <div class="position-relative">
+                <input class="form-control form-control-lg ps-5" type="text" id="" placeholder="이름과 서비스를 검색하세요.">
+                <label class="input-icon-search">
+                    <i class="ai-search"></i>
+                </label>
+            </div>
+            </div>
+        </section>
+        <!-- 채팅 리스트 -->
+        <section class="container chat-list pt-3 pb-7">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a href="#all" class="nav-link active" data-bs-toggle="tab" role="tab">
+                        전체
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#not-read" class="nav-link" data-bs-toggle="tab" role="tab">
+                        안읽음
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#favorite" class="nav-link" data-bs-toggle="tab" role="tab">
+                        즐겨찾기
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#deal" class="nav-link" data-bs-toggle="tab" role="tab">
+                        거래성사
+                    </a>
+                </li>
+            </ul>
+
+            <hr>
+          
+            
+            <!-- Tabs content -->
+            <div class="tab-content pt-4">
+
+                <!-- Tabs 1 -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    
+                    <!-- itam 1 -->
+                    <div class="pb-5">
+                        <div class="card card2 bg-secondary3 height-100 mb-3">
+                            <div class="product-list d-flex flex-wrap align-middle mt-1">
+                                <div class="thumbnail-style">
+                                    <a href="customer-chatting-detail.html" class="thumbnail-style4"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
+                                </div>
+                                <div class="company-info">
+                                    <dl>
+                                        <dt class="d-flex flex-wrap align-middle font-size-large03">
+                                            <a href="customer-chatting-detail.html" class="font-color-66"><span>참좋은 해충방역</span></a>
+                                            <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">답변안함</span></div>
+                                        </dt>
+                                        <p class="fs-xs font-width-normal mt-2 mb-0"><span>해충방역</span> <span>경기 의정부시</span></p>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="customer-chatting-detail.html" class="fs-sm font-color-99">안녕하세요 참좋은 해충방역 업체입니다. 업체선정 아직 안하셨으면... </a>
+                        <hr>
+                        <div class="d-flex justify-content-between align-middle px-3">
+                            <span class="fs-sm">총 70,000원 부터 ~</span>
+                            <span class="fs-xs font-color-99">2002.02.03</span>
+                        </div>
+                    </div>
+
+                    <!-- itam 2 -->
+                    <div class="pb-5">
+                        <div class="card card2 bg-secondary3 height-100 mb-3">
+                            <div class="product-list d-flex flex-wrap align-middle mt-1">
+                                <div class="thumbnail-style">
+                                    <a href="customer-chatting-detail.html" class="thumbnail-style4"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
+                                </div>
+                                <div class="company-info">
+                                    <dl>
+                                        <dt class="d-flex flex-wrap align-middle font-size-large03">
+                                            <a href="customer-chatting-detail.html" class="font-color-66"><span>참좋은 해충방역</span></a>
+                                            <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">답변안함</span></div>
+                                        </dt>
+                                        <p class="fs-xs font-width-normal mt-2 mb-0"><span>해충방역</span> <span>경기 의정부시</span></p>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="customer-chatting-detail.html" class="fs-sm font-color-99">안녕하세요 참좋은 해충방역 업체입니다. 업체선정 아직 안하셨으면... </a>
+                        <hr>
+                        <div class="d-flex justify-content-between align-middle px-3">
+                            <span class="fs-sm">총 70,000원 부터 ~</span>
+                            <span class="fs-xs font-color-99">2002.02.03</span>
+                        </div>
+                    </div>
+
+                    <!-- itam 3 -->
+                    <div class="pb-5">
+                        <div class="card card2 bg-secondary3 height-100 mb-3">
+                            <div class="product-list d-flex flex-wrap align-middle mt-1">
+                                <div class="thumbnail-style">
+                                    <a href="customer-chatting-detail.html" class="thumbnail-style4"><img src="../assets/img/main/img_a01.png" alt="업체썸네일"></a>
+                                </div>
+                                <div class="company-info">
+                                    <dl>
+                                        <dt class="d-flex flex-wrap align-middle font-size-large03">
+                                            <a href="customer-chatting-detail.html" class="font-color-66"><span>참좋은 해충방역</span></a>
+                                            <div class="badge py-0"><span class="rounded-pill bg-secondary4 font-primary2 px-3 ms-1">답변안함</span></div>
+                                        </dt>
+                                        <p class="fs-xs font-width-normal mt-2 mb-0"><span>해충방역</span> <span>경기 의정부시</span></p>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="customer-chatting-detail.html" class="fs-sm font-color-99">안녕하세요 참좋은 해충방역 업체입니다. 업체선정 아직 안하셨으면... </a>
+                        <hr>
+                        <div class="d-flex justify-content-between align-middle px-3">
+                            <span class="fs-sm">총 70,000원 부터 ~</span>
+                            <span class="fs-xs font-color-99">2002.02.03</span>
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>
+
+                <!-- Tabs 2 -->
+                <div class="tab-pane fade" id="not-read" role="tabpanel">
+                    <h5 class="font-size-large03 mt-5 mb-4">안읽음</h5>
+                    
+                    
+                </div>
+
+                <!-- Tabs 3 -->
+                <div class="tab-pane fade" id="favorite" role="tabpanel">
+                    <h5 class="font-size-large03 mt-5 mb-4">즐겨찾기</h5>
+                    
+                    
+                </div>
+
+                <!-- Tabs 4 -->
+                <div class="tab-pane fade" id="deal" role="tabpanel">
+                    <h5 class="font-size-large03 mt-5 mb-4">거래성사</h5>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Footer-->
+        <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+        <iframe src="../layout/footer.html" class="footer-iframe"></iframe>
+
+    </main>
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+
+
+
+
+</body>
+
+</html>
