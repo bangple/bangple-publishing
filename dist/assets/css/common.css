@@ -929,7 +929,13 @@ dropdown
         content: none;
     }
 }
-
+.dropdown-item.btn-primary2, .dropdown-item:hover.btn-primary2, .dropdown-item:focus.btn-primary2{
+    color: #fff;
+}
+.dropdown-item.btn, .dropdown-item:hover.btn, .dropdown-item:focus.btn{
+    margin: 5px;
+    width: 95%;
+}
 /*
 badge
 ***********************************************************************/

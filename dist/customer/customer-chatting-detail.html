@@ -389,12 +389,12 @@
         <!-- 채팅창 상단 -->
         <section class="container">
             <header class="row chat_header align-middle my-2">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3">
                     <button class="btn btn-bgnone fs-lg font-color-66 px-0" onclick="location.href='customer-chatting-list.html'">
                         <i class="ai-arrow-left-circle font-size-large05 me-3"></i> <b>참좋은 해충방역</b>
                     </button>
                 </div>
-                <div class="col-lg-9 d-flex align-middle justify-content-end">
+                <div class="col-lg-9 col-md-9 d-flex flex-wrap align-middle justify-content-end">
                     <a href="#" class="d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalRequest"><img src="../assets/img/icon/icon_career.png" class="me-2"> 내 요청서보기</a>
                     <a href="#" class="d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalSingo"><img src="../assets/img/icon/icon_singo.png" class="me-2"> 신고하기</a>
                     <a href="#" class="d-flex align-middle font-color-66 me-5" data-bs-toggle="modal" data-bs-target="#modalTalkout"><img src="../assets/img/icon/icon_chatout.png" class="me-2"> 채팅방 나가기</a>
@@ -405,12 +405,28 @@
                         <button class="btn btn-primary2 ms-1" data-bs-toggle="modal" href="#exampleModalToggle" role="button">작성한 리뷰보기</button>
                     -->
                 </div>
+                <!-- mobile -->
+                <div class="btn-group dropdown">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <div class="dropdown-menu my-1">
+                        <a href="#" class="dropdown-item d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalRequest"><img src="../assets/img/icon/icon_career.png" class="me-2"> 내 요청서보기</a>
+                        <a href="#" class="dropdown-item d-flex align-middle font-color-66 me-4" data-bs-toggle="modal" data-bs-target="#modalSingo"><img src="../assets/img/icon/icon_singo.png" class="me-2"> 신고하기</a>
+                        <a href="#" class="dropdown-item d-flex align-middle font-color-66 me-5" data-bs-toggle="modal" data-bs-target="#modalTalkout"><img src="../assets/img/icon/icon_chatout.png" class="me-2"> 채팅방 나가기</a>
+                        
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item btn btn-outline-primary2 me-1">거래예약</button>
+                        <button class="dropdown-item btn btn-primary2" data-bs-toggle="modal" data-bs-target="#modalWriteReview">거래확정(리뷰작성)</button>
+                    </div>
+                </div>
             </header>
         </section>
 
-        <!-- 채팅창 -->
+        
         <section class="container chat-section">
             <div class="row">
+                <!-- 채팅창 -->
                 <div class="chat-area col-lg-8 col-md-8 col-sm-8">
                     <ul class="group_message_balloon">
                         <li class="date_check">
@@ -418,7 +434,7 @@
                         </li>
                         
 
-                        <li class="talk_pc_user new_message_balloon_area">
+                        <li class="talk_user new_message_balloon_area">
                             <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
                                 <a>
                                     <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
@@ -431,7 +447,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="talk_pc_partner new_message_balloon_area">
+                        <li class="talk_partner new_message_balloon_area">
                             <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
                                 <a>
                                     <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
@@ -460,7 +476,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="talk_pc_user new_message_balloon_area">
+                        <li class="talk_user new_message_balloon_area">
                             <div class="thumbnail_profile _thmbnail" aria-label="프로필 사진">
                                 <a>
                                     <img src="../assets/img/main/img_a01.png" alt="레스트키즈앤슬라임카페" width="31" onerror="this.src = '/static/front/pc/img/@tmp_img_100X100_1.jpg';">
@@ -493,7 +509,10 @@
                         </div>                    
                     </div>
                 </div>
-                <div class="aside col-lg-4 col-md-4">
+                <!-- // 채팅창 -->
+
+                <!-- 업체정보 -->
+                <div class="aside col-lg-4 col-md-4 col-sm-4">
                     <ul class="nav nav-tabs nav-tabs3 mt-3" role="tablist">
                         <li class="nav-item" style="width: 50%;">
                             <a href="#company-summary" class="nav-link active" data-bs-toggle="tab" role="tab">
@@ -903,6 +922,8 @@
                     </div>
 
                 </div>
+                
+                <!-- // 업체정보 -->
             </div>
             
             

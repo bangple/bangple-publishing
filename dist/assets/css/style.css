@@ -188,11 +188,8 @@ main
     text-align: center;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:800px) {
     .main-estimate {
-        width: 100%;
-        top: -23px;
-        width: 100%;
         height: 55px;
     }
     .main-estimate p {
@@ -201,6 +198,14 @@ main
     .main-estimate p::before{
         background-size: 34px;
         margin: 0 10px 0 30px;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    .main-estimate {
+        width: 100%;
+        top: -23px;
     }
 }
 
@@ -970,6 +975,7 @@ button.btn-square {
 .thumbnail-style a.thumbnail-style4 {
     width: 52px;
     height: 52px;
+    margin: 0 auto;
 }
 
 .thumbnail-style a.add-img{
@@ -1072,12 +1078,26 @@ button.btn-square {
         position: initial;
         width: 100%;
     }
-    .product-list .company-info{
-        width: 100%;
-    }
     .product-list .thumbnail-style{
         width: 100%;
         margin: 0 auto 20px;
+    }
+    .product-list .company-info{
+        width: 100%;
+    }
+
+    .product-list.img-small .company-info{
+        width: calc(100% - 90px);
+    }
+    .product-list.img-small .thumbnail-style{
+        width: 80px;
+        margin: 0;
+    }
+    .product-list.img-small .thumbnail-style a.thumbnail-style4 {
+        margin: 0;
+    }
+    .product-list.img-small .badge {
+        margin-top: 0!important;
     }
     .product-list .thumbnail-style a.thumbnail-style2{
         width: 100%;
@@ -1600,32 +1620,32 @@ ul.list-unstyled li a:hover,
 }
 
 
-.group_message_balloon .talk_pc_partner.new_message_balloon_area .thumbnail_profile {
+.group_message_balloon .talk_partner.new_message_balloon_area .thumbnail_profile {
     left: 0;
 }
-.group_message_balloon .talk_pc_partner .message_balloon{
+.group_message_balloon .talk_partner .message_balloon{
     float: left;
     margin-left: 40px;
 }
-.group_message_balloon .talk_pc_partner .message_balloon .txt_confirm{
+.group_message_balloon .talk_partner .message_balloon .txt_confirm{
     left: 100%;
 }
-.group_message_balloon .talk_pc_partner .message_balloon>span.copy_area{
+.group_message_balloon .talk_partner .message_balloon>span.copy_area{
     margin-left: 10px;
 }
 
 
-.group_message_balloon .talk_pc_user.new_message_balloon_area .thumbnail_profile{
+.group_message_balloon .talk_user.new_message_balloon_area .thumbnail_profile{
     right: 0;
 }
-.group_message_balloon .talk_pc_user .message_balloon{
+.group_message_balloon .talk_user .message_balloon{
     float: right;
     margin-right: 40px;
 }
-.group_message_balloon .talk_pc_user .message_balloon .txt_confirm{
+.group_message_balloon .talk_user .message_balloon .txt_confirm{
     right: 100%;
 }
-.group_message_balloon .talk_pc_user .message_balloon>span.copy_area{
+.group_message_balloon .talk_user .message_balloon>span.copy_area{
     margin-right: 10px;
 }
 
@@ -1650,6 +1670,70 @@ ul.list-unstyled li a:hover,
     z-index: 999;
     overflow: hidden;
     
+}
+
+.chat_header .dropdown{
+    display: none;
+}
+@media screen and (max-width:640px){
+    .aside,
+    .chat_header .col-lg-9.d-flex{
+        display: none!important;
+    }
+    .chat_header{
+        position: relative;
+    }
+    .chat_header .dropdown{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 10px;
+        width: 45%;
+        text-align: right;
+    }
+    /* .chat_header .dropdown-menu{        
+        width: 92%;
+    } */
+    .chat-section {
+        padding: 0 14px 0 0;
+    }
+    .group_message_balloon{
+        position: relative;
+        margin: 136px 0px 0px;
+        height: calc(100vh - 255px);
+    }
+}
+@media screen and (max-width:420px){
+    .group_message_balloon{        
+        margin: 136px 0px 0px;
+        height: calc(100vh - 255px);
+    }
+    .group_message_balloon .message_balloon{
+        max-width: 65%;
+    }
+    .group_message_balloon .message_balloon>span.copy_area{
+        width: 90%;
+    }
+    .group_message_balloon .talk_user .message_balloon>span.copy_area{
+        margin-right: 0;
+    }
+    .group_message_balloon .talk_user .message_balloon{
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+    }
+    .group_message_balloon .talk_partner .message_balloon .txt_confirm {
+        left: 92%;
+    }
+    .group_message_balloon .talk_user .message_balloon .txt_confirm {
+        right: 92%;
+        text-align: right;
+    }
+}
+@media screen and (max-width: 320px){    
+    .chat-section {
+        padding: 0px 0px 0 0;
+    }
 }
 .chat-section .aside .scroll-y {
     height: calc(100vh - 520px);
@@ -1772,4 +1856,46 @@ ul.list-unstyled li a:hover,
     background-image:none;
     transform:none;
 }
+/* 프로필 완성도 프로필 */
+.profile-aside .tns-carousel-wrapper{
+    padding-bottom: 35px;
+}
+.profile-aside .tns-carousel-wrapper .tns-controls{
+    /* top: auto;
+    bottom: -15px; */
+    padding-top: 0;
+    text-align:center;
+    z-index:9999;
+}
+.profile-aside .tns-carousel-wrapper [data-controls]{
+    width: 3rem;
+    height: 2.96rem;
+    transition: all .3s ease-in-out;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: transparent;
+}
+.profile-aside .tns-carousel-wrapper .tns-controls~.tns-inner {
+    margin-bottom: 0 !important;
+}
+.profile-aside .tns-carousel-wrapper .tns-carousel-inner.tns-slider{
+    overflow: inherit;
+}
+.profile-aside .page-num{
+    position: absolute;
+    bottom: -30px;
+    width:100%;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
