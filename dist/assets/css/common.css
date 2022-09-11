@@ -372,6 +372,9 @@ common
 .font-underline {
     text-decoration: underline;
 }
+button.font-underline:hover {
+    text-decoration: underline;
+}
 
 .font-number {
     font-family: 'NanumSquareRound';
@@ -555,7 +558,9 @@ button {
     border-color: #2d9599;
     box-shadow: unset, 0 0 0 0 rgba(93, 207, 192, 0.5);
 }
-
+.cursor-pointer{
+    cursor: pointer;
+}
 
 /* background
 *****************************************************************************/
@@ -723,7 +728,7 @@ hr{
     color: #333;
     font-weight: 200;
     border-radius: 7px;
-    border: solid 1px #ededed;
+    border: solid 1px #d2d9dd;
 }
 .form-control-lg {
     height: 57px;
@@ -953,3 +958,10 @@ list-group
     border-width: 0 0 1px;
 }
 
+.bullet-list li{
+    margin-left: 10px;
+}
+.bullet-list li::before{
+    content: '*';
+    margin: 0 6px 0 -13px;
+}

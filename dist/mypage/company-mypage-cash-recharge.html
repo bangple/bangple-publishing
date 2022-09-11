@@ -51,9 +51,9 @@
                 <!-- 알림, 마이페이지 -->
                 <div class="d-flex justify-content-end order-lg-3">
                     <div class="d-flex align-items-center ms-lg-auto">
-                        <div class="nav-item dropdown mt-1">
-                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
-                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="fs-3 ai-bell"></i><span class="alarm-on"></span></a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="ai-bell"></i><span class="alarm-on"></span></a>
                             <div class="dropdown-menu dropdown-alarm">
                                 <div class="dropdown-column dropdown-item mb-2">
                                     <h6>알림</h6>
@@ -89,18 +89,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nav-item nav-mypage dropdown dropdown-toggle py-2">
-                            <button class="btn btn-ms rounded-pill btn-primary px-2" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user"></i></button>
+                        <div class="nav-item nav-mypage dropdown">
+                            <a class="nav-link btn-ms rounded-pill btn-primary" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user font-color-ff mb-1"></i></a>
                             <div class="dropdown-menu dropdown-mypage">
                                 <div class="dropdown-column dropdown-item">
                                     <h6 class="pb-1">홍길동 고객님</h6>
-                                    <div class="mt-3">
-                                        <a href="../customer/customer-estimate-list-group.html" class="d-flex justify-content-between align-items-center py-2">
-                                            <span>받은 견적</span>
+                                    <div class="d-flex justify-content-center bg-light-grey radius-7 fs-xs py-2">
+                                        <span class="me-3">평점: 25</span><span class="ms-3">리뷰: 30</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="../company/company-profile-manage.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>프로필 관리</span>
                                             <span><i class="ai-chevron-right"></i></span>
                                         </a>
                                         <hr class="my-1">
-                                        <a href="../mypage/mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
+                                        <a href="../mypage/company-mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
                                             <span>마이페이지</span>
                                             <span><i class="ai-chevron-right"></i></span>
                                         </a>
@@ -127,13 +130,16 @@
                                 <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
                             </li>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-company-list.html"> 업체찾기 </a>
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-request-list.html">받은요청</a>
                             </li>
                             <li class="nav-item dropdown dropdown-mega">
-                                <a class="nav-link dropdown-toggle mt-1" href="../customer/customer-estimate-list-group.html">받은견적</a>
+                                <a class="nav-link dropdown-toggle mt-1" href="#">자동견적</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../customer/customer-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../company/company-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-profile-manage.html">프로필</a>
                             </li>
                         </ul>
                     </div>
@@ -143,105 +149,129 @@
         <!-- /Navbar (Solid background)-->
 
         <!-- Page content-->
-        <h3 class="container my-5 font-width-300">마이페이지</h3>
-        <!-- 계정 -->
-        <section class="container mypage-main card card2 bg-secondary3 p-2">
-            <div class="d-flex flex-wrap mypage-header align-items-center p-2">
-                <div class="thumbnail-style me-4">
-                    <a href="#" class="thumbnail-style3"><img src="../assets/img/main/img_a02.png" alt="업체썸네일"></a>
+        <div class="container mb-2">
+            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-profile-manage.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
+        </div>
+        <h3 class="container my-5 font-width-300">캐시충전</h3>
+        
+        
+        <section class="container mt-5 mb-7" style="min-height: 500px;">
+            <div class="row">
+                <!-- 캐시충전  -->
+                <div class="col-lg-9 col-md-9 col-sm-12 mb-2">
+                    
+                    <div class="card card2 bg-secondary3 h-100">
+                        <div class="d-flex justify-content-center align-items-center font-size-large03 p-4">
+                            <b>보유캐시 <span class="px-3">:</span> <span class="font-primary2">50,000 캐시</span></b>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <dl>
-                        <dt class="font-size-large01 font-width-300 font-color-66">
-                            김방역 고객님
-                        </dt>
-                        <dd class="mt-2 font-color-99">
-                            <img src="../assets/img/logo/kakaotalk_logo.png" width="25" alt="카카오톡" class="me-2"> abcdefgh@gmail.com
-                        </dd>
-                    </dl>
+                <!-- // 캐시충전 -->
+
+                 <!-- 방플캐시 자동충전 -->
+                <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
+                    <button class="btn btn-primary d-flex flex-wrap justify-content-around align-items-center font-size-large01 h-100 w-100" onclick="location.href='';">
+                        <img src="../assets/img/icon/icon_cash_s.png" alt="방플캐시" class="me-2">
+                        <span>방플캐시 자동충전</span>
+                        <i class="ai-chevron-right font-size-large03 font-color-ff"></i>
+                    </button>
                 </div>
+                <!-- // 방플캐시 자동충전 -->   
+            </div>
+
+            <div class="row justify-content-end mt-7">
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">30,000 </b> + 3,000</p>
+                            <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦30,000</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">50,000 </b> + 7,500</p>
+                            <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦50,000</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">100,000 </b> + 20,000</p>
+                            <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦100,000</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">200,000 </b> + 50,000</p>
+                            <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦200,000</button>
+                        </li>
+                    </ul>
+
+                    <h5 class="font-size-large03 mt-5">결제수단</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                            <p class="mb-0 mt-2">
+                                <input class="form-check-input" type="radio" id="" name="radio" checked>
+                                <label class="form-check-label font-size-normal ms-2" for="">신용/체크카드</label>
+                            </p>
+                            <button class="btn btn-bgnone font-primary2 font-underline fs-sm px-0">+ 카드등록</button>
+                        </li>
+
+                        <!-- 카드등록 클릭하면 나옴 -->
+                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                            <p class="mb-0 mt-2">
+                                <input class="form-check-input" type="radio" id="" name="radio" checked>
+                                <label class="form-check-label font-size-normal ms-2" for="">신용/체크카드</label>
+                            </p>
+                            <p class="fs-sm font-color-66 mb-0">
+                                <span class="me-4"> [ 외환 ****5871 개인 ]</span>
+                                <button class="btn btn-bgnone font-primary2 fs-sm font-underline px-0">- 삭제</button>
+                            </p>
+                        </li>
+                        <li class="row">
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-99 mt-3">카드 번호</label>
+                                <input class="form-control form-control-lg border-grn" type="text" id="" placeholder="**** **** **** ****">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-99 mt-3">유효기간</label>
+                                <input class="form-control form-control-lg border-grn" type="text" id="" placeholder="MM/YY">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-99 mt-3">카드 비밀번호</label>
+                                <input class="form-control form-control-lg border-grn" type="text" id="" placeholder="비밀번호 앞 2자리">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-99 mt-3">생년월일 6자리</label>
+                                <input class="form-control form-control-lg border-grn" type="text" id="" placeholder="YYMMDD">
+                            </div>
+                            
+                            <p class="fs-sm font-color-66 mb-0 align-right">
+                                <button class="btn btn-bgnone font-primary2 fs-sm font-underline px-0">+ 등록하기</button>
+                            </p>
+                        </li>
+                        <!-- // 카드등록 -->
+
+                        <li class="list-group-item px-0 pb-3 mt-2">
+                            <input class="form-check-input" type="radio" id="" name="radio">
+                            <label class="form-check-label font-size-normal ms-2" for="">휴대폰</label>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-ms btn-primary2 w-100 mt-4">￦30,000 결제하기</button>
+
+                    <div class="card card2 bg-gry2 mt-5">
+                        <p class="font-color-33">방플캐시 이용안내</p>
+                        <ul class="bullet-list fs-sm font-color-99">
+                            <li>모든 상품은 부가세(VAT)포함 가격입니다.</li>
+                            <li>방플 캐시는 현금과 동일한 1:1 비율이며, 방플 서비스 사용을 위해 자유롭게 사용 하실 수 있습니다.</li>
+                            <li>방플 캐시를 충전하시면 상품에 따라 일정량의 보너스 캐시가 지급됩니다.</li>
+                            <li>방플 캐시는 세금계산서 발행 대상이 아닙니다. 구매 후 신용카드 전표/휴대폰 결제 영수증은 개인 소득공제용으로만 사용하실 수 있습니다.</li>
+                            <li>환불 가능 기간은 충전일로부터 5년까지이며, 환불 시 보너스 캐시는 자동으로 차감됩니다.</li>
+                            <li>마이페이지 > 충전/사용내역 > 환불받고자 하는 충전 건 선택 > 환불하기로 실시간 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-12"></div>
+
             </div>
         </section>
 
-        <!-- 설정 -->
-        <section class="container pt-5 pb-7" style="min-height:500px;">
-            <h4 class="font-size-large03 font-width-300 mb-4">설정</h4>
-            <div class="row pb-5 px-0">
-
-                <!-- Item-->
-                <div class="col-lg-6 mb-grid-gutter">
-                    <div class="card card3 card-hover py-3 px-2 cursor-pointer" style="height: 108px;" onclick="location.href='mypage-info.html';">
-                        <div class="card-body d-flex justify-content-between">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="px-3"><i class="ai-user front-icon font-color-99" style="color: #a0b3bb;"></i></span>
-                                <div>
-                                    <h6 class="font-color-66 mb-1">계정</h6>
-                                    <span class="fs-sm font-color-99">이메일, 휴대전화 번호등 계정정보를 수정 할 수 있어요</span>
-                                </div>
-                            </div>
-                            <button class="btn-bgnone"><i class="ai-chevron-right font-size-large03 font-color-99"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item-->
-                <div class="col-lg-6 mb-grid-gutter"> 
-                    <div class="card card3 card-hover py-3 px-2 cursor-pointer" style="height: 108px;" onclick="location.href='mypage-setting-notification.html';">
-                        <div class="card-body d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="px-3"><i class="ai-bell front-icon font-color-99" style="color: #a0b3bb;"></i></span>
-                                <div>
-                                    <h6 class="font-color-66 mb-1">알림</h6>
-                                    <span class="fs-sm font-color-99">받고싶은 알림 유형 및 채널을 선택할 수 있어요</span>
-                                </div>
-                            </div>
-                            <button class="btn-bgnone"><i class="ai-chevron-right font-size-large03 font-color-99"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <h4 class="font-size-large03 font-width-300 mb-4">안내</h4>
-            <div class="row pb-1 px-0">
-
-                <!-- Item-->
-                <div class="col-lg-6 mb-grid-gutter">
-                    <div class="card card3 card-hover py-3 px-2 cursor-pointer" style="height: 108px;" onclick="location.href='../board/board-notice-main.html';">
-                        <div class="card-body d-flex justify-content-between">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="px-3"><i class="ai-volume-2 front-icon font-color-99" style="color: #a0b3bb;"></i></span>
-                                <div>
-                                    <h6 class="font-color-66 mb-1">공지사항</h6>
-                                    <span class="fs-sm font-color-99">공지사항을 확인해 주세요.</span>
-                                </div>
-                            </div>
-                            <button class="btn-bgnone"><i class="ai-chevron-right font-size-large03 font-color-99"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item-->
-                <div class="col-lg-6 mb-grid-gutter">
-                    <div class="card card3 card-hover py-3 px-2 cursor-pointer" style="height: 108px;" onclick="location.href='#';">
-                        <div class="card-body d-flex justify-content-between align-items-center">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="px-3"><i class="ai-book-open front-icon font-color-99" style="color: #a0b3bb;"></i></span>
-                                <div>
-                                    <h6 class="font-color-66 mb-1">방플안내</h6>
-                                    <span class="fs-sm font-color-99">방플에대해 알아보기</span>
-                                </div>
-                            </div>
-                            <button class="btn-bgnone"><i class="ai-chevron-right font-size-large03 font-color-99"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- // 설정 -->
+        
 
 
 
