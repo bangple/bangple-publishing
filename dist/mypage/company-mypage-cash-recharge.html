@@ -39,6 +39,88 @@
 <!-- Body-->
 
 <body>
+    <!-- Modal 자동충전 -->
+    <div class="modal fade" id="modalAutocash" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">캐시 자동충전</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-4 overflow-scroll" id="accordionExample" style="height: 80vh;">
+                    <div class="card card2 bg-gry2 mt-4">
+                        <p class="font-color-33 text-center mb-0">방플캐시의 잔액이 부족할 때 자동충전합니다.</p>
+                    </div>
+                    
+                    <div class="accordion-item br-none">
+                        <div class="card card2 bg-secondary3 mt-4" id="headingOne">
+                            <button class="accordion-button px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div>
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <b class="font-primary2 font-size-large03 me-2">30,000 </b>
+                                        <span class="rounded-pill badge-text bg-secondary4 mt-1 px-4 py-1 fs-sm">+3,000</span>   
+                                    </div>
+                                    <div class="font-color-33 mt-2">결제금액 : 30,000 <span class="font-color-66 fs-sm">원</span></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body px-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                                        <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">30,000 </b> + 3,000</p>
+                                        <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦30,000</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                                        <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">50,000 </b> + 7,500</p>
+                                        <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦50,000</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                                        <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">100,000 </b> + 20,000</p>
+                                        <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦100,000</button>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                                        <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">200,000 </b> + 50,000</p>
+                                        <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦200,000</button>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                    </div>
+                    
+                    <h5 class="font-size-normal mt-4">신용/체크카드</h5>
+                    
+                    <div class="card card2 bg-gry2 mt-2">
+                        <p class="font-color-99">카드등록</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-33"><b>카드 번호</b></label>
+                                <input class="form-control form-control-ms border-grn" type="text" id="" placeholder="**** **** **** ****">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-33"><b>유효기간</b></label>
+                                <input class="form-control form-control-ms border-grn" type="text" id="" placeholder="MM/YY">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-33 mt-3"><b>카드 비밀번호</b></label>
+                                <input class="form-control form-control-ms border-grn" type="text" id="" placeholder="비밀번호 앞 2자리">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="" class="form-label font-width-normal font-color-33 mt-3"><b>생년월일 6자리</b></label>
+                                <input class="form-control form-control-ms border-grn" type="text" id="" placeholder="YYMMDD">
+                            </div>
+                            
+                            <p class="fs-sm font-color-66 mb-0 align-right">
+                                <button class="btn btn-bgnone font-primary2 fs-sm font-underline px-0">+ 등록하기</button>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn btn-ms btn-primary2 w-100 mt-4">자동충전 설정하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="page-wrapper sub-con">
 
         <!-- Navbar (Solid background)-->
@@ -150,7 +232,7 @@
 
         <!-- Page content-->
         <div class="container mb-2">
-            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-profile-manage.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
+            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-mypage-main.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
         </div>
         <h3 class="container my-5 font-width-300">캐시충전</h3>
         
@@ -170,7 +252,10 @@
 
                  <!-- 방플캐시 자동충전 -->
                 <div class="col-lg-3 col-md-3 col-sm-12 mb-2">
-                    <button class="btn btn-primary d-flex flex-wrap justify-content-around align-items-center font-size-large01 h-100 w-100" onclick="location.href='';">
+                    <button 
+                        class="btn btn-primary d-flex flex-wrap justify-content-around align-items-center font-size-large01 h-100 w-100 px-2" 
+                        data-bs-toggle="modal" data-bs-target="#modalAutocash"
+                    >
                         <img src="../assets/img/icon/icon_cash_s.png" alt="방플캐시" class="me-2">
                         <span>방플캐시 자동충전</span>
                         <i class="ai-chevron-right font-size-large03 font-color-ff"></i>
@@ -182,27 +267,27 @@
             <div class="row justify-content-end mt-7">
                 <div class="col-lg-7 col-md-7 col-sm-12">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
-                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">30,000 </b> + 3,000</p>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2 px-0">
+                            <p class="font-color-99 mb-0"><b class="font-color-66 me-1">30,000 </b> + 3,000</p>
                             <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦30,000</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
-                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">50,000 </b> + 7,500</p>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2 px-0">
+                            <p class="font-color-99 mb-0"><b class="font-color-66 me-1">50,000 </b> + 7,500</p>
                             <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦50,000</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
-                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">100,000 </b> + 20,000</p>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2 px-0">
+                            <p class="font-color-99 mb-0"><b class="font-color-66 me-1">100,000 </b> + 20,000</p>
                             <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦100,000</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
-                            <p class="font-color-99 d-flex align-content-center mb-0 mt-2"><b class="font-color-66 me-1">200,000 </b> + 50,000</p>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2 px-0">
+                            <p class="font-color-99 mb-0"><b class="font-color-66 me-1">200,000 </b> + 50,000</p>
                             <button class="btn btn-outline-primary2 btn-ms" style="width: 120px;">￦200,000</button>
                         </li>
                     </ul>
 
                     <h5 class="font-size-large03 mt-5">결제수단</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2 px-0">
                             <p class="mb-0 mt-2">
                                 <input class="form-check-input" type="radio" id="" name="radio" checked>
                                 <label class="form-check-label font-size-normal ms-2" for="">신용/체크카드</label>
@@ -211,12 +296,12 @@
                         </li>
 
                         <!-- 카드등록 클릭하면 나옴 -->
-                        <li class="list-group-item d-flex justify-content-between align-content-center py-2 px-0">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2 px-0">
                             <p class="mb-0 mt-2">
                                 <input class="form-check-input" type="radio" id="" name="radio" checked>
                                 <label class="form-check-label font-size-normal ms-2" for="">신용/체크카드</label>
                             </p>
-                            <p class="fs-sm font-color-66 mb-0">
+                            <p class=" d-flex align-items-center fs-sm font-color-66 mb-0">
                                 <span class="me-4"> [ 외환 ****5871 개인 ]</span>
                                 <button class="btn btn-bgnone font-primary2 fs-sm font-underline px-0">- 삭제</button>
                             </p>
