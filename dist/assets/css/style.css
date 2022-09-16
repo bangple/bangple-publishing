@@ -958,6 +958,7 @@ button.btn-square {
 .thumbnail-style a.thumbnail-style2 {
     width: 117px;
     height: 117px;
+    background-color: #f9f9f9;
 }
 
 .thumbnail-style a img {
@@ -1189,6 +1190,18 @@ button.btn-square {
     border-radius: 20px;
 }
 
+.company-mypage-main.d-grid{
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+    gap: 30px;
+}
+
+@media screen and (max-width:920px){
+    .company-mypage-main.d-grid{
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width:320px){
     .mypage-main .mypage-header{
         justify-content: space-around;
@@ -1200,6 +1213,9 @@ button.btn-square {
     .mypage-main .mypage-header .thumbnail-style.me-4,
     .mypage-main .mypage-header .thumbnail-style a{
         margin-right: 0!important;
+    }
+    .mypage-main span.px-3{
+        display: none;
     }
 }
 
@@ -1888,13 +1904,34 @@ ul.list-unstyled li a:hover,
     text-align:center;
 }
 
+.estimate-preview .profile-aside .page-num{
+    font-size: 12px;
+}
+.estimate-preview .profile-aside .tns-carousel-wrapper .tns-controls{
+    top: 0%;
+}
+.estimate-preview .profile-aside .tns-carousel-wrapper [data-controls]{
+    position: absolute;
+}
+.estimate-preview .tns-carousel-wrapper [data-controls=prev]{
+    left: 0;
+}
+.estimate-preview .tns-carousel-wrapper [data-controls=next]{
+    right: 0;
+}
+.estimate-preview .profile-aside .page-num {
+    bottom: -15px;
+}
+.estimate-preview .profile-aside .tns-carousel-wrapper {
+    padding-bottom: 25px;
+}
 
-
-
-
-
-
-
+@media screen and (max-width: 486px){
+    .person-list .product-list.d-flex{
+        display: block!important;
+    }
+    
+}
 
 
 

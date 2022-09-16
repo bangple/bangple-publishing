@@ -358,7 +358,7 @@ common
 }
 
 .font-color-33 {
-    color: #333;
+    color: #333!important;
 }
 
 .font-color-99 {
@@ -615,7 +615,7 @@ button {
 }
 
 .bg-secondary2 {
-    background-color: #24bdc7;
+    background-color: #a6d9dc;
 }
 
 .bg-secondary3 {
@@ -977,6 +977,14 @@ list-group
 /* 
 accordion
 ***********************************************************************/
-.accordion-button::after{
-
+.new{
+    width: 16px;
+    height: 16px;
+    font-size: 9px;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+    background-color: #fb479b;
 }
