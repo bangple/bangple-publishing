@@ -39,10 +39,45 @@
 <!-- Body-->
 
 <body>
+    <!-- Modal 신고하기 -->
+    <div class="modal fade" id="modalSingo" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modalSingo" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">신고하기</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pt-4">
+                    <div class="card card2 bg-gry2 py-4 align-center fs-sm mb-3">
+                        신고하기 사유 확인이 불가할 경우 해당 신고건은<br>미조치됩니다.
+                    </div>
+                    <ul class="list-group list-group-flush font-size-normal">
+                        <li class="list-group-item form-check">
+                            <input class="form-check-input" type="radio" id="11" name="radio">
+                            <label for="11">서비스와 관련없는 광고/홍보</label>
+                        </li>
+                        <li class="list-group-item form-check">
+                            <input class="form-check-input" type="radio" id="22" name="radio">
+                            <label for="22">부적절한 언어(욕설/성희롱 등) 사용</label>
+                        </li>
+                    </ul>
+                    <p class="fs-sm font-color-99 mt-4">
+                        서비스 진행중 문제가 생겼다면 증빙자료(대화내역, 문자메세지, <br>
+                        녹취, 사진 등)와 함께 방플 이메일 support@soomgo.com로 <br>
+                        접수해 주세요. 신고 결과는 별도 안내되지 않습니다.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4" data-bs-dismiss="modal">신고하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <main class="page-wrapper sub-con">
 
         <!-- Navbar (Solid background)-->
-        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
         <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
             <div class="container">
                 <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html">
@@ -149,98 +184,159 @@
         </header>
         <!-- /Navbar (Solid background)-->
 
-        
         <!-- Page content-->
-        
+
         <!-- 이전페이지 버튼-->
         <div class="container mb-2">
-            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-profile-manage.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
+            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-request-list.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
         </div>
-        <h3 class="container my-5 font-width-300">활동분석</h3>
+        <h3 class="container my-5 font-width-300">견적 보내기</h3>
 
-        <!-- 견적발송수 -->
-        <section class="container">
-            <h5 class="font-size-large03 mt-5 mb-1">견적발송수</h5>
-            <p class="fs-sm font-color-99">적극적인 견적 발송으로 거래 성사 확률을 높여보세요.</p>
 
-            <div class="card card2 bg-gry2">
-                <div class="d-flex align-content-center justify-content-center">
-                    그래프 자리
+        <!-- 받은요청 -->
+        <section class="container company-requist pb-7" style="min-height: 500px;">
+            <div class="row">
+
+                <!-- 고객 정보 -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="product-list d-flex">
+                        <div class="thumbnail-style">
+                            <!--no img-->
+                            <a href="company-request-detail.html" class="thumbnail-style3 d-flex align-items-center bg-gry2">
+                                <img src="../assets/img/icon/icon_photo.png" alt="" style="width: 53px !important;;height:auto" >
+                            </a>
+                        </div>
+                        <dl class="w-100">
+                            <dt class="d-flex align-items-center">
+                                <div class="d-flex font-size-large03 font-color-66 align-items-center">김선희</div>
+                                <a href="#!" class="d-flex align-middle font-color-66 font-width-normal ms-4" data-bs-toggle="modal" data-bs-target="#modalSingo"> <img src="../assets/img/icon/icon_singo.png" class="me-2"> 신고하기</a>
+                            </dt>
+                            <dd>
+                                <p class="fs-xs mb-2">경기 의정부시</p>
+                                <p class="fs-sm font-color-99">업체에서 받은 견적 수 : <span class="font-primary2">10개</span> </p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="accordion accordion-flush my-3" id="accordionFlushExample">
+                        <!-- Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header br-btm br-top br-gry" id="flush-headingOne">
+                                <button class="accordion-button collapsed font-size-small01 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    고객 상세 정보 보기
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse collapsed" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body font-size-small01 mt-4">
+                                    고객 상세 정보 보기<br>
+                                    고객 상세 정보 보기<br>
+                                    고객 상세 정보 보기<br>
+                                    고객 상세 정보 보기<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2 bg-gry2 mb-4">
+                        <div class="scroll-y pe-2">
+                            <ul>
+                                <li>
+                                    <p class="mb-3"><b>Q.어떤 방역을 원하시나요?</b></p>
+                                    <p class="font-color-99">해충방역 (벌레, 해충 퇴치)</p>
+                                </li>
+                                <li>
+                                    <p class="mb-3"><b>Q.공간유형을 선택해주세요.</b></p>
+                                    <p class="font-color-99">주거공간, 상업공간</p>
+                                </li>
+                                <li>
+                                    <p class="mb-3"><b>Q.소독을 원하는 위치가 어디인가요?</b></p>
+                                    <p class="font-color-99">실내</p>
+                                </li>
+                                <li>
+                                    <p class="mb-3"><b>Q.추가로 원하는 소독이 있나요?</b></p>
+                                    <p class="font-color-99">소독방역</p>
+                                </li>
+                                <li>
+                                    <p class="mb-3"><b>Q.공간의 면적을 선택해주세요.</b></p>
+                                    <p class="font-color-99">50평 미만</p>
+                                </li>
+                                <li>
+                                    <p class="mb-3"><b>Q.정기 방역을 원하시나요?</b></p>
+                                    <p class="font-color-99">1회 방역</p>
+                                </li>
+                                <li>
+                                    <p class="mb-3"><b>Q.방역 희망일을 선택해주세요.</b></p>
+                                    <p class="font-color-99">협의 가능해요.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 견적 -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                    <div class="card card2 bg-secondary3 align-center font-primary">
+                        지금 바로 견적으로 보내고 거래 성사확률을 높여보세요
+                    </div>
+                    <div class="d-flex justify-content-end mt-4 mb-3">
+                        <button 
+                            class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline" 
+                            onclick="location.href='#'">
+                            이용안내
+                        </button>
+                    </div>
+                    <button class="btn btn-outline-primary2 w-100 mb-4">
+                        자주 쓰는 견적 불러오기
+                    </button>
+                    <div class="d-flex justify-content-between mt-4 mb-3">
+                        <div class="w-50">
+                            <select class="form-select" id="select-input">
+                                <option>총 비용</option>
+                                <option>50,000원</option>
+                                <option>50,000원</option>
+                                <option>50,000원</option>
+                            </select>
+                        </div>
+                        <button 
+                            class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline" 
+                            onclick="location.href='#'">
+                            이용안내
+                        </button>
+                    </div>
+                    <h3 class="text-center py-3 br-btm br-gry">
+                        <span class="font-primary2">50,000</span><span class="font-width-normal font-color-66 font-size-large04"> 원</span>
+                    </h3>
+                    <div class="pt-4">
+                        <label for="fl-textarea" class="form-label font-size-large03 font-color-33">견적 설명</label>
+                        <div class="form-floating text_box">
+                            <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="1000" placeholder="견적 설명이 없습니다."></textarea>
+                            <div class="count fs-xs font-color-99 align-right mt-2"><span>0</span>/1000자</div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <label for="fl-textarea" class="form-label font-size-large03 font-color-33">파일 첨부</label>
+                        <div class="d-flex ">
+                            <button class="btn btn-lg btn-outline btn-square me-1 " style="width:50px; ">+</button>
+                            <p class="join-thumbnail me-1 mb-0" style="background-image: url(../assets/img/login/thumbnail01.jpg); ">
+                                <span class="thumbnail-text ">등록된<br>이미지</span>
+                                <button class="badge rounded-pill bg-danger "><i class="ai-x "></i></button>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-0 mt-2">
+                        <input class="form-check-input" type="checkbox" id="1" name="checkbox" checked>
+                        <label class="form-check-label font-size-normal ms-2" for="1">자주 쓰는 견적에 추가하기</label>
+                    </p>
+                    <div class="card-footer p-0 mt-5">
+                        <button type="button" class="btn btn-primary btn-lg btn-ms d-flex w-100 justify-content-center align-items-center" style="width: 100%;">
+                            <span class="fs-5">견적 보내기</span> 
+                            <span class="rounded-pill badge-text bg-secondary3 px-4 py-1 ms-2 font-primary fs-sm">500캐시</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </section>
-
-        <!-- 프로필 열람수 -->
-        <section class="container">
-            <h5 class="font-size-large03 mt-5 mb-1">프로필 열람수</h5>
-            <p class="fs-sm font-color-99">80% 이상의 고객들이 프로필 확인 후 거래 성사를 결정합니다.</p>
-
-            <div class="card card2 bg-gry2">
-                <div class="d-flex align-content-center justify-content-center">
-                    그래프 자리
-                </div>
-            </div>
-        </section>
-
-        <!-- 누적 거래 완료수 -->
-        <section class="container">
-            <h5 class="font-size-large03 mt-5 mb-1">누적 거래 완료수</h5>
-            <p class="fs-sm font-color-99">거래 성사하기를 통해 카운팅됩니다.</p>
-
-            <div class="card card2 bg-gry2">
-                <div class="row align-content-center justify-content-start">
-                    <div class="col-lg-1 fs-sm">본인</div>
-                    <div class="col-lg-9 process-area d-flex align-content-center mx-0">
-                        <h6 class="font-primary mb-0" style="width:50px;">25건</h6>
-                        <div class="process-3 px-0 border-0" style="height:20px;">
-                            <div class="bg-primary" style="width:20%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row align-content-center justify-content-start mt-4">
-                    <div class="col-lg-1 fs-sm pe-0">상위 20%</div>
-                    <div class="col-lg-9 process-area d-flex align-content-center mx-0">
-                        <h6 class="font-color-99 mb-0" style="width:50px;">160건</h6>
-                        <div class="process-3 px-0 border-0" style="height:20px;">
-                            <div class="bg-gry3" style="width:60%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 누적 평점 -->
-        <section class="container mb-7">
-            <h5 class="font-size-large03 mt-5 mb-1">누적 평점</h5>
-            <p class="fs-sm font-color-99">리뷰 요청 기능을 통해 고객에게 리뷰 작성을 요청하세요.</p>
-
-            <div class="card card2 bg-gry2">
-                <div class="row align-content-center justify-content-start">
-                    <div class="col-lg-1 fs-sm">본인</div>
-                    <div class="col-lg-9 d-flex align-content-center mx-0">
-                        <h6 class="font-primary mb-0" style="width:50px;">4.2</h6>
-                        <div class="star-rating align-items-center">
-                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
-                            <span class="font-size-small02 font-primary mx-2">3개</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row align-content-center justify-content-start mt-4">
-                    <div class="col-lg-1 fs-sm pe-0">상위 20%</div>
-                    <div class="col-lg-9 d-flex align-content-center mx-0">
-                        <h6 class="font-color-99 mb-0" style="width:50px;">4.7</h6>
-                        <div class="star-rating align-items-center">
-                            <i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled active"></i><i class="sr-star ai-star-filled"></i><i class="sr-star ai-star-filled"></i>
-                            <span class="font-size-small02 mx-2">95개</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
 
 
 
@@ -260,47 +356,7 @@
     <!-- Main theme script-->
     <script src="../assets/js/theme.min.js"></script>
 
-    <script text="javascript/text">
-        $(document).ready(function(){
-     
-            $('.qna-list ul li').each(function(){
-                //var content = $(this).children('.content');
-                var content = $(this).find('.contentStr');
-     
-                var content_txt = content.text();
-                var content_html = content.html();
-                var content_txt_short = content_txt.substring(0,250)+"...";
-                var btn_more = $('<a href="javascript:void(0)" class="more font-primary2">자세히 보기 <i class="ai-chevron-down"></i></a>');
-     
-                
-                $(this).append(btn_more);
-                
-                if(content_txt.length >= 250){
-                    content.html(content_txt_short)
-                    
-                }else{
-                    btn_more.hide()
-                }
-                
-                btn_more.click(toggle_content);
-                function toggle_content(){
-                    if($(this).hasClass('short')){
-                        // 접기 상태
-                        $(this).html('자세히 보기 <i class="ai-chevron-down"></i>');
-                        content.html(content_txt_short)
-                        $(this).removeClass('short');
-                    }else{
-                        // 더보기 상태
-                        $(this).html('접어 두기 <i class="ai-chevron-up"></i>');
-                        content.html(content_html);
-                        $(this).addClass('short');
-     
-                    }
-                }
-            });
-        });
-      </script>
-    
+
 
 
 </body>

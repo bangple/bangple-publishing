@@ -1082,6 +1082,7 @@ button.btn-square {
     .product-list .thumbnail-style{
         width: 100%;
         margin: 0 auto 20px;
+        text-align: -webkit-center;
     }
     .product-list .company-info{
         width: 100%;
@@ -1934,5 +1935,19 @@ ul.list-unstyled li a:hover,
 }
 
 
+.company-requist .scroll-y {
+    height: calc(100vh - 325px);
+}
 
+@media screen and (max-width: 768px){
+    .company-requist .scroll-y {
+        height: calc(100vh - 400px);
+    }
+}
+@media screen and (max-width: 420px){
+    .company-requist .product-list .thumbnail-style {
+        width: 45%;
+        margin: 0px 15px 0 0;
+    }
+}
 

@@ -178,6 +178,13 @@ dt {
         margin-top: 2rem !important;
     }
 } 
+@media screen and (max-width: 420px){
+    .sub-con h3.my-5 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
 @media screen and (max-width:320px){
     .container{
         padding: 0 12px;
@@ -254,12 +261,12 @@ common
 }
 
  ::-webkit-scrollbar-track {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: transparent;
+    border: none;
 }
 
  ::-webkit-scrollbar-track-piece {
-    background-color: #fff;
+    background-color: transparent;
 }
 
  ::-webkit-scrollbar-thumb {
@@ -314,11 +321,11 @@ common
 }
 
 
-.font-size-samll02 {
+.font-size-small02 {
     font-size: 0.9rem;
 }
 
-.font-size-samll01 {
+.font-size-small01 {
     font-size: 0.95rem;
 }
 
@@ -568,6 +575,9 @@ button {
 .cursor-pointer{
     cursor: pointer;
 }
+a.hover-underline:hover{
+    text-decoration: underline;
+}
 
 /* background
 *****************************************************************************/
@@ -640,7 +650,7 @@ button {
 }
 
 .bg-gry2 {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9!important;
     color: #666;
 }
 
@@ -975,7 +985,7 @@ list-group
 
 
 /* 
-accordion
+new
 ***********************************************************************/
 .new{
     width: 16px;
