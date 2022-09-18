@@ -74,6 +74,79 @@
         </div>
     </div>
 
+    <!-- Modal 자주 쓰는 견적 -->
+    <div class="modal fade" id="modalOftenEstimate" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-m">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">자주 쓰는 견적</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-3 pt-4 pb-7">
+                    <div class="card card2 bg-gry2 py-4 align-center fs-sm mb-3">
+                        마이페이지에서 관리할 수 있습니다
+                    </div>
+                    <h5 class="mt-5">해충방역 견적</h5>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between align-items-center">
+                            총 1,000원
+                        </div>
+                        <button class="btn-bgnone"><i class="ai-chevron-right font-size-large03 font-color-99"></i></button>
+                    </div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 이용 안내 -->
+    <div class="modal fade" id="modalUserguide" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-lg">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">이용 안내</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5 pt-4">
+                    <div class="font-size-large03">
+                        <span class="font-primary2">“참조은 해충방역”</span>님을 위한<br> <b>견적과 상담</b> 이용안내
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <span class="me-2"><i class="ai-alert-circle font-primary2 font-size-large04"></i> </span>
+                        <div>
+                            <p class="mb-1">고객문의에 빠르게 답변하세요</p>
+                            <p class="fs-sm font-color-99">빠른 답변을 할수록 거래 성사율이 매우 높아집니다.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <span class="me-2"><i class="ai-alert-circle font-primary2 font-size-large04"></i> </span>
+                        <div>
+                            <p class="mb-1">조건에 맞는 내용의 견적을 보내세요</p>
+                            <p class="fs-sm font-color-99 mb-0">고객은 최저가가 아닌 요건에 충실한 내용의 견적을 선택합니다. </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <h5 class="mt-4">견적 발송 보상 정책</h5>
+                    <div class="card card2 bg-gry2 py-4 fs-sm mb-3">
+                        견적을 보내신 후 48시간 내 고객이 읽지 않으면 견적발송 비용은 캐시로 100% 보상됩니다.(단 보너스캐시 사용건은 보너스캐시로 보상됩니다.)
+                    </div>
+
+                    <h5 class="mt-4">자동 견적 발송 기능</h5>
+                    <div class="card card2 bg-gry2 py-4 fs-sm mb-3 text-danger">
+                        견적 발송과 채팅방 열람시 필요한 비용은 서비스의 종류에 따라 변경 가능합니다
+                    </div>
+                </div>
+                <div class="modal-footer px-5">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4 w-100" data-bs-dismiss="modal" >확인</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
 
     <main class="page-wrapper sub-con">
 
@@ -281,12 +354,12 @@
                     <div class="d-flex justify-content-end mt-4 mb-3">
                         <button 
                             class="btn-bgnone font-primary2 fs-sm align-items-center btn-underline" 
-                            onclick="location.href='#'">
+                            data-bs-toggle="modal" data-bs-target="#modalUserguide">
                             이용안내
                         </button>
                     </div>
-                    <button class="btn btn-outline-primary2 w-100 mb-4">
-                        자주 쓰는 견적 불러오기
+                    <button class="btn btn-outline-primary2 w-100 mb-4" data-bs-toggle="modal" data-bs-target="#modalOftenEstimate">
+                        자주 쓰는 견적 불러오기 
                     </button>
                     <div class="d-flex justify-content-between mt-4 mb-3">
                         <div class="w-50">
