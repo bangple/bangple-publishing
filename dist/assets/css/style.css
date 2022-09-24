@@ -571,8 +571,8 @@ main
     height: 15px;
     border-top: 3px solid;
     border-bottom: 3px solid;
-    border-color: #e7e9ee;
-    background-color: #e7e9ee;
+    border-color: #f3f3f3;
+    background-color: #f3f3f3;
 }
 .process-area .process div {
     height: 9px;
@@ -594,6 +594,30 @@ main
 }
 .process-area .process-3 div {
     height: 20px;
+}
+
+/* 프로세스2 */
+
+.process-area2 .process {
+    width: 100%;
+    height: 7px;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+.process-area2 .process div {
+    position: relative;
+    height: 7px;
+    background-color: #02526a;
+    border-radius: 5px;
+}
+.process-area2 .process div span{
+    position:absolute;
+    top:-6px;
+    right:0;
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    background-color: #02526a;
 }
 
 
@@ -1873,6 +1897,8 @@ ul.list-unstyled li a:hover,
     background-image:none;
     transform:none;
 }
+
+
 /* 프로필 완성도 프로필 */
 .profile-aside .tns-carousel-wrapper{
     padding-bottom: 35px;

@@ -495,6 +495,19 @@ button {
     background-color: #494949;
 }
 
+.btn-gry2,
+.btn-gry2:hover {
+    color: #fff;
+}
+
+.btn-gry2 {
+    background-color: #ddd;
+}
+
+.btn-gry2:hover {
+    background-color: #bebdbd;
+}
+
 .btn-large1 {
     height: 58px;
     line-height: 55px;
@@ -524,6 +537,14 @@ button {
 .btn-group-sm>.btn {
     height: 33px;
     padding: 0.3rem 1rem;
+}
+
+.btn-xs, 
+.btn-group-xs>.btn {
+    height: 22px;
+    line-height: 20px;
+    padding: 0 1rem;
+    font-size: 11px;
 }
 
 .btn-outline {
@@ -662,6 +683,10 @@ hr{
     background-color: #e7e9ee;
 }
 
+hr.br-dashed{
+    border-bottom: 1px dashed #999;
+}
+
 
 /* border
 ************************************************************************/
@@ -734,7 +759,9 @@ hr{
 .form-check-input {
     border: 1px solid #c3c5cd;
 }
-
+.form-check-label{
+    color: #333;
+}
 .form-label {
     color: #666;
     padding-left: 7px;
@@ -883,7 +910,10 @@ modal
     font-size: 14px;
     color:#fff;
 }
-
+.modal .scroll-y {
+    height: calc(100vh - 520px);
+    overflow-y: auto;
+}
 @media screen and (min-width:500px){
     .modal-dialog{
         margin: 1.75rem auto;
@@ -974,15 +1004,43 @@ list-group
 .list-group-flush>.list-group-item:last-child {
     border-width: 0 0 1px;
 }
-
-.bullet-list li{
+.list-group-item.form-check{
+    padding-left: 30px;
+}
+.bullet-list li,
+.bullet-list2 p{
     margin-left: 10px;
+    margin-bottom: 0;
 }
 .bullet-list li::before{
     content: '*';
     margin: 0 6px 0 -13px;
 }
 
+.bullet-list2 p::before{
+    content: '-';
+    margin: 0 6px 0 -13px;
+}
+
+.accordion-header {
+    border-bottom: 1px dashed #707070;
+}
+.accordion-button {
+    font-size: 14px;
+    color: #666;
+    padding: 15px 10px;
+}
+.accordion-button::after{
+    background-image:url(../img/icon/icon_down_black.png)!important;
+}
+.accordion-item .accordion-body {
+    padding: 0.5rem 1.5rem 1.5rem!important;
+}
+.accordion-item .accordion-body a{
+    display: block;
+    font-size: 13px;
+    line-height: 26px;
+}
 
 /* 
 new

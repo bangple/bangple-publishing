@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BANGPLE</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#02597e">
+    <meta name="theme-color" content="#ffffff">-->
+    <!-- Page loading styles-->
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css" />
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <link rel="stylesheet" media="screen" href="../assets/css/style.css">
+
+    <!-- 슬라이드
+    <link rel="stylesheet" media="screen" href="../assets/css/normalize.css">-->
+    <link href="../assets/js/jquery.gallery3d.css" rel="stylesheet">
+    <script src="../assets/js/modernizr.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.gallery3d.js"></script>
+    <script src="../assets/js/action.js" defer></script>
+
+</head>
+<!-- Body-->
+
+<body>
+    
+    <!-- Modal 자동견적등록 하기 -->
+    <div class="modal fade" id="modalAutoregister" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-lg">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">자동견적 등록하기</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-3 pt-4">
+                    <div class="process-area d-flex align-items-center justify-content-between mx-0">
+                        <div class="bg-light-grey process px-0">
+                            <div id="myBar" class="bg-green" style="width:20%"></div>
+                        </div>
+                        <div class="font-size-large02 font-primary align-right" id=""><b>20%</b></div>
+                    </div>
+
+                    <div class="select-list px-3 mt-2 scroll-y">
+                        
+                        <h4 class="mt-4 mb-0"><span class="font-primary2">STEP1</span> 서비스 선택</h4>
+                        <h5 class="font-width-normal">자동견적을 등록할 서비스를 설정합니다.</h5>
+                        
+
+                        <div class="bullet-list2 my-4 fs-sm">
+                            <p>같은 서비스를 중복으로 설정할 수 없습니다.</p>
+                            <p>고객이 요청서를 작성하는 즉시 업체님과 연결하기 위해 원하는 조건을 미리 설정합니다.</p>
+                        </div>
+                        <p class="fs-sm font-color-99">* 프로필에 저장된 서비스가 표시됩니다.</p>
+                        <div class="card px-3 pt-2">
+                            <div class="p-2">
+                                <span class="tag-big rounded-pill bg-secondary3 px-4">해충방역</span>
+                                <span class="tag-big rounded-pill bg-secondary3 px-4">소독방역</span>
+                                <span class="tag-big rounded-pill bg-secondary3 px-4">드론방역</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select-list select-service px-3 mt-2 scroll-y">
+                        <h4 class="mt-4 mb-0"><span class="font-primary2">STEP2</span> 서비스 지역</h4>
+                        <h5 class="font-width-normal">고객에게 서비스를 제공할 지역을 설정합니다</h5>
+                        
+
+                        <div class="bullet-list2 my-4 fs-sm">
+                            <p>지역을 넓게 선택하면 더 많은 고객을 만날수 있습니다.</p>
+                            <p>경계지역은 오차가 발생할 수 있습니다.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-end ms-2 mt-4">
+                            <button class="btn-bgnone font-primary2 fs-sm" data-bs-toggle="modal" data-bs-target="#modalSelectcountry">등록하기</button>
+                        </div>
+                        <div class="card" style="height: 200px;padding: 0;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.880873857798!2d127.20317465100955!3d37.55787033228282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb17ca8e64423%3A0x4f54e36b36af8af2!2z7ZiE64yA7KeA7Iud7IKw7JeF7IS87YSwIO2VnOqwleuvuOyCrDLssKg!5e0!3m2!1sko!2skr!4v1647491160787!5m2!1sko!2skr"
+                                width="520" height="200" style="border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="select-country mt-1">
+                            <button class="btn btn-sm btn-outline mt-2">성남시</button>
+                            <button class="btn btn-sm btn-outline mt-2 action">광주시</button>
+                            <button class="btn btn-sm btn-outline mt-2">용인시</button>
+                            <button class="btn btn-sm btn-outline mt-2">시흥시</button>
+                            <button class="btn btn-sm btn-outline mt-2">용인시</button>
+                            <button class="btn btn-sm btn-outline mt-2">성남시</button>
+                            <button class="btn btn-sm btn-outline mt-2">광주시</button>
+                            <button class="btn btn-sm btn-outline mt-2">용인시</button>
+                            <button class="btn btn-sm btn-outline mt-2">시흥시</button>
+                        </div>
+                    </div>
+
+                    <div class="select-list px-3 mt-2 scroll-y">
+                        <h4 class="mt-4 mb-0"><span class="font-primary2">STEP3</span> 서비스 세부사항</h4>
+                        <h5 class="font-width-normal">업체님이 제공할 요청서 세부항목을 설정합니다.</h5>
+                        
+
+                        <div class="bullet-list2 my-4 fs-sm">
+                            <p>고객이 요청서 작성 시 선택하는 항목중에서 제공 가능한 항목을 선택 합니다. (중복선택 가능)</p>
+                            <p>고객이 요청한 항목과 일치하면 견적이 발송되므로 많은 항목을 선택하는 것이 유리합니다.</p>
+                        </div>
+
+                        <div class="card card2 bg-secondary3 mypage-wrap">
+                            <div class="d-flex align-items-center">
+                                <img src="../assets/img/icon/icon_caution.png">
+                                <div class="align-left ms-4">
+                                    <p class="mb-0 fs-sm">고객 요청서에서 선택하는 항목입니다. 항목을 많이 선택할수록 많은 고객을 빠르게 만날수 있어요</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-2 mt-4">
+                            <h5>공간의 유형을 선택해 주세요.</h5>
+                            <ul class="list-group list-group-flush font-size-normal">
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="11">주거공간</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="22">상업공간</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="33">사무공간</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="22">교육시설</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="33">의료시설</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="22">기타</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="select-list px-3 mt-2 scroll-y">
+                        <h4 class="mt-4 mb-0"><span class="font-primary2">STEP4</span> 서비스 견적금액</h4>
+                        <h5 class="font-width-normal">고객이 견적을 빠르게 비교할 수 있도록 최저 금액과 조건을 입력합니다.</h5>
+                        
+
+                        <div class="bullet-list2 my-4 fs-sm">
+                            <p>정확한 견적은 고객에게 채팅상담으로 안내할 수 있습니다.</p>
+                            <p>반드시 서비스를 제공할 수 있는 견적금액을 입력하세요</p>
+                        </div>
+
+                        <button class="btn btn-outline-primary2 w-100 mb-4" data-bs-toggle="modal" data-bs-target="#modalOftenEstimate">
+                            자주 쓰는 견적 불러오기 
+                        </button>
+                        <div class="my-3">
+                            <div class="w-50">
+                                <select class="form-select" id="select-input">
+                                    <option>총 비용</option>
+                                    <option>50,000원</option>
+                                    <option>50,000원</option>
+                                    <option>50,000원</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3 class="text-center py-3 br-btm br-gry">
+                            <span class="font-primary2">50,000</span><span class="font-width-normal font-color-66 font-size-large04"> 원 부터 ~</span>
+                        </h3>
+                        <div class="pt-4">
+                            <label for="fl-textarea" class="form-label font-size-large03 font-color-33">견적 설명</label>
+                            <div class="form-floating text_box">
+                                <div class="count fs-xs font-color-99 align-right"><span>0</span>/1000자</div>
+                                <textarea class="form-control" id="fl-textarea" style="height: 95px;" maxlength="1000" placeholder="견적 설명이 없습니다."></textarea>
+                            </div>
+                            <p class="fs-sm font-color-99 mt-2">* 추가발생 비용여부 및 A/S 내용 등의 기타사항을 기재해 주세요</p>
+                        </div>
+                        <div class="pt-4">
+                            <label for="fl-textarea" class="form-label font-size-large03 font-color-33">파일 첨부</label>
+                            <p class="fs-sm font-color-99 mb-2">* 본 파일첨부 그림은 향후 채팅창에 고객이 보는 파일입니다.</p>
+                            
+                            <div class="d-flex ">
+                                <button class="btn btn-lg btn-outline btn-square me-1 " style="width:50px; ">+</button>
+                                <p class="join-thumbnail me-1 mb-0" style="background-image: url(../assets/img/login/thumbnail01.jpg); ">
+                                    <span class="thumbnail-text ">등록된<br>이미지</span>
+                                    <button class="badge rounded-pill bg-danger "><i class="ai-x "></i></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select-list px-3 mt-2 scroll-y">
+                        <h4 class="mt-4 mb-0"><span class="font-primary2">STEP5</span> 일일 견적 예산</h4>
+                        <h5 class="font-width-normal">매일 견적 발송에 필요한 비용을 설정합니다.</h5>
+                        
+
+                        <div class="bullet-list2 my-4 fs-sm">
+                            <p>업체님이 지정한 예산 금액 안에서 자동으로 견적을 발송합니다.</p>
+                            <p>견적 예산을 많이 설정할수록 더 많은 고객에게 견적을 발송할 수 있습니다</p>
+                        </div>
+
+                        <div class="card card2 bg-secondary3 mypage-wrap">
+                            <div class="d-flex align-items-center">
+                                <div class="align-left">
+                                    <p class="mb-0 fs-sm font-primary">하루 최대 25개까지 견적이 발송됩니다.</p>
+                                    <h3 class="font-primary2">16,000 <span class="font-color-66 font-width-normal font-size-large04">캐시</span></h3>
+                                </div>
+                            </div>
+                            <div class="process-area2 mx-0">
+                                <div class="process px-0">
+                                    <div id="myBar" class="bg-primary" style="width:20%">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 mt-4">
+                            <h5>자주 묻는 질문</h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <!-- Item -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                            Q. 일반견적 방식과 자동견적 차이가 무엇인가요?
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapsed collapse" id="flush-collapse1" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample" style="">
+                                        <div class="accordion-body fs-sm font-color-99">
+                                            자동견적은 고객과 빠르게 연락할 수 있습니다. 자동견적은 고객이 요청서를 작성하자마자 견적을 보냅니다. 따라서 고객은 기다리지 않고 바로 상담을 시작하기 때문에 업체님을 거래 성사할 확률이 높습니다.
+                                        </div>
+                                    </div>
+                                    
+                                    <h2 class="accordion-header" id="flush-heading2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                            Q.예산설정은 무엇인가요?
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapsed collapse" id="flush-collapse2" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample" style="">
+                                        <div class="accordion-body fs-sm font-color-99">
+                                            자동견적은 고객과 빠르게 연락할 수 있습니다. 자동견적은 고객이 요청서를 작성하자마자 견적을 보냅니다. 따라서 고객은 기다리지 않고 바로 상담을 시작하기 때문에 업체님을 거래 성사할 확률이 높습니다.
+                                        </div>
+                                    </div>
+                                    
+                                    <h2 class="accordion-header" id="flush-heading3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                            Q.예산설정은 무엇인가요?
+                                        </button>
+                                    </h2>
+                                    <div class="accordion-collapse collapsed collapse" id="flush-collapse3" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample" style="">
+                                        <div class="accordion-body fs-sm font-color-99">
+                                            자동견적은 고객과 빠르게 연락할 수 있습니다. 자동견적은 고객이 요청서를 작성하자마자 견적을 보냅니다. 따라서 고객은 기다리지 않고 바로 상담을 시작하기 때문에 업체님을 거래 성사할 확률이 높습니다.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="select-service">
+                        <div class="select-list px-3 mt-2 scroll-y">
+                            <h4 class="mt-4 mb-0"><span class="font-primary2">STEP6</span> 견적 발송 제외 시간</h4>
+                            <h5 class="font-width-normal">자동견적이 발송되지 않는 시간을 설정합니다.</h5>
+                            <ul class="list-group list-group-flush font-size-normal mt-4">
+                                
+                                <li class="form-check">
+                                    <input class="form-check-input" type="radio" id="11" name="radio">
+                                    <label class="form-check-label" for="11">해충방역 (벌레, 해충 퇴치)</label>
+                                </li>
+                                <li class="form-check action">
+                                    <input class="form-check-input" type="radio" id="22" name="radio" checked>
+                                    <label class="form-check-label" for="22">소독방역 (세균, 바이러스 퇴치)</label>
+                                </li>
+                            </ul>
+                            <div class="d-flex ps-5 mt-1">
+                                <h1 class="">10 : 00</h1>
+                                <div class="ms-4" style="width: 50px;">
+                                    <button class="btn btn-xs btn-primary2 mb-1">오전</button>
+                                    <button class="btn btn-xs btn-gry2">오전</button>
+                                </div>
+                            </div>
+                            <hr class="br-dashed mt-1">
+                            <p class="fs-sm font-color-99 mt-2">견적 발송 제외 시간 설정 시, 제외된 시간에는 자동견적이 발송되지 않습니다. 
+                                최대 8시간까지 설정할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="select-list px-3 mt-2 scroll-y">
+                        <h4 class="mt-4 text-center">
+                            <p class="mb-0 font-primary2">등록이 완료되었습니다.</p>
+                            더 빠르게 고객을 만날 수 있어요.
+                        </h4>
+                        <h5 class="mt-4 mb-4 text-center font-width-normal">지금부터 고객이 요청서를 작성하는 즉시<br>보유하신 방플캐시로 바로 견적을 발송합니다.</h5>
+
+                        <div class="card card2 bg-secondary3 mypage-wrap">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="font-width-normal mb-0">보유캐시</h4>
+                                <h4 class="font-primary2 mb-0">16,000 <span class="font-color-66 font-width-normal font-size-large04">캐시</span></h4>
+                            </div>
+                        </div>
+                        <p class="fs-sm font-color-99 mt-2">보유하신 방플캐시가 없습니다.</p>
+                        <p class="font-size-large03 font-color-33 mb-1">자동충전 이용안내</p>
+                    
+                        <div class="card card2 bg-gry2">
+                            <ul class="bullet-list fs-sm font-color-99">
+                                <li>방플캐시와 보너스캐시를 다 사용하면 자동견적이 발송 되지 않고, 
+                                    충전하면 다시 시작됩니다. (방플캐시를 다 사용하면 보너스캐시로 
+                                    발송됩니다.)</li>
+                                <li>방플 유료서비스 이용 시 잔액이 부족하면 설정한 금액으로 자동으로 
+                                    캐시를 충전하여 편리하게 이용하실 수 있는 기능입니다.</li>
+                                <li>자동충전 된 캐시는 방플 서비스 이용약관 방플 캐시 관련 내용에서 
+                                    정한 바에 따릅니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer px-3">
+                    <div class="align-content-end mt-1 w-100 text-end">
+                        <button class="btn btn-outline-primary2 btn-pre" onclick="plusDivs(-1)">이전</button>
+                        <button class="btn btn-primary2 btn-next" onclick="plusDivs(1)">다음</button>
+                    </div>
+                    <!-- 마지막 페이지 버튼 -->
+                    <div class="d-flex justify-content-between text-center mt-1 w-100">
+                        <button class="btn btn-outline-primary2 btn-pre w-50 me-1">아니요. 다음에 하겠습니다.</button>
+                        <button class="btn btn-primary2 btn-next w-50">캐시충전으로 이동</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 지역 선택 -->
+    <div class="modal fade select-service" id="modalSelectcountry" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered dialog-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title align-center">지역 선택</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-2 pt-4">
+                    <div class="px-2 scroll-y">
+                        <div class="pt-4 align-center mb-3">
+                            <select class="form-select mb-2" id="11" required>
+                                <option value="">전국</option>
+                                <option value="서울시">서울시</option>
+                                <option value="경기도">경기도</option>
+                                <option value="인천시">인천시</option>
+                            </select>
+                            <select class="form-select mb-2" id="11" required>
+                                <option value="">전국</option>
+                                <option value="서울시">서울시</option>
+                                <option value="경기도">경기도</option>
+                                <option value="인천시">인천시</option>
+                            </select>
+                            <select class="form-select mb-2" id="11" required>
+                                <option value="">전국</option>
+                                <option value="서울시">서울시</option>
+                                <option value="경기도">경기도</option>
+                                <option value="인천시">인천시</option>
+                            </select>
+                        </div>
+                        <div class="px-2 scroll-y">
+                            <ul class="list-group list-group-flush font-size-normal">
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="11">경기전체</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="22">고양시</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="33">과천시</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="22">고양시</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="33">과천시</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="22">고양시</label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" id="11" name="checkbox">
+                                    <label class="form-check-label" for="33">과천시</label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary2 btn-ms px-4" data-bs-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-wrapper sub-con">
+
+        <!-- Navbar (Solid background)-->
+        <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header data-fixed-element>
+            <div class="container">
+                <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4" href="../main/index.html">
+                    <img class="d-none d-lg-block" src="../assets/img/logo/logo.png" alt="BANGPLE" width="153">
+                    <img class="d-lg-none" src="../assets/img/logo/logo.png" alt="BANGPLE" width="130">
+                </a>
+                <!-- 알림, 마이페이지 -->
+                <div class="d-flex justify-content-end order-lg-3">
+                    <div class="d-flex align-items-center ms-lg-auto">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link nav-news display-web" href="#" title="알림"><i class="ai-bell"></i><span class="alarm-on"></span></a>
+                            <a class="nav-link nav-news display-mobile" href="#" title="알림" data-bs-toggle="dropdown"><i class="ai-bell"></i><span class="alarm-on"></span></a>
+                            <div class="dropdown-menu dropdown-alarm">
+                                <div class="dropdown-column dropdown-item mb-2">
+                                    <h6>알림</h6>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-inform mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>요청서가 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">김길동님에 견적 요청서가 도착했습니다. 요청 내용을 자세히 확인해보세요</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="nav-news-list">
+                                        <p class="when fs-xs font-color-99 news-notice mb-0">1일전</p>
+                                        <a href="#">
+                                            <dl>
+                                                <dt>공지사항이 도착했습니다</dt>
+                                                <dd class="d-flex align-items-center fs-xs font-color-99">자세한 내용은 공지사항 페이지를 확인해 보세요.</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item nav-mypage dropdown">
+                            <a class="nav-link btn-ms rounded-pill btn-primary" href="#" title="마이메뉴" data-bs-toggle="dropdown"><i class="fs-4 ai-user font-color-ff mb-1"></i></a>
+                            <div class="dropdown-menu dropdown-mypage">
+                                <div class="dropdown-column dropdown-item">
+                                    <h6 class="pb-1">홍길동 고객님</h6>
+                                    <div class="d-flex justify-content-center bg-light-grey radius-7 fs-xs py-2">
+                                        <span class="me-3">평점: 25</span><span class="ms-3">리뷰: 30</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="../company/company-profile-manage.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>프로필 관리</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                        <hr class="my-1">
+                                        <a href="../mypage/company-mypage-main.html" class="d-flex justify-content-between align-items-center py-2">
+                                            <span>마이페이지</span>
+                                            <span><i class="ai-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                    <button class="btn btn-primary mt-4" style="width:100% ;">로그아웃</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="navbar-toggler order-lg-4" id="btn_side_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-collapse offcanvas-end order-lg-2" id="primaryMenu">
+                    <div class="offcanvas-header navbar-shadow">
+                        <h5 class="mt-1 mb-0">Menu</h5>
+                        <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <!-- Menu - web-->
+                        <ul class="navbar-nav me-3">
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../common/sitemap.html"> Sitemap </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-request-list.html">받은요청</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="#">자동견적</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="d-flex align-items-center nav-link dropdown-toggle mt-1" href="../company/company-chatting-list.html">채팅<span class="badge rounded-pill bg-danger ms-1 fs-xs">9</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega">
+                                <a class="nav-link dropdown-toggle mt-1" href="../company/company-profile-manage.html">프로필</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Navbar (Solid background)-->
+
+        <!-- Page content-->
+
+        <!-- 이전페이지 버튼-->
+        <!-- <div class="container mb-2">
+            <button class="btn-bgnone mt-3 p-0" onclick="location.href='company-request-list.html'"><i class="h5 ai-chevron-left mb-1 me-2"></i><span class="h7">이전페이지</span></button>
+        </div> -->
+        <h3 class="container my-5 font-width-300">자동견적</h3>
+
+
+        <!-- 자동견적 미등록 -->
+        <section class="container pb-7" style="min-height: 500px;">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-6 text-center">
+                    <h4 class="mb-5">
+                        <p class="font-size-large03 font-primary font-width-normal mb-1">원하는 요청서에 견적을 자동으로</p>
+                        <p class="">편리하고 빠른 자동견적</p>
+                    </h4>
+                    <div>
+                        <img src="../assets/img/subimg/img_auto_estimate.png">
+                    </div>
+                    <div class="mt-4">
+                        <p class="font-primary mb-1">일반견적보다 300원 저렴한 자동견적</p>
+                        <p>업체찾기 목록에도 상위 노출되어 고객을 만날 확률이 높아집니다!</p>
+                        <button class="btn-bgnone font-primary2 fs-sm btn-underline mt-3">자동견적 더 알아보기</button>
+                    </div>
+                    <button type="button" class="btn btn-primary2 btn-ms px-4 w-100 mt-5" data-bs-toggle="modal" data-bs-target="#modalAutoregister">자동견적 등록하기</button>
+                    <p class="mt-3 fs-sm text-start font-color-99">* 서비스 비용은 당사 사정에 따라 추후에 변경될 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer-->
+        <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+        <iframe src="../layout/footer.html" class="footer-iframe"></iframe>
+
+    </main>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("select-list ");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            x[slideIndex - 1].style.display = "block ";
+        }
+
+
+        function move() {
+            var elem = document.getElementById("myBar ");
+            var width = 20;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    document.getElementById("demo ").innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+
+
+
+
+</body>
+
+</html>
