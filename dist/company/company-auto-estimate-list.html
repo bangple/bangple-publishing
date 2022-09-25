@@ -51,7 +51,7 @@
                 <div class="modal-body px-3 pt-4">
                     <div class="process-area d-flex align-items-center justify-content-between mx-0">
                         <div class="bg-light-grey process px-0">
-                            <div id="myBar" class="bg-primary" style="width:20%"></div>
+                            <div id="myBar" class="bg-green" style="width:20%"></div>
                         </div>
                         <div class="font-size-large02 font-primary align-right" id=""><b>20%</b></div>
                     </div>
@@ -543,24 +543,107 @@
         <h3 class="container my-5 font-width-300">자동견적</h3>
 
 
-        <!-- 자동견적 미등록 -->
+        <!-- 자동견적 리스트 -->
         <section class="container pb-7" style="min-height: 500px;">
             <div class="row justify-content-lg-center">
-                <div class="col-lg-6 text-center">
-                    <h4 class="mb-5">
-                        <p class="font-size-large03 font-primary font-width-normal mb-1">원하는 요청서에 견적을 자동으로</p>
-                        <p class="">편리하고 빠른 자동견적</p>
-                    </h4>
-                    <div>
-                        <img src="../assets/img/subimg/img_auto_estimate.png">
+                <div class="col-lg-7">
+                    <div class="row justify-content-between align-items-center mb-3">
+                        <h4 class="col-lg-6 mb-0">자동견적 서비스리스트</h4>
+                        <div class="col-lg-6 text-end"">
+                            <button type="button" class="btn btn-primary2 btn-ms px-3" data-bs-toggle="modal" data-bs-target="#modalAutoregister">자동견적 등록하기</button>
+                        </div>
                     </div>
-                    <div class="mt-4">
-                        <p class="font-primary mb-1">일반견적보다 300원 저렴한 자동견적</p>
-                        <p>업체찾기 목록에도 상위 노출되어 고객을 만날 확률이 높아집니다!</p>
-                        <button class="btn-bgnone font-primary2 fs-sm btn-underline mt-3">자동견적 더 알아보기</button>
+                    
+                    <div class="card p-4 mb-4">
+                        <div class="row justify-content-between align-items-center">
+                            <h4 class="col-lg-6 mb-0 font-width-300 cursor-pointer" onclick="location.href='company-auto-estimate-detail.html'">해충방역</h4>
+                            <div class="col-lg-6 text-end"">
+                                <a href="#!"><img src="../assets/img/icon/icon_auto_stop.png" alt="자동견적 중지"></a>
+                                <button type="button" class="btn btn-outline-primary2 btn-ms px-3">자동견적 중지</button>
+                            </div>
+                        </div>
+
+                        <div class="process-area d-flex align-items-center justify-content-between mx-0 my-4">
+                            <div class="bg-light-grey process px-0">
+                                <div id="myBar" class="bg-primary" style="width:20%"></div>
+                            </div>
+                            <div class="font-size-large02 font-primary align-right" id=""><b>20%</b></div>
+                        </div>
+
+                        <div class="row justify-content-between font-size-small01">
+                            <div class="col-lg-6">
+                                오늘 견적발송 : <b class="font-primary2">2</b>
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <div class="card card2 bg-secondary3">
+                                    오늘 사용 캐시 <br>
+                                    <b class="font-primary fs-lg">3,000</b>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-primary2 btn-ms px-4 w-100 mt-5" data-bs-toggle="modal" data-bs-target="#modalAutoregister">자동견적 등록하기</button>
-                    <p class="mt-3 fs-sm text-start font-color-99">* 서비스 비용은 당사 사정에 따라 추후에 변경될 수 있습니다.</p>
+                    
+                    <div class="card p-4 mb-4">
+                        <div class="row justify-content-between align-items-center">
+                            <h4 class="col-lg-6 mb-0 font-width-300 cursor-pointer" onclick="location.href='company-auto-estimate-detail.html'">소독방역</h4>
+                            <div class="col-lg-6 text-end"">
+                                <a href="#!"><img src="../assets/img/icon/icon_auto.png" alt="자동견적 다시시작"></a>
+                                <button type="button" class="btn btn-outline-primary2 btn-ms px-3">자동견적 다시시작</button>
+                            </div>
+                        </div>
+
+                        <div class="process-area d-flex align-items-center justify-content-between mx-0 my-4">
+                            <div class="bg-light-grey process px-0">
+                                <div id="myBar" class="bg-primary" style="width:20%"></div>
+                            </div>
+                            <div class="font-size-large02 font-primary align-right" id=""><b>20%</b></div>
+                        </div>
+
+                        <div class="row justify-content-between font-size-small01">
+                            <div class="col-lg-6">
+                                오늘 견적발송 : <b class="font-primary2">2</b>
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <div class="card card2 bg-secondary3">
+                                    오늘 사용 캐시 <br>
+                                    <b class="font-primary fs-lg">3,000</b>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-4 mb-4">
+                        <div class="row justify-content-between align-items-center">
+                            <h4 class="col-lg-6 mb-0 font-width-300 cursor-pointer" onclick="location.href='company-auto-estimate-detail.html'">해충방역</h4>
+                            <div class="col-lg-6 text-end"">
+                                <a href="#!"><img src="../assets/img/icon/icon_auto_stop.png" alt="자동견적 중지"></a>
+                                <button type="button" class="btn btn-outline-primary2 btn-ms px-3">자동견적 중지</button>
+                            </div>
+                        </div>
+
+                        <div class="process-area d-flex align-items-center justify-content-between mx-0 my-4">
+                            <div class="bg-light-grey process px-0">
+                                <div id="myBar" class="bg-primary" style="width:20%"></div>
+                            </div>
+                            <div class="font-size-large02 font-primary align-right" id=""><b>20%</b></div>
+                        </div>
+
+                        <div class="row justify-content-between font-size-small01">
+                            <div class="col-lg-6">
+                                오늘 견적발송 : <b class="font-primary2">2</b>
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <div class="card card2 bg-secondary3">
+                                    오늘 사용 캐시 <br>
+                                    <b class="font-primary fs-lg">3,000</b>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>

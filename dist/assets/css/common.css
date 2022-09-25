@@ -920,6 +920,15 @@ modal
     }
     .modal-m {
         max-width: 350px;
+    }    
+}
+@media screen and (max-width:500px){
+    .modal .scroll-y {
+        height: calc(100vh - 280px);
+        overflow-y: auto;
+    }
+    .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+        padding-top: 0.625rem;
     }
 }
 @media screen and (max-width:320px){
