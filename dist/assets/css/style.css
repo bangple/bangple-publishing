@@ -1703,7 +1703,26 @@ ul.list-unstyled li a:hover,
     color: #02597e;
     font-weight: 500;
 }
-
+.alarm_message{
+    position: relative;
+    border-bottom: 1px solid #dbdbdc;
+    height: 1px;
+    margin: 30px 0;
+}
+.alarm_message p{
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.alarm_message .text{
+    font-size: 14px;
+    margin: 0 auto;
+    color: #333;
+    background-color: #fafafa;
+    padding: 0 15px;
+}
 
 
 .aside{

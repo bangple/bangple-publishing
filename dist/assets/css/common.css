@@ -371,7 +371,9 @@ common
 .font-color-99 {
     color: #999;
 }
-
+.font-color-danger {
+    color: #fb479b;
+}
 .font-width-normal {
     font-weight: 200!important;
 }
