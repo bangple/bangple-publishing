@@ -33,23 +33,6 @@ iframe.footer-iframe {
     width: 108px;
     height: 44px;
 }
-
-@media screen and (max-width:480px){
-    .header{
-        height: 60px;
-    }
-    .header.navbar{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .header .container{
-        padding: 0;
-    }
-    .navbar-toggler{
-        padding: 0.75rem 0.25rem;
-    }
-}
-
 .navbar-dark .navbar-toggler-icon {
     background-image: url(../img/icon/navbar-light-toggler-icon-bg.svg);
 }
@@ -73,6 +56,49 @@ iframe.footer-iframe {
     line-height: 30px;
     padding: 0!important;
 }
+
+@media screen and (max-width:480px){
+    .header{
+        height: 52px;
+    }
+    .header.navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header .container{
+        padding: 0;
+    }
+    .navbar-toggler{
+        padding: 0.75rem 0.25rem;
+    }
+    
+    header.navbar-nav.mobile {
+        display: block;
+    }
+    header.navbar-nav.mobile {
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        padding-top: 0;
+    }
+    header.navbar-nav.mobile a{
+        display: inline-display;
+        justify-content: start;
+        font-size: 18px;
+        line-height: 39px;
+        color: #333;
+        padding: 0 10px;
+    }
+    header.navbar-nav.mobile a:first-child{
+        padding-left:20px;
+    }
+}
+@media screen and (max-width:280px){
+    
+    header.navbar-nav.mobile {
+        display: none;
+    }
+}
+
 
 .nav-item .btn-bell {
     margin-top: 5px;

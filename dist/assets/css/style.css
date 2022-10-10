@@ -1153,6 +1153,11 @@ button.btn-square {
         font-size: 0.9rem;
         margin-right: 0!important;
     }
+    
+    .photo-list .thumbnail-style-s {
+        height: 150px;
+        margin-bottom: 10px;
+    }
 }
 
 /** 업체찾기 **/
@@ -1747,7 +1752,7 @@ ul.list-unstyled li a:hover,
         display: block;
         position: absolute;
         top:0;
-        right: 10px;
+        right: 0;
         width: 45%;
         text-align: right;
     }
@@ -1789,6 +1794,10 @@ ul.list-unstyled li a:hover,
         right: 92%;
         text-align: right;
     }
+    .modal .modal-448{
+        width: 100%;
+    }
+    
 }
 @media screen and (max-width: 320px){    
     .chat-section {
