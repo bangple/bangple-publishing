@@ -791,12 +791,39 @@ main
 
 /** login **/
 
+.login .nav-tabs{
+    width: 448px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.login .nav-tabs .nav-item{
+    width:46%;
+}
+.login .nav-tabs:not(.nav-fill):not(.nav-justified) .nav-item, 
+.login .nav-pills .nav-item{
+    margin-right: 4px;
+}
+.login .nav-tabs .nav-link{
+    width:100%;
+    text-align: center;
+    color: #889a9f;
+    border: 1px solid #c3c5cd;
+    border-bottom: none;
+    border-radius: 7px 7px 0 0;
+    background-color: #ccdddf;
+    line-height: 43px;
+}
+.login .nav-tabs .nav-link.active{
+    color: #666666;
+    border: 1px solid #c3c5cd;
+    border-bottom: none;
+    background-color: #fff;
+}
 .login .card {
     width: 448px;
     padding: 50px 40px;
     margin: 0 auto;
 }
-
 .btn-yllw {
     color: #000;
     background-color: #fae100;
